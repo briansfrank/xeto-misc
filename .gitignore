@@ -1,0 +1,10 @@
+# ignore files for git
+
+Thumbs.db
+.DS_Store
+fan.props
+
+# lib/
+/lib/
+
+

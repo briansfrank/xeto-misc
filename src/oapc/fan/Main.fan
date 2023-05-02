@@ -62,6 +62,7 @@ class Main : AbstractMain
   Void parseWalk(File f)
   {
     if (f.ext == "yaml") return parseYaml(f)
+    if (f.name == "kpi.yaml") return // skip
     if (f.isDir) f.list.each |kid| { parseWalk(kid) }
   }
 
@@ -115,45 +116,100 @@ class Main : AbstractMain
 
     echo
     echo("Generating...")
+    genLib
     files.each |loc|
     {
       // find all defs in file so we output using same file structure
       defs := defsByCode.findAll |d| { d.loc === loc }.vals
-      generateFile(loc, defs)
+      genFile(loc, defs)
     }
     echo
   }
 
-  Void generateFile(FileLoc loc, Def[] defs)
+  Void genLib()
   {
-    if (!loc.file.endsWith(".yaml")) throw Err()
-    file := outDir + (loc.file[0..-6] + ".xeto").toUri
+    file := outDir + `lib.xeto`
+    file.out.printLine(
+       """// Auto-generated  ${DateTime.now.toLocale}
 
-    echo("Generate [$file]")
+          pragma: Lib <
+            doc: "Ontology Alignment Project"
+            version: "1.1.0"
+            depends: {
+              { lib: "sys" }
+              { lib: "ph" }
+            }
+            org: {
+              dis: "Ontology Alignment Project"
+              uri: "https://oap.cloud.buildingsiot.com/1.1/"
+            }
+          >
+          """).close
+  }
+
+  Void genFile(FileLoc loc, Def[] defs)
+  {
+    file := outDir + toFileName(loc).toUri
+
+    //echo("Generate [$file]")
     out := file.out
     out.printLine("// Auto-generated " + DateTime.now.toLocale)
-    defs.each |def| { generateDef(out, def) }
+    defs.each |def| { genDef(out, def) }
     out.printLine
     out.close
   }
 
-  Void generateDef(OutStream out, Def def)
+  Str toFileName(FileLoc loc)
+  {
+    // the yaml naming convention often duplicates the folder name
+    // into the file name; but for Xeto we have to flatten the dirs
+    name := loc.file
+    if (!name.endsWith(".yaml")) throw Err(name)
+    slash := name.index("/")
+    parent := name[0..<slash]
+    if (parent == "environment-sensing") parent = "env"
+    rest := name[slash+1..-6]
+    rest = rest.replace("."+parent, "")
+               .replace(".envs", "")
+               .replace(".meter", "")
+               .replace(".network", "")
+    rest = rest.replace(".", "-")
+    return parent + "-" + rest + ".xeto"
+  }
+
+  Void genDef(OutStream out, Def def)
   {
     extends := def.body["extends"]
     phType := phType(def)
 
     out.printLine
-    out.printLine("// " + def.description)
+    genDefDescription(out, def)
     out.printLine(def.code + ": " + (extends ?: phType) + " {")
+
+    // marker "type" tags
     def.typeMarkers.each |tag|
     {
       if (tag == phType.lower) return
       out.printLine("  $tag")
     }
+
+    // value "type" tags
     def.typeVals.each |v, n|
     {
-      generateDefTypeVal(out, def, n, v)
+      genDefTypeVal(out, def, n, v)
     }
+
+    // optional "type" tags
+    typeOptional := def.haystack["type_optional"] as Str[]
+    if (typeOptional != null)
+    {
+      typeOptional.each |tag| { out.printLine("  ${tag}: Marker?") }
+    }
+
+    // points
+    points := def.body["points"] as List
+    if (points != null) genDefPoints(out, def, points)
+
     out.printLine("}")
   }
 
@@ -167,7 +223,26 @@ class Main : AbstractMain
     return "Dict"
   }
 
-  Void generateDefTypeVal(OutStream out, Def def, Str n, Obj v)
+  Void genDefDescription(OutStream out, Def def)
+  {
+    d := def.description
+    if (d.size < 80) return out.printLine("// $d")
+
+    // try to put comments no loner than 80 chars wide
+    curLine := 0
+    words := d.split(' ')
+    words.each |word|
+    {
+      if (curLine == 0) { out.print("\n// "); curLine = 3 }
+      out.print(word)
+      curLine += word.size + 1
+      if (curLine < 80) out.print(" ")
+      else curLine = 0
+    }
+    out.printLine
+  }
+
+  Void genDefTypeVal(OutStream out, Def def, Str n, Obj v)
   {
     // treat the non-marker type tags specially
     switch (n)
@@ -177,6 +252,19 @@ class Main : AbstractMain
       case "stage":           out.printLine("  $n: Int $v")
       default:                echo("WARN: unsupported value type tag: $n = $v $def")
     }
+  }
+
+  Void genDefPoints(OutStream out, Def def, Str[] points)
+  {
+    if (points.isEmpty) return echo("WARN: empty points: $def")
+    out.printLine("  points: {")
+    points.each |point|
+    {
+      pointDef := defsByCode[point]
+      if (pointDef == null) return echo("WARN: unknown point def $point in $def")
+      out.printLine("    ${point}?")
+    }
+    out.printLine("  }")
   }
 
 //////////////////////////////////////////////////////////////////////////

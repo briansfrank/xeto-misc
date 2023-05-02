@@ -62,7 +62,7 @@ class Main : AbstractMain
   Void parseWalk(File f)
   {
     if (f.ext == "yaml") return parseYaml(f)
-    if (f.name == "kpi.yaml") return // skip
+    if (f.name.startsWith("kpi")) return // skip
     if (f.isDir) f.list.each |kid| { parseWalk(kid) }
   }
 

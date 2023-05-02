@@ -1,0 +1,142 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// A generic enclosed space within a building
+ROOM: Space {
+  room
+}
+
+
+// A room set aside to use during a break from work for the purpose of relaxing,
+// socializing or eating. 
+BREAKRM: ROOM {
+  breakRoom
+}
+
+// A space used by people to move throughout a building - hallways, stair.
+CIRCULATION: ROOM {
+  circulation
+}
+
+// A room provided for singular events such as business conferences and meetings.
+CONRM: ROOM {
+  conferenceRoom
+}
+
+
+// A room used for storing servers, storage, and communication equipment in a facility.
+DATAHALL: ROOM {
+  dataHall
+}
+
+// A room for providing or gaining knowledge
+EDRM: ROOM {
+  educational
+}
+
+// A general class of space types used for sports, working out and exercise
+FTNSRM: ROOM {
+  fitness
+}
+
+
+// A class for rooms for the maintaining and restoration of health by the treatment
+// and prevention of disease. 
+HEALTHCARERM: ROOM {
+  healthCare
+}
+
+// A room used for research within a facility
+LABROOM: ROOM {
+  laboratory
+}
+
+// An entranceway or foyer in a building 
+LOBBY: ROOM {
+  lobby
+}
+
+
+// A room containing lockers for the storage of personal belongings and typically
+// bathing and restroom facilities, especially in schools or gymnasiums. 
+LCKRROOM: ROOM {
+  lockerRoom
+}
+
+
+// A general class of space types used to maintain cleanliness of one's body and
+// clothing to preserve overall health and well-being. 
+PERHYGIENE: ROOM {
+  personalHygiene
+}
+
+
+// An individual space (Dormitory Room) or collection of rooms(Bedroom, Living Room,
+// etc) providing sleeping and living quarters. 
+RESIDENCE: ROOM {
+  residence
+}
+
+// A general class of space types used for the sale of goods to the public
+RETAILRM: ROOM {
+  retail
+}
+
+// A room for holding goods or supplies for future use.
+STRGRM: ROOM {
+  storage
+}
+
+// A room not intended for prolonged human occupancy or material storage.
+UTILRM: ROOM {
+  utility
+}
+
+// A room for formal instructor led learning.
+CLASSRM: EDRM {
+  classroom
+}
+
+// A room providing sleeping and residential quarters for students at a school.
+DORMRM: RESIDENCE {
+  dormitory
+}
+
+
+// A room or space dedicated to the electrical equipment for managing power distribution.
+// not intended for prolonged human occupancy or material storage. 
+ELECRM: UTILRM {
+  elec
+}
+
+
+// A room or space dedicated to the equipment for managing environmental quality,
+// lighting and life safety equipment, not intended for prolonged human occupancy
+// or material storage. 
+MECHRM: UTILRM {
+  mechanical
+}
+
+
+// A room where dead bodies are kept in preparation for burial or cremation, or
+// in the case of a hospital or school, for study and examination. 
+MORTUARY: HEALTHCARERM {
+  mortuary
+}
+
+// A room in a public space providing toilets and lavatories, a public bathroom
+RESTROOM: PERHYGIENE {
+  restroom
+}
+
+
+// Space used to house computer and networking gear. Includes MDF (Main Distribution
+// Frame), IDF(Intermediate Distribution Frame), Telecom Rooms, and IT Closets.
+SRVROOM: UTILRM {
+  serverRoom
+}
+
+// A room for small group or self-directed study.
+STUDYRM: EDRM {
+  studyRoom
+}
+

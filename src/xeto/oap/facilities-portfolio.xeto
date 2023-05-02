@@ -1,0 +1,18 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Collection of buildings/sites.
+PORTFOLIO: Dict {
+  portfolio
+}
+
+
+// A campus is a collection of two or more buildings that function as a single property.
+// They are generally owned and operated by the same party. 
+CAMPUS: PORTFOLIO {
+  campus
+  points: {
+    OARH?
+    OATEMP?
+  }
+}
+

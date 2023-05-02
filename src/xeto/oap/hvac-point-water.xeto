@@ -1,0 +1,818 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Water Delta Temperature
+DT: Point {
+  delta
+  temp
+  water
+  sensor
+}
+
+// Water Delta Temperature Setpoint
+DTSP: Point {
+  water
+  delta
+  temp
+  sp
+}
+
+// Return Water Flow
+RWFLW: Point {
+  leaving
+  water
+  flow
+  sensor
+}
+
+// Water Pressure (Base Definition)
+WPR: Point {
+  water
+  pressure
+  sensor
+}
+
+// Water Differential Pressure (Base Definition)
+WDIFFPR: Point {
+  water
+  delta
+  pressure
+  sensor
+}
+
+// Water Differential Pressure Setpoint (Base Definition)
+WDIFFPRSP: Point {
+  water
+  delta
+  pressure
+  sp
+}
+
+// Water Flow Rate
+WFLOW: Point {
+  water
+  flow
+  sensor
+}
+
+// Water Flow Setpoint (Base Definition)
+WFLOWSP: Point {
+  water
+  flow
+  sp
+}
+
+// Water Temperature Setpoint (Base Definition)
+WTEMPSP: Point {
+  water
+  temp
+  sp
+}
+
+// Cumulative total of water volume measured relative to some baseline
+WVOL: Point {
+  water
+  volume
+  sensor
+  total
+}
+
+// Bypass Chilled Water Flow
+BYPCHWFL: WFLOW {
+  chilled
+  bypass
+}
+
+// Basin Heat Status
+BAHTST: Point {
+  basin
+  heat
+  sensor
+}
+
+// Chilled Water Differential Pressure
+CHWDPR: WDIFFPR {
+  chilled
+}
+
+// Primary Loop Chilled Water Differential Pressure
+PRCHWDPR: CHWDPR {
+  primaryLoop
+}
+
+// Secondary Loop Chilled Water Differential Pressure
+SCCHWDPR: CHWDPR {
+  secondaryLoop
+}
+
+// Tertiary Loop Chilled Water Differential Pressure
+TRCHWDPR: CHWDPR {
+  tertiaryLoop
+}
+
+// Chilled Water Minimum Flow Setpoint
+CHWFLWMNSP: WFLOWSP {
+  min
+  chilled
+}
+
+// Leaving Chilled Water Flow Setpoint
+LCHWFLOWSP: WFLOWSP {
+  chilled
+  leaving
+}
+
+// Chilled Water Differential Pressure Setpoint
+CHWDPRSP: WDIFFPRSP {
+  chilled
+}
+
+// Primary Loop Chilled Water Differential Pressure Setpoint
+PRCHWDPRSP: CHWDPRSP {
+  primaryLoop
+}
+
+// Secondary Loop Chilled Water Differential Pressure Setpoint
+SCCHWDPRSP: CHWDPRSP {
+  secondaryLoop
+}
+
+// Tertiary Loop Chilled Water Differential Pressure Setpoint
+TRCHWDPRSP: CHWDPRSP {
+  tertiaryLoop
+}
+
+// Cooling Tower Bypass Valve Command
+CTBYPVCMD: VCMD {
+  coolingTower
+  condenser
+  water
+  bypass
+}
+
+// Condenser Water Bypass Valve Command
+CWBYPVCMD: VCMD {
+  condenser
+  water
+  bypass
+}
+
+// Condenser Water Bypass Valve Position Feedback
+CWBYPVFBK: VPOS {
+  condenser
+  water
+  bypass
+}
+
+// Condenser Water Differential Pressure
+CWDPR: WDIFFPR {
+  condenser
+}
+
+// Condenser Water Differential Pressure Setpoint
+CWDPRSP: WDIFFPRSP {
+  condenser
+}
+
+// Domestic Water Pressure
+DWPR: WPR {
+  domestic
+}
+
+// Difference between domestic hot water leaving and entering temperatures.
+DHWDT: DT {
+  domestic
+  hot
+}
+
+// Difference between hot water leaving and entering temperatures.
+HWDT: DT {
+  hot
+}
+
+// Entering Chilled Water Flow
+ECHWFL: WFLOW {
+  chilled
+  entering
+}
+
+// Entering Chilled Water Flow Status
+ECHWFLST: WFLWST {
+  chilled
+  entering
+}
+
+// Entering Hot Water Flow
+EHWFL: WFLOW {
+  entering
+  hot
+}
+
+// Heat Exchanger Isolation Valve Command
+HXISOVCMD: VCMD {
+  heatExchanger
+  isolation
+  water
+}
+
+// Leaving Heat Exchanger Isolation Valve Command
+LHXISOVCMD: VCMD {
+  leaving
+  heatExchanger
+  isolation
+  water
+}
+
+// Leaving Heat Exchanger Isolation Valve Position Feedback
+LHXISOVFBK: VPOS {
+  leaving
+  heatExchanger
+  isolation
+  water
+}
+
+// Entering Heat Exchanger Isolation Valve Command
+EHXISOVCMD: VCMD {
+  entering
+  heatExchanger
+  isolation
+  water
+}
+
+// Entering Heat Exchanger Isolation Valve Position Feedback
+EHXISOVFBK: VPOS {
+  entering
+  heatExchanger
+  isolation
+  water
+}
+
+// Hot Water Differential Pressure
+HWDPR: WDIFFPR {
+  hot
+}
+
+// Primary Loop Hot Water Differential Pressure
+PRHWDPR: HWDPR {
+  primaryLoop
+}
+
+// Secondary Loop Hot Water Differential Pressure
+SCHWDPR: HWDPR {
+  secondaryLoop
+}
+
+// Tertiary Loop Hot Water Differential Pressure
+TRHWDPR: HWDPR {
+  tertiaryLoop
+}
+
+// Hot Water Differential Pressure Setpoint
+HWDPRSP: WDIFFPRSP {
+  hot
+}
+
+// Primary Loop Hot Water Differential Pressure Setpoint
+PRHWDPRSP: HWDPRSP {
+  primaryLoop
+}
+
+// Secondary Loop Hot Water Differential Pressure Setpoint
+SCHWDPRSP: HWDPRSP {
+  secondaryLoop
+}
+
+// Tertiary Loop Hot Water Differential Pressure Setpoint
+TRHWDPRSP: HWDPRSP {
+  tertiaryLoop
+}
+
+// Leaving Chilled Water Flow
+LCHWFL: WFLOW {
+  chilled
+  leaving
+}
+
+// Leaving Chilled Water Flow Status
+LCHWFLST: WFLWST {
+  chilled
+  leaving
+}
+
+// Leaving Chilled Water Temperature Setpoint
+LCHWTSP: WTEMPSP {
+  chilled
+  leaving
+}
+
+// Leaving Condenser Water Flow
+LCWFL: WFLOW {
+  condenser
+  leaving
+}
+
+// Leaving Condenser Water Flow Setpoint
+LCWFLSP: WFLOWSP {
+  condenser
+  leaving
+}
+
+// Leaving Condenser Water Temperature Setpoint
+LCWTSP: WTEMPSP {
+  condenser
+  leaving
+}
+
+// Leaving Hot Water Flow
+LHWFL: WFLOW {
+  hot
+  leaving
+}
+
+// Leaving Hot Water Flow Setpoint
+LHWFLSP: WFLOWSP {
+  hot
+  leaving
+}
+
+// Leaving Hot Water Temperature Setpoint
+LHWTSP: WTEMPSP {
+  hot
+  leaving
+}
+
+// Leaving Water Isolation Valve Command
+LWISOVCMD: VCMD {
+  leaving
+  water
+  isolation
+}
+
+// Leaving Water Isolation Valve Status
+LWISOVST: VST {
+  leaving
+  water
+  isolation
+}
+
+// Pressure Requests
+PRREQ: REQ {
+  pressure
+}
+
+// Make Up Water Valve Command
+MKUPWVCMD: VCMD {
+  makeup
+  water
+}
+
+// Mixing Water Valve Command
+MXWVCMD: VCMD {
+  mixing
+  water
+}
+
+// Mixing Water Valve Position Feedback
+MXWVFBK: VPOS {
+  mixing
+  water
+}
+
+// Preheat Water Valve Command
+PHWVCMD: VCMD {
+  preheat
+  water
+}
+
+// Primary Leaving Hot Water Temperature Setpoint
+PRLHWTSP: LHWTSP {
+  primaryLoop
+}
+
+// Primary Loop Leaving Chilled Water Temperature
+PRLCHWT: LCHWT {
+  primaryLoop
+}
+
+// Primary Loop Leaving Chilled Water Temperature Setpoint
+PRLCHWTSP: LCHWTSP {
+  primaryLoop
+}
+
+// Primary Loop Entering Chilled Water Temperature
+PRECHWT: ECHWT {
+  primaryLoop
+}
+
+// Primary Loop Leaving Condenser Water Temperature
+PRLCWT: LCWT {
+  primaryLoop
+}
+
+// Primary Loop Leaving Condenser Water Temperature Setpoint
+PRLCWTSP: LCWTSP {
+  primaryLoop
+}
+
+
+// The flow rate setpoint of condenser water leaving the the cooling tower on the
+// primary loop. 
+PLLCWFLSP: LCWFLSP {
+  primaryLoop
+}
+
+
+// The flow rate of condenser water leaving the the cooling tower on the primary
+// loop. 
+PLLCWFLOW: LCWFL {
+  primaryLoop
+}
+
+
+// The flow rate setpoint of condenser water leaving the the condenser water plant
+// on the secondary loop. 
+SLLCWFLSP: LCWFLSP {
+  secondaryLoop
+}
+
+
+// The flow rate of condenser water leaving the the condenser water plant on the
+// secondary loop. 
+SLLCWFLOW: LCWFL {
+  secondaryLoop
+}
+
+// Primary Loop Entering Condenser Water Temperature
+PRECWT: ECWT {
+  primaryLoop
+}
+
+// Primary Loop Enable Command
+PRLENCMD: ENCMD {
+  primaryLoop
+}
+
+// Secondary Loop Enable Command
+SCLENCMD: ENCMD {
+  secondaryLoop
+}
+
+// Secondary Loop Leaving Chilled Water Temperature
+SCLCHWT: LCHWT {
+  secondaryLoop
+}
+
+// Secondary Loop Leaving Chilled Water Temperature Setpoint
+SCLCHWTSP: LCHWTSP {
+  secondaryLoop
+}
+
+// Secondary Loop Entering Chilled Water Temperature
+SCECHWT: ECHWT {
+  secondaryLoop
+}
+
+// Secondary Loop Leaving Condenser Water Temperature
+SCLCWT: LCWT {
+  secondaryLoop
+}
+
+// Secondary Loop Leaving Condenser Water Temperature Setpoint
+SCLCWTSP: LCWTSP {
+  secondaryLoop
+}
+
+// Secondary Loop Leaving Condenser Water Cooling Temperature Setpoint
+SCLCWCTSP: SCLCWTSP {
+  cooling
+}
+
+// Secondary Loop Leaving Condenser Water Heating Temperature Setpoint
+SCLCWHTSP: SCLCWTSP {
+  heating
+}
+
+// Secondary Loop Entering Condenser Water Temperature
+SCECWT: ECWT {
+  secondaryLoop
+}
+
+// Secondary Loop Condenser Water Heat Exchanger Bypass Valve Command
+SCCWHXBYPVCMD: VCMD {
+  secondaryLoop
+  condenser
+  water
+  heatExchanger
+  bypass
+}
+
+// Secondary Chilled Water Flow
+SCHWFL: WFLOW {
+  chilled
+  secondaryLoop
+}
+
+// Secondary Hot Water Flow
+SHWFL: WFLOW {
+  hot
+  secondaryLoop
+}
+
+// Secondary Leaving Hot Water Temperature Setpoint
+SCLHWTSP: LHWTSP {
+  secondaryLoop
+}
+
+// Tertiary Chilled Water Flow
+TRCHWFL: WFLOW {
+  chilled
+  tertiaryLoop
+}
+
+// Tertiary Hot Water Flow
+TRHWFL: WFLOW {
+  hot
+  tertiaryLoop
+}
+
+// Tertiary Loop Leaving Chilled Water Temperature
+TRLCHWT: LCHWT {
+  tertiaryLoop
+}
+
+// Tertiary Loop Leaving Hot Water Temperature
+TRLHWT: LHWT {
+  tertiaryLoop
+}
+
+// Tertiary Loop Entering Chilled Water Temperature
+TRECHWT: ECHWT {
+  tertiaryLoop
+}
+
+// Tertiary Loop Entering Hot Water Temperature
+TREHWT: EHWT {
+  tertiaryLoop
+}
+
+// A measure of the conductivity of water.
+WCD: Point {
+  water
+  conductivity
+  sensor
+}
+
+// The target value for the conductivity of water.
+WCDSP: Point {
+  water
+  conductivity
+  sp
+}
+
+// A measure of the water level in units of height, typically in a tank or sump.
+WTLVL: Point {
+  water
+  level
+  sensor
+}
+
+// The target value for the water level, typically in a tank or sump.
+WLVLSP: Point {
+  water
+  level
+  sp
+}
+
+// Water level has exceeded a certain threshold and is generating an alarm.
+WLALRMH: ALRMPT {
+  water
+  level
+  high
+}
+
+// Water level has gone below a certain threshold and is generating an alarm.
+WLALRML: ALRMPT {
+  water
+  level
+  low
+}
+
+// A digital input which proves water flow.
+WFLWST: Point {
+  water
+  flow
+  state
+  sensor
+}
+
+// Boiler Circulation Pump Run Command
+BCPSSCMD: PSSCMD {
+  circ
+  hot
+  water
+}
+
+// Boiler Circulation Pump Run Status
+BCPSSST: PSSST {
+  circ
+  hot
+  water
+}
+
+// The temperature of the water in a domestic hot water storage tank.
+DHWTT: WTRTEMP {
+  tank
+  domestic
+  hot
+}
+
+
+// The temperature of the water entering the chiller or Chilled water plant. Commonly
+// referred to as Chilled Water Return Temp (CHWRT). 
+ECHWT: WTRTEMP {
+  entering
+  chilled
+}
+
+
+// The temperature of the water entering the heat exchanger, cooling tower or condenser
+// water plant. Commonly referred to as Condenser Water Return Temp (CWRT). 
+ECWT: WTRTEMP {
+  entering
+  condenser
+}
+
+
+// The temperature of the water entering (returning to) the boiler or Hot water
+// plant. Commonly referred to as Hot Water Return Temp (HWRT). 
+EHWT: WTRTEMP {
+  entering
+  hot
+}
+
+// The temperature of the water entering the domestic hot water heater or plant.
+EDHWT: WTRTEMP {
+  entering
+  domestic
+  hot
+}
+
+// Entering Water Temperature Setpoint
+EWTSP: WTEMPSP {
+  entering
+}
+
+
+// The temperature of the water leaving the chiller or Chilled water plant. Commonly
+// referred to as Chilled Water Supply Temp (CHWST). 
+LCHWT: WTRTEMP {
+  leaving
+  chilled
+}
+
+
+// The temperature of the water leaving the equipment including the heat exchanger,
+// condenser water loop equipment, cooling tower or condenser water plant. Commonly
+// referred to as Condenser Water Supply Temp (CWST). 
+LCWT: WTRTEMP {
+  leaving
+  condenser
+}
+
+
+// The temperature of the water leaving the boiler or Hot water plant. Commonly
+// referred to as Hot Water Supply Temp (HWST). 
+LHWT: WTRTEMP {
+  leaving
+  hot
+}
+
+
+// The temperature of the water leaving the domestic hot water heater or recirculation
+// pump. 
+LDHWT: WTRTEMP {
+  leaving
+  domestic
+  hot
+}
+
+
+// The temperature setpoint of the water leaving the domestic hot water heater or
+// recirculation pump. 
+LDHWTSP: WTEMPSP {
+  leaving
+  domestic
+  hot
+}
+
+
+// The temperature of the water leaving the Hot water plant. Commonly referred to
+// as Building Hot Water Supply Temp. 
+PRLHWT: LHWT {
+  primaryLoop
+}
+
+
+// The temperature of the water entering the Hot water plant. Commonly referred
+// to as Building Hot Water Supply Temp. 
+PREHWT: EHWT {
+  primaryLoop
+}
+
+// Pump Run Command
+PSSCMD: CMD {
+  run
+  pump
+}
+
+// Pump Run Status
+PSSST: SSST {
+  pump
+}
+
+// Pump Speed Command
+PSPCMD: Point {
+  cmd
+  speed
+  pump
+}
+
+// Condensate Pump Status
+CNPST: PSSST {
+  condensate
+}
+
+
+// The temperature of the water leaving the Hot water plant. Commonly referred to
+// as Building Hot Water Supply Temp. 
+SCLHWT: LHWT {
+  secondaryLoop
+}
+
+
+// The temperature of the water entering the Hot water plant. Commonly referred
+// to as Building Hot Water Return Temp. 
+SCEHWT: EHWT {
+  secondaryLoop
+}
+
+
+// Pump located in cooling tower basin used to agitate water in order to limit sediment
+// build up. 
+BSWPSSCMD: PSSCMD {
+  basinSweeper
+  separator
+  water
+}
+
+
+// Pump located in cooling tower basin used to agitate water in order to limit sediment
+// build up. 
+BSWPSSST: PSSST {
+  basinSweeper
+  separator
+  water
+}
+
+// Change Over Valve Command
+COVCMD: VCMD {
+  changeover
+}
+
+// Change Over Valve Feedback
+COVFBK: VPOS {
+  changeover
+}
+
+// Chilled Water Delta Temperature
+CHWDT: DT {
+  chilled
+}
+
+// Leaving Steam Temperature
+LSTT: Point {
+  leaving
+  steam
+  temp
+  sensor
+}
+
+// Leaving Steam Pressure
+LSTP: Point {
+  leaving
+  steam
+  pressure
+  sensor
+}
+
+// Command to a valve that controls a waterside economizer
+WECVCMD: VCMD {
+  water
+  economizing
+}
+
+// Position of a waterside economizer control valve
+WECVPOS: VPOS {
+  water
+  economizing
+}
+

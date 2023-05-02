@@ -1,0 +1,10 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Horn Strobe
+HS: Dict {
+  device
+  fire
+  horn
+  strobe
+}
+

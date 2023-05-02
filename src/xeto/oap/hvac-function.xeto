@@ -1,0 +1,13 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Chilled Beam with Chilled Water Cooling and Hot water Heating (zone control)
+CHBZC: Dict {
+  points: {
+    ZT?
+    CLCMD?
+    HTCMD?
+    CHWVCMD?
+    HWVCMD?
+  }
+}
+

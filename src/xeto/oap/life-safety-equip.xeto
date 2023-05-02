@@ -1,0 +1,62 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Fire Alarm Panel
+FAP: AP {
+  fire
+  points: {
+    ALRMPT?
+    FAST?
+  }
+}
+
+// Break Glass Unit
+BGU: Equip {
+  fire
+  breakGlass
+}
+
+// Fire Damper
+FD: DMP {
+  fire
+}
+
+// Fire Smoke Damper
+FSD: DMP {
+  fire
+  smoke
+}
+
+// Fire Extinguisher
+FE: Equip {
+  fire
+  fireExtinguisher
+}
+
+
+// A fire pump increases pressure as part of a fire sprinkler system's water supply.
+// The pump provides water flow at a higher pressure to the sprinkler system risers
+// and hose standpipes. 
+FP: PUMP {
+  fire
+}
+
+
+// Fire suppression systems are used to extinguish or prevent the spread of fire
+// in a building. 
+FSUP: Equip {
+  fire
+  fireSuppression
+  system
+}
+
+// Fire Water Tank
+FWT: WTK {
+  fire
+}
+
+// Sprinkler Head
+SPH: Equip {
+  fire
+  sprinklerHead
+}
+

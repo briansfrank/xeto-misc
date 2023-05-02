@@ -1,0 +1,564 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Uses air to cool hot refrigerant.
+ACR: Dict {
+  airCooled
+}
+
+// Air flow control.
+AFC: Dict {
+  points: {
+    OCCIAFLWMNSP?
+    OCCIAFLWMXSP?
+    SBIAFLWMNSP?
+    SBIAFLWMXSP?
+    UOCIAFLWMNSP?
+    UOCIAFLWMXSP?
+    IAFLW?
+    EFFIAFLWSP?
+  }
+}
+
+// Cooling air flow control.
+CAFC: Dict {
+  points: {
+    UOCIAFLWMNSP?
+    UOCIAFLWCLMNSP?
+    UOCIAFLWCLMXSP?
+    SBIAFLWMNSP?
+    SBIAFLWCLMNSP?
+    SBIAFLWCLMXSP?
+    OCCIAFLWMNSP?
+    OCCIAFLWCLMNSP?
+    OCCIAFLWCLMXSP?
+    IAFLW?
+    EFFIAFLWSP?
+    CLREQ?
+  }
+}
+
+// Chilled water valve control on discharge air side.
+CHWDC: Dict {
+  chilledWaterCooling
+  points: {
+    CHWVCMD?
+    DAT?
+    DATSP?
+    DATCLSP?
+  }
+}
+
+// Chilled water valve control on zone side.
+CHWZC: Dict {
+  chilledWaterCooling
+  directZone
+  points: {
+    CHWVCMD?
+    ZT?
+    ZTSP?
+    DAT?
+  }
+}
+
+// Condensate Monitoring
+CNM: Dict {
+  points: {
+    CN?
+  }
+}
+
+// Single cooling setpoint control.
+CSP: Dict {
+  points: {
+    CLDEM?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCZTCLSP?
+    UOCZTCLSP?
+    SBZTCLSP?
+    ZT?
+    EFFZTSP?
+    ZTSP?
+    ZTADJSP?
+  }
+}
+
+// Condenser water valve control on leaving side.
+CWLC: Dict {
+  condenserCooling
+  points: {
+    CWVCMD?
+    CWVFBK?
+    LCWT?
+    LCWTSP?
+  }
+}
+
+// The base function of a dual duct equipment
+DD: Dict {
+  dualDuct
+  points: {
+    CDDCMD?
+    HDDCMD?
+    DAT?
+    CDDAT?
+    HDDAT?
+  }
+}
+
+// Combination of discharge fan run command and status (start/stop).
+DFSS: Dict {
+  points: {
+    DFCMD?
+    DFST?
+    DFP?
+    DFI?
+  }
+}
+
+// Variable speed control for discharge fans.
+DFVDC: Dict {
+  variableAirVolume
+  points: {
+    DFSPCMD?
+    DFCMD?
+    DFST?
+  }
+}
+
+// The dual temperature control function
+DSP: Dict {
+  points: {
+    CLDEM?
+    HTDEM?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    SBZTCLSP?
+    SBZTHTSP?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    ZT?
+    EFFZTDB?
+    EFFZTSP?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    ZTSP?
+    ZTADJSP?
+  }
+}
+
+// Discharge Air Humidity Control
+DHC: Dict {
+  points: {
+    DARH?
+    DARHSP?
+  }
+}
+
+// Domestic Hot Water Control
+DHWC: Dict {
+  points: {
+    LDHWT?
+    LDHWTSP?
+    DHWTT?
+  }
+}
+
+// Discharge Air Temperature Monitoring
+DTM: Dict {
+  points: {
+    DAT?
+  }
+}
+
+// Compressor run control on zone side.
+DXZC: Dict {
+  dxCooling
+  directZone
+  points: {
+    ZT?
+    CLCMD?
+    CLSTG1CMD?
+    CLSTG2CMD?
+    CLSTG3CMD?
+    CLSTG4CMD?
+    DAT?
+    RAT?
+  }
+}
+
+// Compressor run control on discharge side.
+DXDC: Dict {
+  dxCooling
+  points: {
+    CLCMD?
+    CLSTG1CMD?
+    CLSTG2CMD?
+    CLSTG3CMD?
+    CLSTG4CMD?
+    DAT?
+    CCDAT?
+    DATSP?
+    DATCLSP?
+    RAT?
+  }
+}
+
+// Exhaust air flow control.
+EAFC: Dict {
+  points: {
+    EADCMD?
+    EADFBK?
+    EAFLW?
+    EAFLWSP?
+  }
+}
+
+// Economizer control.
+ECON: Dict {
+  economizing
+  points: {
+    ECOALCKTSP?
+    RAT?
+    MAT?
+    DAT?
+    DATSP?
+    MATSP?
+    OADCMD?
+    OADFBK?
+    RADCMD?
+  }
+}
+
+// Exhaust air flow control.
+ED: Dict {
+  points: {
+    EAFLW?
+    EAFLWSP?
+    EADCMD?
+    EADFBK?
+  }
+}
+
+// Combination of exhaust fan run command and status (start/stop).
+EFSS: Dict {
+  points: {
+    EFCMD?
+    EFST?
+  }
+}
+
+// Variable speed control for exhaust fans.
+EFVSC: Dict {
+  variableAirVolume
+  points: {
+    EFSPCMD?
+    EFCMD?
+    EFST?
+  }
+}
+
+// Heating air flow control.
+HAFC: Dict {
+  points: {
+    UOCIAFLWMNSP?
+    UOCIAFLWHTMNSP?
+    UOCIAFLWHTMXSP?
+    SBIAFLWMNSP?
+    SBIAFLWHTMNSP?
+    SBIAFLWHTMXSP?
+    OCCIAFLWMNSP?
+    OCCIAFLWHTMNSP?
+    OCCIAFLWHTMXSP?
+    IAFLW?
+    EFFIAFLWSP?
+    HTREQ?
+  }
+}
+
+// Heat Pump run control on zone side.
+HPZC: Dict {
+  dxCooling
+  dxHeating
+  singleDuct
+  directZone
+  points: {
+    CLCMD?
+    HTCMD?
+    REVVCMD?
+    DAT?
+    RAT?
+    HVACMDSP?
+    HVACMDCMD?
+    CMPST?
+  }
+}
+
+// Single heating setpoint control.
+HSP: Dict {
+  points: {
+    HTDEM?
+    OCCZTHTSP?
+    SBZTHTSP?
+    UOCZTHTSP?
+    ZT?
+    EFFZTSP?
+    ZTSP?
+    ZTADJSP?
+  }
+}
+
+// Electric heater control on zone side (ZC).
+HTEZC: Dict {
+  elecHeating
+  points: {
+    ZT?
+    HTCMD?
+    HTSTG1CMD?
+    HTSTG2CMD?
+    HTSTG3CMD?
+    HTSTG4CMD?
+  }
+}
+
+// Gas heater control on zone side (ZC).
+HTGZC: Dict {
+  gasHeating
+  points: {
+    ZT?
+    HTCMD?
+  }
+}
+
+// Heating water valve monitoring on zone side 
+HWZC: Dict {
+  hotWaterHeating
+  points: {
+    HWVCMD?
+    ZT?
+    ZTSP?
+    HTREQ?
+  }
+}
+
+// Minimum (ventilation) outside air flow control.
+MOAFC: Dict {
+  points: {
+    OADCMD?
+    OADFBK?
+    OAFLW?
+    OAFLWSP?
+  }
+}
+
+// Pressure dependent single cooling setpoint control.
+PDZC: Dict {
+  pressureDependent
+  points: {
+    DADCMD?
+    DADCMDOP?
+    DADCMDCL?
+    DADFBK?
+    ZT?
+  }
+}
+
+// Hot water preheat valve control on supply air side.
+PHWSC: Dict {
+  hotWaterHeating
+  points: {
+    HWVCMD?
+    DAT?
+    DATSP?
+  }
+}
+
+// Hot water valve control on discharge air side.
+HWDC: Dict {
+  hotWaterHeating
+  points: {
+    HWVCMD?
+    HCDAT?
+    DAT?
+    DATSP?
+    DATHTSP?
+  }
+}
+
+// Variable speed control for pumps.
+PVSC: Dict {
+  points: {
+    PSSCMD?
+    PSSST?
+    PSPCMD?
+  }
+}
+
+// Return air flow control.
+RD: Dict {
+  return
+  points: {
+    RAFLW?
+    RAFLWSP?
+    RADCMD?
+  }
+}
+
+// Return Air Humidity Control
+RHC: Dict {
+  points: {
+    RARH?
+    RARHSP?
+  }
+}
+
+// Return Air Temperature Control
+RTC: Dict {
+  points: {
+    RAT?
+    RATSP?
+  }
+}
+
+// Return Air Temperature Monitoring
+RTM: Dict {
+  points: {
+    RAT?
+  }
+}
+
+// The base function of a single duct equipment
+SD: Dict {
+  singleDuct
+  points: {
+    DADCMD?
+    DADCMDOP?
+    DADCMDCL?
+    DADFBK?
+    DAT?
+    DATSP?
+    HVACMDSP?
+    HVACMDCMD?
+    DPRREQ?
+  }
+}
+
+// The base function of a single inlet duct equipment
+SID: Dict {
+  singleDuct
+  points: {
+    IADCMD?
+    IADCMDOP?
+    IADCMDCL?
+    IADFBK?
+    DAT?
+    DATSP?
+    HVACMDSP?
+    HVACMDCMD?
+    DPRREQ?
+  }
+}
+
+
+// Uses water to cool hot refrigerant (or heat cold refrigerant), basically a refrigerant
+// to condenser water heat exchange process. 
+WCR: Dict {
+  waterCooled
+  points: {
+    CWVCMD?
+    ECWT?
+    LCWT?
+  }
+}
+
+// Zone CO2 control
+ZCO2C: Dict {
+  points: {
+    ZCO2?
+    ZCO2SP?
+  }
+}
+
+// Zone RH control
+ZRHC: Dict {
+  points: {
+    ZRH?
+    ZRHSP?
+  }
+}
+
+// Zone static pressure control.
+ZSPC: Dict {
+  points: {
+    ZSPR?
+    ZSPRSP?
+  }
+}
+
+// Discharge Duct Static Pressure Control
+DSPC: Dict {
+  points: {
+    DADCTSPR?
+    DADCTSPRSP?
+  }
+}
+
+// Building Static Pressure Control
+BSPC: Dict {
+  points: {
+    BLDSPR?
+    BLDSPRSP?
+  }
+}
+
+// Heat Recovery Wheel Control
+HRWC: Dict {
+  heatRecovery
+  points: {
+    HRWCMD?
+    HRWST?
+    HRWSPCMD?
+    HRBYPDCMD?
+    HRDAT?
+  }
+}
+
+// Hot Gas Reheat Control
+HGRC: Dict {
+  points: {
+    HTGRHVCMD?
+    HTGRHSP?
+  }
+}
+
+// VRF Refrigeration Control and Monitoring for Outdoor Units
+VRFOUREF: Dict {
+  points: {
+    CMPFREQ?
+    CNDRFPR?
+    EVPRFPR?
+    CMPRFET?
+    CMPRFLT?
+    CNDRFLT?
+    SBCRFET?
+    SBCRFLT?
+  }
+}
+
+// VRF Control and Monitoring for Air-Cooled Outdoor Units
+VRFOUAIR: Dict {
+  points: {
+    CNDFFREQ?
+  }
+}
+
+// VRF Control and Monitoring for Water-Cooled Outdoor Units
+VRFOUWTR: Dict {
+  points: {
+    ECWT?
+    LCWT?
+  }
+}
+

@@ -1,0 +1,50 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Steam Mass
+STMASS: Point {
+  steam
+  mass
+  sensor
+}
+
+// Steam Volume
+STVOL: Point {
+  steam
+  volume
+  sensor
+}
+
+// Volumetric flow rate of steam
+STFLOW: Point {
+  steam
+  flow
+  sensor
+}
+
+// Mass flow rate of steam
+STMFLOW: Point {
+  steam
+  massFlow
+  sensor
+}
+
+// Steam Condensate Mass
+STCNMASS: STMASS {
+  condensate
+}
+
+// Steam Condensate Volume
+STCNVOL: STVOL {
+  condensate
+}
+
+// Volumetric flow rate of steam
+STCNFLOW: STFLOW {
+  condensate
+}
+
+// Mass flow rate of steam
+STCNMFLOW: STMFLOW {
+  condensate
+}
+

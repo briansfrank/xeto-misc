@@ -1,0 +1,154 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// The light level setpoint in percent when daylighting is enabled.
+DLTLVLSP: Point {
+  daylighting
+  light
+  level
+  sp
+}
+
+// The light level setpoint in percent.
+EFLTLVLSP: Point {
+  effective
+  light
+  level
+  sp
+}
+
+// Enable daylighting control of light levels.
+ENDLC: Point {
+  enable
+  daylighting
+  cmd
+}
+
+// The light level reduction in percent when loadshedding is active.
+LDSHLTLVLSP: Point {
+  loadshed
+  light
+  level
+  sp
+}
+
+// Controls the specific lighting circuit.
+LTCIRCMD: Point {
+  lighting
+  circuit
+  cmd
+}
+
+// The color temperature of the light.
+LTCLRT: Point {
+  light
+  colorTemperature
+  sp
+}
+
+// Light Command
+LTCMD: Point {
+  light
+  run
+  cmd
+}
+
+// A measure of the light level in percent.
+LTLVL: Point {
+  light
+  level
+  sensor
+}
+
+// Dimming control of a light or group of lights in a lighting zone.
+LTLVLCMD: Point {
+  light
+  level
+  cmd
+}
+
+// The occupancy control mode for a lighting group or zone.
+LTOCMODE: Point {
+  lighting
+  occupied
+  mode
+  sp
+}
+
+// A measure of the illuminance in footcandles.
+LTPC: Point {
+  light
+  illuminance
+  sensor
+}
+
+// The selected lighting scene.
+LTSC: Point {
+  light
+  effective
+  scene
+  sp
+}
+
+// Light Status
+LTST: Point {
+  light
+  run
+  sensor
+}
+
+// The light level setpoint in percent during the occupied period.
+OCLTLVLSP: Point {
+  occ
+  light
+  level
+  sp
+}
+
+// A measure of the outdoor ambient illuminance in footcandle.
+OLTPC: LTPC {
+  outside
+}
+
+// The light level setpoint in percent during the unoccupied period.
+UOCLTLVLSP: Point {
+  unocc
+  light
+  level
+  sp
+}
+
+// The vertical position of the shades.
+SHPOS: Point {
+  shades
+  position
+  sensor
+}
+
+// The shade scene or preset.
+SHSC: Point {
+  shades
+  scene
+  sp
+}
+
+// The direction the shades are moving, opening, closing or stopped.
+SHDIR: Point {
+  shades
+  direction
+  sensor
+}
+
+// Extent control of a shade or group of shades in a group.
+SHPOSCMD: Point {
+  shades
+  level
+  cmd
+}
+
+// Tilt control of a shade or group of shades in a group.
+SHTLTCMD: Point {
+  shades
+  angle
+  cmd
+}
+

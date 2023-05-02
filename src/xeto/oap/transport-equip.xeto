@@ -1,0 +1,60 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// An Autowalk is a moving walkway that transports people across a horizontal or
+// inclined plane over a short to medium distance. 
+AW: Equip {
+  movingWalkway
+}
+
+
+// An elevator (US and Canada) or lift (UK, Ireland and Australia) is a type of
+// vertical transportation machine that moves people or freight between floors,
+// levels, or decks of a building, vessel, or other structure. 
+ELV: Equip {
+  elevator
+  points: {
+    ALRMPT?
+    CARPOS?
+    CARNXTPOS?
+    CARDIR?
+    CARDIRCMD?
+    CARMD?
+    CARLD?
+    ASNLNDCALL?
+    MKCARCALL?
+    REGCARCALL?
+    CARDRST?
+    CARDRVST?
+    LNDCALL?
+    LNDDRST?
+    ELVOOS?
+    PASALM?
+  }
+}
+
+// A set of elevators that are grouped under the same controller.
+ELVGRP: Equip {
+  elevator
+  group
+  points: {
+    LNDCALL?
+  }
+}
+
+// A floor stop for an elevator (or lift).
+ELVLND: Equip {
+  elevator
+  landing
+}
+
+
+// An escalator is a moving staircase which carries people between floors of a building.
+ESC: Equip {
+  escalator
+  points: {
+    ESCOOS?
+    PASALM?
+  }
+}
+

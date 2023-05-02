@@ -1,0 +1,438 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Air pressure used to control terminal equipment.
+BRPR: ADP {
+  pneumatic
+  branch
+}
+
+// VFD Output Speed
+VFDSPCMD: OUTSPD {
+  vfd
+}
+
+// VFD Speed Reference
+VFDSPREF: SPDREF {
+  vfd
+}
+
+// VFD Start/Stop Command
+VFDSSCMD: CMD {
+  run
+  vfd
+}
+
+// VFD Frequency Feedback
+VFDFREQ: Point {
+  vfd
+  freq
+  sensor
+}
+
+
+// Units of useful work out divided by units of useful work in. Typically a calculated
+// or virtual point. 
+EFF: Point {
+  efficiency
+  sensor
+}
+
+
+// Units of useful heat or coolth produced divided by units of useful work in (typically
+// electricity). Typically a calculated or virtual point. Usually measured as COP(unitless)
+// or kw/ton. 
+THERMEFF: EFF {
+  thermal
+}
+
+
+// Ratio of real time current draw to RLA (rated load amps). This is almost always
+// a percentage. 
+RLAPCT: Point {
+  current
+  sensor
+  rla
+}
+
+// Presence of condensate water.
+CN: Point {
+  condensate
+  sensor
+}
+
+// Compressor Run Command
+CMPSSCMD: SSCMD {
+  compressor
+}
+
+// Compressor Status
+CMPST: SSST {
+  compressor
+}
+
+// Compressor Speed Command
+CMPSPCMD: Point {
+  cmd
+  speed
+  compressor
+}
+
+// Compressor Speed Feedback
+CMPSPFBK: Point {
+  speed
+  compressor
+  sensor
+}
+
+// Compressor Frequency
+CMPFREQ: Point {
+  compressor
+  sensor
+  freq
+}
+
+// Abbreviated as Compressor Refrigerant Leaving Temperature
+CMPRFLT: Point {
+  compressor
+  leaving
+  temp
+  refrig
+  sensor
+}
+
+// Abbreviated as Compressor Refrigerant Entering Temperature
+CMPRFET: Point {
+  compressor
+  entering
+  temp
+  refrig
+  sensor
+}
+
+// For an air-cooled condenser fan
+CNDFFREQ: Point {
+  condenser
+  fan
+  freq
+  sensor
+}
+
+// Speed for an air-cooled condenser fan
+CNDFSPCMD: FANSPCMD {
+  condenser
+}
+
+// Also called Liquid Refrigerant Pressure or "high side pressure"
+CNDRFPR: Point {
+  refrig
+  condenser
+  pressure
+  sensor
+}
+
+// Also called Liquid Line Temperature.
+CNDRFLT: Point {
+  refrig
+  condenser
+  leaving
+  temp
+  sensor
+}
+
+
+// Temperature at which refrigerant is fully saturated (transitioned from vapor
+// to liquid) for a corresponding saturation pressure in the condenser. 
+CNDRFSTT: Point {
+  refrig
+  condenser
+  saturated
+  temp
+  sensor
+}
+
+// Subcooler Refrigerant Entering Temperature
+SBCRFET: Point {
+  refrig
+  subcooler
+  entering
+  temp
+  sensor
+}
+
+// Subcooler Refrigerant Leaving Temperature
+SBCRFLT: Point {
+  refrig
+  subcooler
+  leaving
+  temp
+  sensor
+}
+
+// Also called Suction Refrigerant Pressure or "low side pressure"
+EVPRFPR: Point {
+  refrig
+  evaporator
+  pressure
+  sensor
+}
+
+// Refrigerant temperature entering evaporator (or indoor coil)
+EVPRFET: Point {
+  refrig
+  evaporator
+  entering
+  temp
+  sensor
+}
+
+// Refrigerant temperature leaving evaporator (or indoor coil)
+EVPRFLT: Point {
+  refrig
+  evaporator
+  leaving
+  temp
+  sensor
+}
+
+
+// Temperature at which refrigerant is fully saturated (transitioned from liquid
+// to vapor) for a corresponding saturation pressure in the evaporator. 
+EVPRFSTT: Point {
+  refrig
+  evaporator
+  saturated
+  temp
+  sensor
+}
+
+// Generic alarm point indicating a critical malfunction with a piece of equipment
+ALRMPT: Point {
+  alarm
+  sensor
+}
+
+// Alarm code or message point indicating the source of the alarm.
+ALRMPTCD: Point {
+  alarm
+  text
+}
+
+// Fault or error code/message point indicating the source of the fault or error.
+FLTCD: Point {
+  fault
+  text
+}
+
+
+// Generic fault point indicating a minor or non-critical malfunction with a piece
+// of equipment 
+FLTPT: Point {
+  fault
+  sensor
+}
+
+// Enable Command
+ENCMD: CMD {
+  enable
+}
+
+// energy associated with heating or cooling, measured in units such as kBtu or kJ
+THRMEN: Point {
+  energy
+  sensor
+  thermal
+}
+
+
+// Power associated with heating or cooling, measured in units such as kBTU/h or
+// Watts 
+THRMPWR: Point {
+  power
+  sensor
+  thermal
+}
+
+// Power associated with cooling, measured in units such as kBTU/h or Watts
+CLTHRMPWR: THRMPWR {
+  cooling
+}
+
+// Power associated with heating, measured in units such as kBTU/h or Watts
+HTTHRMPWR: THRMPWR {
+  heating
+}
+
+// Control Mode Configuration
+CNTMDCFG: Point {
+  mode
+  config
+  sp
+}
+
+// Emergency Mode Override Command
+EMOVC: Point {
+  hvacMode
+  emergency
+  cmd
+  override
+}
+
+// Cooling Mode Lockout Command
+CMLC: Point {
+  cooling
+  cmd
+  disable
+}
+
+// Heating Mode Lockout Command
+HMLC: Point {
+  heating
+  cmd
+  disable
+}
+
+// Glycol Concentration Sensor
+GLYCON: Point {
+  glycol
+  concentration
+  sensor
+}
+
+// Occupancy Command
+OCCCMD: Point {
+  occupied
+  cmd
+}
+
+// Occupancy Sensor
+OCCSNS: Point {
+  occupied
+  sensor
+}
+
+// Occupancy Status
+OCCEFFSP: Point {
+  occupied
+  effective
+  sp
+}
+
+// Occupancy Schedule
+OCCSCHSP: Point {
+  occupied
+  schedulePoint
+  sp
+}
+
+// 6-way Valve Command
+SXWVCMD: VCMD {
+  sixWay
+}
+
+// 6-way Valve Feedback
+SXWVFB: VPOS {
+  sixWay
+}
+
+// The status of window(s) that can be commanded open to allow ventilation
+WDST: Point {
+  window
+  sensor
+}
+
+// Zone Dew Point
+ZDWP: AIRDWP {
+  zone
+}
+
+// Zone Override
+ZOVCMD: Point {
+  zone
+  occupied
+  override
+  cmd
+}
+
+// Disables thermostat for users.
+TSTATLCK: Point {
+  thermostat
+  cmd
+  disable
+}
+
+// Disables users from adjusting mode setting on local thermostat.
+TSTATMDLCK: Point {
+  thermostat
+  cmd
+  disable
+  hvacMode
+}
+
+// Disables users from adjusting fan setting on local thermostat.
+TSTATFLCK: Point {
+  thermostat
+  cmd
+  disable
+  fan
+}
+
+// Disables users from adjusting temperature setting on local thermostat.
+TSTATTLCK: Point {
+  thermostat
+  cmd
+  disable
+  temp
+}
+
+// Command a window or group of windows open to create ventilation in the space
+WDCMD: Point {
+  window
+  cmd
+}
+
+
+// Electric Power consumed by equipment attributed only to heating or cooling. For
+// example, power consumed by the compressor & condenser of an AC unit, but not
+// indoor/discharge fans. Another example, power consumed by the outdoor unit of
+// a VRF system attributed to each individual indoor unit. Another example, power
+// consumed by the chilled water plant attributed to a chilled water fan coil unit.
+// This is typically not an actual sensor but a "virtual" or calculated sensor point.
+THRMSRCPWR: Point {
+  elec
+  power
+  sensor
+  thermalSource
+}
+
+
+// Electric Energy consumed by equipment attributed only to heating or cooling.
+// For example, energy consumed by the compressor & condenser of an AC unit, but
+// not indoor/discharge fans. Another example, energy consumed by the outdoor unit
+// of a VRF system attributed to each individual indoor unit. Another example, energy
+// consumed by the chilled water plant attributed to a chilled water fan coil unit.
+// This is typically not an actual sensor but a "virtual" or calculated sensor point.
+THRMSRCEN: Point {
+  elec
+  energy
+  sensor
+  thermalSource
+}
+
+// Generic reset point
+RESET: Point {
+  reset
+  cmd
+}
+
+// Alarm Reset
+ALRMRESET: RESET {
+  alarm
+}
+
+// Flow of fuel oil in units of mass flowrate
+FOMFL: Point {
+  fuelOil
+  massFlow
+  sensor
+}
+

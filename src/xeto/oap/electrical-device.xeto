@@ -1,0 +1,40 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// A circuit breaker is an automatically operated electrical switch designed to
+// protect an electrical circuit from damage caused by excess current from an overload
+// or short circuit.  
+CB: Equip {
+  elec
+  breaker
+  power
+}
+
+
+// An electrical apparatus that provides emergency power to a load when the input
+// power source or mains power fails. 
+UPS: Equip {
+  ups
+  points: {
+    ACI?
+    ACIA?
+    ACIB?
+    ACIC?
+    ACV?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+

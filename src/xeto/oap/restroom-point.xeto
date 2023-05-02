@@ -1,0 +1,24 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Level has gone below a certain threshold and is generating a fault.
+LVLLFLT: FLTPT {
+  level
+  low
+}
+
+// Level has gone above a certain threshold and is generating a fault.
+LVLHFLT: FLTPT {
+  level
+  high
+}
+
+// Equipment is indicating a leak fault.
+LKFLT: FLTPT {
+  leak
+}
+
+// Equipment is indicating a jam or stuck in position fault.
+JMFLT: FLTPT {
+  jam
+}
+

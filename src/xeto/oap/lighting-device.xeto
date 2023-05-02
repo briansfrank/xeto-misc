@@ -1,0 +1,79 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Digital controller with embedded software for lighting controls.
+LCM: CNTRL {
+  lighting
+  points: {
+    LTPC?
+    OLTPC?
+    LTLVLCMD?
+    LTCMD?
+    LTLVL?
+    LTST?
+    ENLDSH?
+    RLPWR?
+    DLTLVLSP?
+    EFLTLVLSP?
+    ENDLC?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTSC?
+    OCLTLVLSP?
+    UOCLTLVLSP?
+  }
+}
+
+
+// Lighting Panels typically house relays and other analog devices for control of
+// light fixtures. 
+LCP: Dict {
+  device
+  lighting
+  panel
+  points: {
+    ALRMPT?
+    EFLTLVLSP?
+    ENDLC?
+    ENLDSH?
+    DLTLVLSP?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTCMD?
+    LTLVLCMD?
+    LTCIRCMD?
+    LTLVL?
+    LTPC?
+    LTST?
+    LTSC?
+    OCCSNS?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCLTLVLSP?
+    OLTPC?
+    UOCLTLVLSP?
+  }
+}
+
+// Intelligent Connected Light Photocell Device
+LPS: Dict {
+  device
+  luminance
+  lighting
+  points: {
+    LTPC?
+  }
+}
+
+// Lighting Gateway
+LTGW: GW {
+  lighting
+}
+
+
+// A device that controls a variety of motorized window treatments as well as motorized
+// doors, sunroofs, lifts and projection screens. 
+SDC: CNTRL {
+  shades
+  window
+}
+

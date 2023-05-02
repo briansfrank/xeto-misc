@@ -1,0 +1,45 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// An actuator is a device that is responsible for moving and controlling a mechanism
+// or system, for example by opening a valve. 
+ACT: Equip {
+  actuator
+}
+
+
+// A vaporizer or vaporiser is a device used to vaporize substances for inhalation.
+//  
+VAP: Equip {
+  vaporizer
+}
+
+// Device that varies the frequency output to a motor
+VFD: Dict {
+  device
+  vfd
+  points: {
+    ALRMPT?
+    ALRMPTCD?
+    VFDFREQ?
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+    SSST?
+    HOAST?
+  }
+}
+
+
+// A device that provides the means to open and close a window to allow ventilation
+WDO: Dict {
+  device
+  actuator
+  window
+  points: {
+    BATLLST?
+    WDST?
+    WDCMD?
+  }
+}
+

@@ -1,0 +1,69 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Occupancy control and schedule
+OCC: Dict {
+  points: {
+    OCCEFFSP?
+    OCCCMD?
+    OCCSCHSP?
+    OCCSNS?
+  }
+}
+
+// Basic run command and status (start/stop).
+SS: Dict {
+  points: {
+    SSCMD?
+    SSST?
+  }
+}
+
+// Basic pump run command and status (start/stop).
+PSS: Dict {
+  points: {
+    PSSCMD?
+    PSSST?
+  }
+}
+
+// Variable speed control
+VSC: Dict {
+  points: {
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+  }
+}
+
+// Leaving water temperature control
+LWTC: Dict {
+  points: {
+    EHWT?
+    EHWFL?
+    LHWT?
+    LHWTSP?
+  }
+}
+
+// Condenser water heat exchanger temperature control
+CWHXTC: Dict {
+  condenser
+  water
+  points: {
+    PRLCWT?
+    PRLCWTSP?
+    PRECWT?
+    SCLCWT?
+    SCLCWTSP?
+    SCECWT?
+  }
+}
+
+// Leaving water isolation valve control
+LWISOVC: Dict {
+  points: {
+    LWISOVCMD?
+    LWISOVST?
+  }
+}
+

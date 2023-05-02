@@ -1,0 +1,29 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// A digital telecommunications network which llows nodes to share resources.
+NET: Dict {
+  network
+}
+
+
+// A computer and device network is a digital telecommunications network, specifically
+// segmented to the clinical systems in a healthcare facility,  which allows nodes
+// to share resources. 
+CLINET: NET {
+  clinical
+}
+
+
+// A computer network is a digital telecommunications network which allows nodes
+// to share resources. 
+COMPNET: NET {
+  computer
+}
+
+
+// A device network is a digital telecommunications network which allows nodes to
+// share resources. 
+DEVNET: NET {
+  device
+}
+

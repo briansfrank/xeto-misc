@@ -1,0 +1,20 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// The current status of the fire alarm system, either normal or in alarm.
+FAST: ST {
+  fire
+  state
+}
+
+// The current status of a smoke detector, either smoke detected or not.
+SDST: ST {
+  smoke
+  state
+}
+
+
+// The current status of a smoke detector specifically one in a discharge air stream.
+DASDST: SDST {
+  discharge
+}
+

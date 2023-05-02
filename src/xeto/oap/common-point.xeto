@@ -1,0 +1,357 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Generic Point Definition (Base Definition)
+POINT_GEN: Point {
+}
+
+// The current binary value of a specific BO/DO
+CMD: Point {
+  cmd
+}
+
+// The current binary value of a specific BI/DI
+ST: Point {
+  sensor
+}
+
+// Carbon Dioxide (Base Definition)
+AIRCO2: Point {
+  air
+  co2
+  sensor
+}
+
+// Air Flow (Base Definition)
+AIRFLOW: Point {
+  air
+  flow
+  sensor
+}
+
+// Air Temperature (Base Definition)
+AIRTEMP: Point {
+  air
+  temp
+  sensor
+}
+
+// Enable loadshedding.
+ENLDSH: Point {
+  enable
+  loadshed
+  cmd
+}
+
+// Air Enthalpy (Base Definition)
+AIRENTH: Point {
+  air
+  enthalpy
+  sensor
+}
+
+// Air Dewpoint (Base Definition)
+AIRDWP: Point {
+  air
+  dewPoint
+  sensor
+}
+
+
+// Relative humidity (RH) is the ratio of the partial pressure of water vapor to
+// the equilibrium vapor pressure of water at a given temperature. Relative humidity
+// depends on temperature and the pressure of the system of interest. 
+RELHUM: Point {
+  air
+  humidity
+  sensor
+}
+
+// Speed Reference (Base Definition)
+SPDREF: Point {
+  sensor
+  speed
+}
+
+// Output Speed (Base Definition)
+OUTSPD: Point {
+  cmd
+  speed
+}
+
+// Water Temperature
+WTRTEMP: Point {
+  water
+  temp
+  sensor
+}
+
+// Acoustic Level
+ACSLVL: Point {
+  acoustic
+  sensor
+}
+
+// Dimming Command
+DIMCMD: Point {
+  load
+  cmd
+}
+
+// Amount of bandwidth being used by the device connected to the port.
+EPRTBAND: Point {
+  bandwidth
+}
+
+// Error Status of the ethernet port.
+PRTERR: Point {
+  port
+  fault
+  sensor
+}
+
+// Hand Auto Status
+HOAST: ST {
+  inHand
+}
+
+
+// The status or state of a device or equip ex. switched or unswitched; emergency
+// or normal; state a, b or c. 
+MDST: ST {
+  mode
+}
+
+// Cumulative Total natural gas volume relative to some baseline
+NGVOL: POINT_GEN {
+  naturalGas
+  sensor
+  volume
+  total
+}
+
+// Natural gas energy sensor, often measured in Therms.
+NGEN: POINT_GEN {
+  naturalGas
+  energy
+  sensor
+}
+
+// Natural gas usage expressed in units of power.
+NGPWR: Point {
+  naturalGas
+  power
+  sensor
+}
+
+// Natural gas flow rate
+NGFLOW: POINT_GEN {
+  naturalGas
+  flow
+  sensor
+}
+
+// Natural Gas Temperature
+NGTEMP: POINT_GEN {
+  naturalGas
+  temp
+  sensor
+}
+
+// Amount of current being used by the device connected to the port.
+POECURR: Point {
+  poe
+  current
+  dc
+  sensor
+}
+
+// Amount of power being used by the device connected to the port.
+POEPWR: Point {
+  poe
+  power
+  dc
+  sensor
+}
+
+// Indicates when with the parking space is available to be used.
+PRKSPACT: POINT_GEN {
+  parking
+  active
+  sensor
+}
+
+// Indicates when with the parking space is occupied.
+PRKSPST: POINT_GEN {
+  parking
+  sensor
+  occ
+}
+
+// A measure of digital quality
+RES: Point {
+  sensor
+  resolution
+}
+
+// Run Command
+SSCMD: CMD {
+  run
+}
+
+// Run Status
+SSST: ST {
+  state
+  run
+}
+
+// Runtime
+RNTM: Point {
+  run
+  duration
+}
+
+// Device Point (Base Definition)
+DEVPT: Point {
+}
+
+
+// The status of communication between a device (deviceRef) and a connection (commRef).
+// For instance, a supervisory controller may have many communication status points,
+// each with a different commRef pointing to a different device. 
+CMST: DEVPT {
+  comm
+  state
+  sensor
+}
+
+// Storage Drive Usage
+SDLD: POINT_GEN {
+  storageDrive
+  load
+  sensor
+}
+
+// CPU Usage
+CPULD: DEVPT {
+  cpu
+  load
+  sensor
+}
+
+// Physical Memory Usage
+PMLD: DEVPT {
+  physicalMemory
+  load
+  sensor
+}
+
+// Total Physical Memory Capacity
+TLPM: DEVPT {
+  physicalMemory
+  total
+  sp
+}
+
+// Heap Memory Usage
+HPLD: DEVPT {
+  heap
+  load
+  sensor
+}
+
+// Total Storage Drive Capacity
+TLSD: DEVPT {
+  storageDrive
+  total
+  sp
+}
+
+// Battery Status
+BATST: DEVPT {
+  battery
+  sensor
+}
+
+// The amount of battery charge.
+BATLVL: DEVPT {
+  battery
+  level
+  sensor
+}
+
+// Battery Level Low Fault Status
+BATLLST: FLTPT {
+  battery
+  level
+  low
+}
+
+// Total Carbon Dioxide (CO2) measured in the outside air.
+OACO2: AIRCO2 {
+  outside
+  concentration
+}
+
+// Total Volatile Organic Compound (TVOC) measured in the outside air.
+OATVOC: AIR {
+  outside
+  tvoc
+}
+
+// Outside air dewpoint temperature
+OADWP: AIRDWP {
+  outside
+}
+
+// Outside air relative humidity
+OARH: RELHUM {
+  outside
+}
+
+// Outside Air Temperature
+OATEMP: AIRTEMP {
+  outside
+}
+
+// Outside Air Wet Bulb Temperature
+OAWBTEMP: AIRTEMP {
+  outside
+  wetBulb
+}
+
+// Wind Speed (Base Definition)
+WNDSPD: Point {
+  speed
+  wind
+  sensor
+}
+
+// Measures easterly ( blows from the east) winds
+ESTWNDSPD: WNDSPD {
+  east
+}
+
+// Measures westerly ( blows from the west) winds
+WSTWNDSPD: WNDSPD {
+  west
+}
+
+
+// Provides a current status of atmospheric water vapor fallen including rain, sleet,
+// snow, and hail 
+PRECST: Point {
+  sensor
+  weather
+  precipitation
+}
+
+// The run or on/off status of a dishwasher
+DWSTS: SSST {
+  dishwasher
+}
+
+// The run or on/off status of a clothes dryer
+DRSTS: SSST {
+  dryer
+}
+

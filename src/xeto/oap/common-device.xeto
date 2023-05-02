@@ -1,0 +1,85 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// A camera is an optical instrument used to record images.
+CAM: Dict {
+  device
+  camera
+  points: {
+    RES?
+  }
+}
+
+// A microprocessor Controller on any type of equipment
+CNTRL: Dict {
+  device
+  controller
+}
+
+
+// Digital whiteboards replace traditional dry-erase boards in hospital patient
+// rooms. With information that is up-to-the-minute accurate, the patients, their
+// families and staff can benefit from knowing their pain-level, mobility status,
+// fall risk, plan for the day, etc. 
+DWB: Dict {
+  device
+  whiteboard
+}
+
+// A port is a communication endpoint. 
+ETP: Dict {
+  device
+  port
+  portNum
+  ethernet
+}
+
+
+// An human-machine interface (HMI) that interfaces machines with physical input
+// hardware such as keyboards, mice, game pads and output hardware such as computer
+// monitors, speakers, and printers. 
+HMI: Dict {
+  device
+  hmi
+}
+
+// A PoE port is a communication endpoint that supplies DC Power to the endpoint. 
+POEETP: Dict {
+  device
+  port
+  poe
+  portNum
+  ethernet
+}
+
+// A camera is an optical instrument used to record images.
+PTZCAM: CAM {
+  device
+  ptz
+}
+
+
+// A storage area network (SAN) or storage network is a computer network which provides
+// access to consolidated, block-level data storage.  
+SAN: Dict {
+  device
+  storageMedia
+  san: Marker?
+}
+
+
+// The SDN Controller is a logically centralized entity in charge of translating
+// the requirements from the SDN Application layer down to the SDN Datapaths and
+// providing the SDN Applications with an abstract view of the network. 
+SDNC: Dict {
+  device
+  controller
+  sdn
+}
+
+
+// A microprocessor Controller whose primary function is to integrate and supervise
+// other controllers 
+SUPC: CNTRL {
+  supervisor
+}
+

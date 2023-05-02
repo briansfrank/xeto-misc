@@ -1,0 +1,317 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// A geographic location of the built environment. Typically site maps to one building
+// with its own unique street address. 
+SITE: Site {
+}
+
+
+// Bank Branch refers to a commercial banking outlet that offers banking services
+// to walk-in customers. 
+BANKBR: SITE {
+  primaryFunction: Str "Bank Branch"
+}
+
+
+// Casino refers to buildings primarily used to conduct gambling activities including
+// both electronic and live table games. 
+CASINO: SITE {
+  primaryFunction: Str "Casino"
+}
+
+
+// Courthouse refers to buildings used for federal, state, or local courts, and
+// associated administrative office space. 
+COURT: SITE {
+  primaryFunction: Str "Courthouse"
+}
+
+
+// Data Center refers to buildings specifically designed and equipped to meet the
+// needs of high density computing equipment, such as server racks, used for data
+// storage and processing. 
+DATACTR: SITE {
+  primaryFunction: Str "Data Center"
+}
+
+
+// Distribution Center refers to unrefrigerated buildings that are used for the
+// temporary storage and redistribution of goods, manufactured products, merchandise
+// or raw materials. Buildings that are used primarily for assembling, modifying,
+// manufacturing, or growing goods, products, merchandise or raw material should
+// be classified as Manufacturing Facility. 
+DISTCTR: SITE {
+  primaryFunction: Str "Distribution Center"
+}
+
+
+// Drinking Water Treatment and Distribution refers to facilities designed to pump
+// and distribute drinking water through a network of pipes. Depending on the water
+// source (ground water, surface water, purchased water), a water utility may or
+// may not contain a treatment process. This property use applies to any/all water
+// sources and any/all levels of treatment. 
+DWTRTRT: SITE {
+  primaryFunction: Str "Drinking Water Treatment & Distribution"
+}
+
+
+// Energy/Power Station applies to buildings containing machinery and/or associated
+// equipment for generating electricity or district heat (steam, hot water, or chilled
+// water) from a raw fuel, including fossil fuel power plants, traditional district
+// heat power plants, combined heat and power plants, nuclear reactors, hydroelectric
+// dams, or facilities associated with a solar or wind farm. 
+ENERPWR: SITE {
+  primaryFunction: Str "Energy/Power Station"
+}
+
+
+// Fast Food Restaurant, also known as Quick Service Restaurant, refers to buildings
+// used for the preparation and sale of ready-to-eat food. Fast Food Restaurants
+// are characterized by a limited menu of food prepared quickly (often within a
+// few minutes), and sometimes cooked in bulk in advance and kept hot. 
+FSTFOOD: SITE {
+  primaryFunction: Str "Fast Food Restaurant"
+}
+
+
+// Fire Station refers to buildings used to provide emergency response services
+// associated with fires. Fire stations may be staffed by either volunteer or full-time
+// paid firefighters. 
+FIRE: SITE {
+  primaryFunction: Str "Fire Station"
+}
+
+
+// Fitness Center/Health Club/Gym refers to buildings used for recreational or professional
+// athletic training and related activities. 
+FITNESS: SITE {
+  primaryFunction: Str "Fitness Center/Health Club/Gym"
+}
+
+
+// Hospital refers to a general medical and surgical hospital (including critical
+// access hospitals and children’s hospitals). 
+HOSP: SITE {
+  primaryFunction: Str "Hospital (General Medical & Surgical)"
+}
+
+
+// Hotel refers to buildings renting overnight accommodations on a room/suite and
+// nightly basis, and typically include a bath/shower and other facilities in guest
+// rooms. Hotel properties typically have daily services available to guests including
+// housekeeping/laundry and a front desk/concierge. 
+HOTEL: SITE {
+  primaryFunction: Str "Hotel"
+}
+
+
+// K-12 School refers to buildings or campuses used as a school for Kindergarten
+// through 12th grade students.  
+K12: SITE {
+  primaryFunction: Str "K-12 School"
+}
+
+
+// Laboratory refers to buildings that provide controlled conditions in which scientific
+// research, measurement, and experiments are performed or practical science is
+// taught. 
+LAB: SITE {
+  primaryFunction: Str "Laboratory"
+}
+
+
+// Library refers to buildings used to store and manage collections of literary
+// and artistic materials such as books, periodicals, newspapers, films, etc. that
+// can be used for reference or lending. 
+LIBRARY: SITE {
+  primaryFunction: Str "Library"
+}
+
+
+// Enclosed Mall refers to buildings that house multiple stores, often “anchored”
+// by one or more department stores, and with interior walkways. Most stores will
+// not have entrances accessible from outside, with the exception of the “anchor”
+// stores. 
+MALL: SITE {
+  primaryFunction: Str "Enclosed Mall"
+}
+
+
+// A Mixed Use (or multi use) property is one contains multiple property types,
+// none of which are greater than 50% of the total Gross Floor Area (GFA), including
+// parking GFA. 
+MIXUSE: SITE {
+  primaryFunction: Str "Mixed Use Property"
+}
+
+
+// Medical Office refers to buildings used to provide diagnosis and treatment for
+// medical, dental, or psychiatric outpatient care. 
+MOB: SITE {
+  primaryFunction: Str "Medical Office"
+}
+
+// Movie theater refers to buildings used for public or private film screenings.
+MOVIE: SITE {
+  primaryFunction: Str "Movie Theater"
+}
+
+
+// Multifamily Housing refers to residential properties that contain two or more
+// residential living units. These properties may include low-rise buildings (1-4
+// stories), mid-rise buildings (5-9 stories), or high-rise buildings (10+ stories).
+// Occupants of these buildings may include tenants, cooperators, and/or individual
+// owners. 
+MLTFAM: SITE {
+  primaryFunction: Str "Multifamily Housing"
+}
+
+
+// Museum refers to buildings that display collections to outside visitors for public
+// viewing and enjoyment and for informational/educational purposes. 
+MUSEUM: SITE {
+  primaryFunction: Str "Museum"
+}
+
+
+// Other - Utility applies to buildings used by a utility for some purpose other
+// than general office or energy/power generation. This may include utility transfer
+// stations, maintenance facilities and central plants for generating hot water,
+// chilled water, steam, etc. 
+OUTIL: SITE {
+  primaryFunction: Str "Other - Utility"
+}
+
+
+// Other-Mall refers to buildings containing a collection of stores whose purpose
+// is the sale of goods, but which do not fit into the enclosed mall, lifestyle
+// center, or strip mall property types. 
+OMALL: SITE {
+  primaryFunction: Str "Other - Mall"
+}
+
+
+// Outpatient Rehabilitation/Physical Therapy offices refers to buildings used to
+// provide diagnosis and treatment for rehabilitation and physical therapy. 
+OPRP: SITE {
+  primaryFunction: Str "Outpatient Rehabilitation/Physical Therapy"
+}
+
+
+// Specialty Hospitals refers to long-term acute care hospitals, inpatient rehabilitation
+// facilities, including Cancer Centers and Psychiatric and Substance Abuse Hospitals/Facilities.
+OSPCHOSP: SITE {
+  primaryFunction: Str "Other - Specialty Hospital"
+}
+
+
+// Office refers to buildings used to conduct commercial or governmental business
+// activities. This includes administrative and professional offices. 
+OFFICE: SITE {
+  primaryFunction: Str "Office"
+}
+
+// Parking refers to buildings and lots used for parking vehicles.
+PARKING: SITE {
+  primaryFunction: Str "Parking"
+}
+
+
+// Performing Arts refers to buildings used for public or private artistic or musical
+// performances. 
+PERF: SITE {
+  primaryFunction: Str "Performing Arts"
+}
+
+
+// Police Station applies to buildings used for federal, state, or local police
+// forces and their associated office space. 
+POLICE: SITE {
+  primaryFunction: Str "Police Station"
+}
+
+
+// Residence Hall/Dormitory refers to buildings associated with educational institutions
+// or military facilities which offer multiple accommodations for long-term residents.
+DORM: SITE {
+  primaryFunction: Str "Residence Hall/Dormitory"
+}
+
+
+// Restaurant refers to buildings used for preparation and sale of ready-to-eat
+// food and beverages, but which do not fit in the fast food property type. Examples
+// include fast casual, casual, and fine dining restaurants. 
+REST: SITE {
+  primaryFunction: Str "Restaurant"
+}
+
+
+// Retail Store refers to individual stores used to conduct the retail sale of non-food
+// consumer goods such as Department Stores, Discount Stores, Drug Stores, Dollar
+// Stores, Hardware Stores, and Apparel/Specialty Stores (e.g. books, clothing,
+// office products, sporting goods, toys, home goods, and electronics). Buildings
+// containing multiple stores should be classified as enclosed mall, lifestyle center,
+// or strip mall. 
+RETST: SITE {
+  primaryFunction: Str "Retail Store"
+}
+
+
+// Senior Living Community refers to buildings that house and provide care and assistance
+// for elderly residents, specifically homes (skilled nursing facilities) and assisted
+// living facilities. It is NOT intended for retirement or other senior communities
+// that offer only independent living – a community with only independent living
+// should benchmark as a Multifamily property (see below for further details). 
+SENIORLV: SITE {
+  primaryFunction: Str "Senior Care Community"
+}
+
+
+// Supermarket/Grocery Store refers to buildings used for the retail sale of primarily
+// food and beverage products, and which may include small amounts of preparation
+// and sale of ready-to-eat food. Buildings where the primary business is the onsite
+// preparation and sale of ready-to-eat food should use one of the Restaurant property
+// types. 
+SUPERMKT: SITE {
+  primaryFunction: Str "Supermarket/Grocery Store"
+}
+
+
+// Strip mall refers to buildings comprising more than one retail store, restaurant,
+// or other business, in an open-air configuration where each establishment has
+// an exterior entrance to the public and there are no internal walkways. 
+STRMALL: SITE {
+  primaryFunction: Str "Strip Mall"
+}
+
+
+// College/University refers to buildings used for the purpose of higher education.
+// This includes public and private colleges and universities. 
+UNIV: SITE {
+  primaryFunction: Str "College/University"
+}
+
+
+// Urgent Care Center/Clinic/Other Outpatient Office refers to buildings used to
+// treat patients, usually on an unscheduled, walk-in basis, who have an injury
+// or illness that requires immediate care but is not serious enough to warrant
+// a visit to an emergency department. 
+URGCLIN: SITE {
+  primaryFunction: Str "Urgent Care/Clinic/Other Outpatient"
+}
+
+
+// Wastewater Treatment Plant refers to facilities designed to treat municipal wastewater.
+WASTEWTR: SITE {
+  primaryFunction: Str "Wastewater Treatment Plant"
+}
+
+
+// Worship Facility refers to buildings that are used as places of worship. This
+// includes churches, temples, mosques, synagogues, meetinghouses, or any other
+// buildings that primarily function as a place of religious worship. 
+WORSHIP: SITE {
+  primaryFunction: Str "Worship Facility"
+}
+

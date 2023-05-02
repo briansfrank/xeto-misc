@@ -1,0 +1,39 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Toilet Paper Dispenser
+TPDSP: Equip {
+  dispenser
+  toiletPaper
+  points: {
+    CMST?
+    LVLLFLT?
+    JMFLT?
+    BATLLST?
+  }
+}
+
+// Paper Towel Dispenser
+PTDSP: Equip {
+  dispenser
+  towelPaper
+  points: {
+    CMST?
+    LVLLFLT?
+    JMFLT?
+    BATLLST?
+  }
+}
+
+// Soap Dispenser
+SPDSP: Equip {
+  dispenser
+  soap
+  points: {
+    CMST?
+    LVLLFLT?
+    LKFLT?
+    JMFLT?
+    BATLLST?
+  }
+}
+

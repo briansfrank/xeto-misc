@@ -1,0 +1,323 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// A transfer switch is an electrical switch that switches a load between two sources.
+//  
+ATS: Equip {
+  ats
+  points: {
+    ALRMPT?
+    MDST?
+  }
+}
+
+
+// A circuit or electrical circuit supplies electricity to an area or sub-system
+// within a building. 
+CIR: Equip {
+  circuit
+  elec
+  points: {
+    ALRMPT?
+    ACI?
+    ACIA?
+    ACIAVG?
+    ACIB?
+    ACIC?
+    ACITTL?
+    ACFREQ?
+    ACPF?
+    ACPFA?
+    ACPFB?
+    ACPFC?
+    ACPFAVG?
+    ACV?
+    ACVAVG?
+    ACVLLAVG?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    ENERGYIMP?
+    ENERGYEXP?
+    ENERGYNET?
+    PWRDMD?
+    REACPWR?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+
+
+// An electrical distribution panel or electrical panel is a central part of the
+// electrical supply system in a building that divides an electrical power feed
+// into subsidiary circuits 
+EDP: Equip {
+  elec
+  panel
+  singlePhase: Marker?
+  threePhase: Marker?
+  loadType: Marker?
+  points: {
+    ALRMPT?
+    ACI?
+    ACIA?
+    ACIAVG?
+    ACIB?
+    ACIC?
+    ACITTL?
+    ACFREQ?
+    ACPF?
+    ACPFA?
+    ACPFB?
+    ACPFC?
+    ACPFAVG?
+    ACV?
+    ACVAVG?
+    ACVLLAVG?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    ENERGYIMP?
+    ENERGYEXP?
+    ENERGYNET?
+    PWRDMD?
+    REACPWR?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+
+
+// A component of an electricity supply system that directs electricity from one
+// or more sources of supply to several smaller regions of usage. 
+ESB: Equip {
+  switchboard
+  elec
+  threePhase
+  points: {
+    ALRMPT?
+    ACI?
+    ACIA?
+    ACIAVG?
+    ACIB?
+    ACIC?
+    ACITTL?
+    ACFREQ?
+    ACPF?
+    ACPFA?
+    ACPFB?
+    ACPFC?
+    ACPFAVG?
+    ACV?
+    ACVAVG?
+    ACVLLAVG?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    ENERGYIMP?
+    ENERGYEXP?
+    ENERGYNET?
+    PWRDMD?
+    REACPWR?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+
+
+// A Cogenerator is a combined heat and power (CHP) system that contains an electrical
+// generator and a heat recovery system that provides hot water that can be utilized
+// by the building. 
+COGEN: GEN {
+  heatRecovery
+}
+
+
+// An Electric Generator is a component of an electricity supply system that converts
+// motive power (mechanical energy) into electrical power for use in an external
+// circuit. 
+GEN: Equip {
+  generator
+  emergency: Marker?
+  naturalGas: Marker?
+  fuelOil: Marker?
+  points: {
+    ALRMPT?
+    SSST?
+    RNTM?
+    MDST?
+  }
+}
+
+
+// A high voltage distribution panel is a component of an electricity supply system
+// that divides an electrical power feed into subsidiary circuits, while providing
+// a protective fuse or circuit breaker for each circuit in a common enclosure.
+//  
+HVDP: EDP {
+  highVoltage
+}
+
+
+// A High Voltage Switchboard is a component of an electricity supply system that
+// directs electricity from one or more sources of supply to several smaller regions
+// of usage.  
+HVSB: Equip {
+  switchboard
+  highVoltage
+}
+
+
+// Integrated Power switchboards combine circuit breakers, chassis, and transformers,
+// as well as other electrical products. 
+IPS: Equip {
+  ips
+}
+
+
+// Lighting inverters maintain crucial AC Power to operate all emergency lighting
+// at “full light” output, providing superior dependability and security to any
+// office, commercial or industrial environment. 
+LI: Equip {
+  inverter
+  lighting
+  points: {
+    LTST?
+    ALRMPT?
+    DLTLVLSP?
+    EFLTLVLSP?
+    ENDLC?
+    ENLDSH?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTCMD?
+    LTLVL?
+    LTLVLCMD?
+    LTPC?
+    LTSC?
+    OCCSNS?
+    OCLTLVLSP?
+    OLTPC?
+    UOCLTLVLSP?
+  }
+}
+
+
+// A low voltage  distribution panel is a component of an electricity supply system
+// that divides an electrical power feed into subsidiary circuits, while providing
+// a protective fuse or circuit breaker for each circuit in a common enclosure.
+LVDP: EDP {
+  lowVoltage
+}
+
+
+// A Low Voltage Switchboard is a component of an electricity supply system that
+// directs electricity from one or more sources of supply to several smaller regions
+// of usage.  
+LVSB: Equip {
+  switchboard
+  lowVoltage
+}
+
+
+// A mains distribution unit (MDU) is a device fitted with multiple outputs designed
+// to distribute electric power, especially to racks of computers and networking
+// equipment located within a data center. 
+MDU: Equip {
+  mdu
+}
+
+
+// A Mains Switchboard  is a component of an electricity supply system that directs
+// electricity from one or more sources of supply to several smaller regions of
+// usage.  
+MSB: Equip {
+  switchboard
+}
+
+
+// A power distribution unit (PDU) is a device fitted with multiple outputs designed
+// to distribute electric power, especially to racks of computers and networking
+// equipment located within a data center. 
+PDU: Equip {
+  pdu
+  points: {
+    ACI?
+    ACIA?
+    ACIB?
+    ACIC?
+    ACV?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+
+
+// A sectionalizer is a protective device that automatically isolates a faulted
+// section of line from the rest of the distribution system. 
+SCS: Equip {
+  sectionalizer
+}
+
+
+// Substations transform voltage from high to low, or the reverse, or perform any
+// of several other important functions. 
+SSTN: Equip {
+  substation
+}
+
+
+// In an electric power system, switchgear is composed of electrical disconnect
+// switches, fuses or circuit breakers used to control, protect and isolate electrical
+// equipment.  
+SWGR: Equip {
+  substation
+}
+
+
+// In an electric power system, a passive electrical device that transfers electrical
+// energy from one electrical circuit to another in order to increase or decrease
+// the voltage. 
+XFMR: Equip {
+  transformer
+}
+

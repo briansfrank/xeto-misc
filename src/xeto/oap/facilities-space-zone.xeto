@@ -1,0 +1,60 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Related to spaces from a system perspective
+ZONE: Space {
+  zone
+}
+
+// Related to spaces from a shading system perspective
+SHZONE: ZONE {
+  shades
+  points: {
+    SHPOS?
+    SHSC?
+    SHDIR?
+  }
+}
+
+// Related to spaces from a system perspective
+FIREZONE: ZONE {
+  fireDetection
+}
+
+// Related to spaces from a system perspective
+HVACZONE: ZONE {
+  hvac
+}
+
+// Related to spaces from a system perspective
+IAQZONE: ZONE {
+  iaq
+}
+
+// Related to spaces from a system perspective
+LTGZONE: ZONE {
+  lighting
+  points: {
+    LTPC?
+    OLTPC?
+    LTLVLCMD?
+    LTCMD?
+    LTLVL?
+    LTST?
+    ENLDSH?
+    RLPWR?
+    DLTLVLSP?
+    EFLTLVLSP?
+    ENDLC?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTSC?
+    OCLTLVLSP?
+    UOCLTLVLSP?
+  }
+}
+
+// Related to spaces from a system perspective
+OCCZONE: ZONE {
+  occupancy
+}
+

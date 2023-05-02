@@ -1,0 +1,54 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Air Quality Monitoring
+AQM: Dict {
+  airQuality
+  points: {
+    ZCO2?
+    ZCO?
+    ZTVOC?
+    ZPM10?
+    ZPM25?
+    ZPM01?
+    ZCH2O?
+    ZNO2?
+    ZO3?
+    ZNH3?
+  }
+}
+
+// Toxic/Combustible Gas Monitoring
+TCGM: Dict {
+  points: {
+    ZCO?
+    ZCOALMSP?
+    ZNO2?
+    ZNO2ALMSP?
+    ZCH4?
+    ZCH4ALMSP?
+  }
+}
+
+// Occupancy or Presence Monitoring
+OCM: Dict {
+  points: {
+    OCCSNS?
+    OCCDWTM?
+  }
+}
+
+// Line, Entry or In/Out Occupancy Monitoring
+LOCM: Dict {
+  points: {
+    LNIPCNT?
+    LNOPCNT?
+  }
+}
+
+// Zone or Space Occupancy Monitoring
+ZOCM: Dict {
+  points: {
+    ZPCNT?
+  }
+}
+

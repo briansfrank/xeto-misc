@@ -1,0 +1,174 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// A water meter is a device that measures the amount of water consumed by a residence,
+// a business or equipment. 
+WM: Equip {
+  water
+  meter
+  points: {
+    WFLOW?
+    WVOL?
+  }
+}
+
+
+// An electricity meter, electric meter, electrical meter, or energy meter is a
+// device that measures the amount of electric energy consumed by a residence, a
+// business, or an electrically powered device. 
+EM: Equip {
+  elec
+  meter
+  points: {
+    ALRMPT?
+    ACI?
+    ACIA?
+    ACIAVG?
+    ACIB?
+    ACIC?
+    ACITTL?
+    ACFREQ?
+    ACPF?
+    ACPFA?
+    ACPFB?
+    ACPFC?
+    ACPFAVG?
+    ACV?
+    ACVAVG?
+    ACVLLAVG?
+    ACVAB?
+    ACVBC?
+    ACVCA?
+    ACVA?
+    ACVB?
+    ACVC?
+    APPENE?
+    APPPWR?
+    DCV?
+    ENERGYIMP?
+    ENERGYEXP?
+    ENERGYNET?
+    PWRDMD?
+    REACPWR?
+    REACENE?
+    RLPWR?
+    RLPWRA?
+    RLPWRB?
+    RLPWRC?
+  }
+}
+
+
+// A natural gas meter is a device that measures the amount of natural gas consumed
+// by a residence, a business or equipment. 
+NGM: Equip {
+  naturalGas
+  meter
+  points: {
+    ALRMPT?
+    NGEN?
+    NGFLOW?
+    NGVOL?
+    NGPWR?
+    NGTEMP?
+    THRMEN?
+    THRMPWR?
+  }
+}
+
+
+// A heat meter, or thermal meter, is a device that measures the amount of heat
+// energy consumed. 
+HM: Equip {
+  thermal
+  meter
+  points: {
+    THRMEN?
+    THRMPWR?
+  }
+}
+
+// A steam meter is a device that measures the flow rate of steam.
+SM: Equip {
+  steam
+  meter
+  thermal: Marker?
+  points: {
+    ALRMPT?
+    THRMEN?
+    THRMPWR?
+    STMASS?
+    STVOL?
+    STFLOW?
+    STMFLOW?
+    STCNMASS?
+    STCNVOL?
+    STCNFLOW?
+    STCNMFLOW?
+    LSTT?
+    LSTP?
+  }
+}
+
+
+// A chilled water meter is a device that measures the amount of chilled water delivered
+// to a piece of HVAC equipment. 
+CHWM: WM {
+  chilled
+  thermal: Marker?
+}
+
+
+// A hot water meter is a device that measures the amount of heating hot water delivered
+// to a piece of HVAC equipment. 
+HWM: WM {
+  hot
+  heating
+  thermal: Marker?
+}
+
+
+// A condenser water meter is a device that measures the amount of condenser water
+// delivered to a piece of HVAC equipment. 
+CWM: WM {
+  condenser
+  thermal: Marker?
+}
+
+
+// A domestic cold water meter is a device that measures the amount of domestic
+// (cold) water consumed by a residence, a business or equipment. 
+DWM: WM {
+  domestic
+}
+
+
+// A domestic hot water meter is a device that measures the amount of domestic hot
+// water consumed by a residence, a business or equipment. 
+DHWM: WM {
+  domestic
+  hot
+}
+
+
+// A wastewater meter is a device that measures the amount of wastewater generated
+// by a residence, a business, process or equipment. 
+BDWM: WM {
+  blowdown
+}
+
+
+// A makeup water meter is a device that measures the amount of makeup water (typically
+// domestic water) consumed by an equipment or hydronic system. 
+MUWM: WM {
+  makeup
+  domestic: Marker?
+}
+
+
+// A wastewater meter is a device that measures the amount of wastewater generated
+// by a residence, a business, process or equipment. 
+WWM: WM {
+  wastewater
+}
+

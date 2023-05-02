@@ -1,0 +1,7 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Enclosure or chassis used to mount computer and networking gear
+RACK: Equip {
+  rack
+}
+

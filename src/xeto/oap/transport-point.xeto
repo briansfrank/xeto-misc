@@ -1,0 +1,145 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// List of calls for an Elevator.
+ELVCALL: Point {
+  call
+}
+
+// Elevator Status (Base Definition)
+ELVST: Point {
+  state
+  sensor
+}
+
+
+// This property shall represent the current landing calls and their direction for
+// the lift represented by this object. 
+ASNLNDCALL: ELVCALL {
+  landing
+  cmd
+}
+
+
+// This represents the direction this elevator is assigned to move, based on current
+// car calls. 
+CARDIRCMD: POINT_GEN {
+  car
+  direction
+  cmd
+}
+
+
+// This property represents whether or not this lift's car is moving, and if so,
+// in which direction. 
+CARDIR: POINT_GEN {
+  car
+  direction
+  sensor
+}
+
+// This property indicates the status of the doors on the car.
+CARDRST: ELVST {
+  car
+  door
+}
+
+
+// This property shall indicate the current status of the lift's motor drive system.
+CARDRVST: ELVST {
+  car
+  drive
+}
+
+// This property indicates the load in the car, both passengers and goods.
+CARLD: POINT_GEN {
+  car
+  load
+  sensor
+}
+
+// This property shall indicate the current operational mode of the car.
+CARMD: Point {
+  car
+  mode
+  sp
+}
+
+
+// This property indicates the universal floor number where the car will stop next
+// when underway. If the car is not in motion, this property indicates the current
+// universal floor number. 
+CARNXTPOS: POINT_GEN {
+  car
+  position
+  next
+  sensor
+}
+
+// This property indicates the universal floor number of this lift's car position.
+CARPOS: POINT_GEN {
+  car
+  position
+  sensor
+}
+
+
+// This property is an indication whether (TRUE) or not (FALSE) the object is decoupled
+// from the lift that this object represents. 
+ELVOOS: POINT_GEN {
+  elevator
+  state
+  sensor
+}
+
+
+// This property is an indication whether (TRUE) or not (FALSE) the object is decoupled
+// from the escalator that this object represents. 
+ESCOOS: POINT_GEN {
+  escalator
+  state
+  sensor
+}
+
+// This indicates the last car calls written to this elevator.
+MKCARCALL: ELVCALL {
+  car
+  cmd
+}
+
+// This contains all of the landing calls within an Elevator Group
+LNDCALL: ELVCALL {
+  group
+  landing
+}
+
+// This property indicates the status of the doors on the car.
+LNDDRST: ELVST {
+  landing
+  door
+}
+
+
+// This property represents the direction and speed in which this escalator is presently
+// moving. 
+OPDIR: POINT_GEN {
+  sensor
+  direction
+}
+
+
+// This property indicates whether (TRUE) or not (FALSE) the passenger alarm has
+// been activated. 
+PASALM: POINT_GEN {
+  occupants
+  alarm
+  sensor
+}
+
+
+// This property represents the lists of currently registered car calls (requests
+// to stop at particular floors using a particular door) for this lift. 
+REGCARCALL: ELVCALL {
+  car
+  sp
+}
+

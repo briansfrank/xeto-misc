@@ -1,0 +1,55 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Lighting Fixture
+LT: Equip {
+  lighting
+  luminaire
+  points: {
+    ALRMPT?
+    DLTLVLSP?
+    EFLTLVLSP?
+    ENDLC?
+    ENLDSH?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTCMD?
+    LTLVLCMD?
+    LTLVL?
+    LTPC?
+    LTSC?
+    LTST?
+    OCCSNS?
+    OCCSCHSP?
+    OCCEFFSP?
+    OCLTLVLSP?
+    OLTPC?
+    RLPWR?
+    UOCLTLVLSP?
+  }
+}
+
+// Lighting Circuit, typically controlled in a Lighting Control Panel
+LTCIR: CIR {
+  lighting
+  circuit
+  points: {
+    ALRMPT?
+    EFLTLVLSP?
+    ENDLC?
+    ENLDSH?
+    DLTLVLSP?
+    LDSHLTLVLSP?
+    LTCLRT?
+    LTCMD?
+    LTLVLCMD?
+    LTCIRCMD?
+    LTLVL?
+    LTPC?
+    LTST?
+    LTSC?
+    OCLTLVLSP?
+    OLTPC?
+    UOCLTLVLSP?
+  }
+}
+

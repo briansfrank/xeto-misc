@@ -1,0 +1,365 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Generic Power Point Definition (Base Definition)
+POINT_GEN_PWR: Point {
+}
+
+// Any generic single phase AC current sensor
+ACI: POINT_GEN_PWR {
+  ac
+  current
+  elec
+  magnitude
+  sensor
+}
+
+// AC Current Phase A
+ACIA: POINT_GEN_PWR {
+  ac
+  current
+  elec
+  magnitude
+  sensor
+  phase: Str
+}
+
+// Any averaging single or multi-phase AC current reading
+ACIAVG: POINT_GEN_PWR {
+  ac
+  avg
+  current
+  elec
+  magnitude
+  sensor
+}
+
+// AC Current Phase B
+ACIB: POINT_GEN_PWR {
+  ac
+  current
+  elec
+  magnitude
+  sensor
+  phase: Str
+}
+
+// AC Current Phase C
+ACIC: POINT_GEN_PWR {
+  ac
+  current
+  elec
+  magnitude
+  sensor
+  phase: Str
+}
+
+// Any summed AC current reading, typically total multi-phase current
+ACITTL: POINT_GEN_PWR {
+  ac
+  current
+  elec
+  magnitude
+  sensor
+  total
+}
+
+// AC Input Frequency
+ACFREQ: POINT_GEN_PWR {
+  ac
+  elec
+  freq
+  sensor
+}
+
+// Single phase power factor sensor
+ACPF: POINT_GEN_PWR {
+  ac
+  elec
+  pf
+  sensor
+}
+
+// Power Factor Phase A
+ACPFA: POINT_GEN_PWR {
+  ac
+  elec
+  pf
+  sensor
+  phase: Str
+}
+
+// Power Factor Phase B
+ACPFB: POINT_GEN_PWR {
+  ac
+  elec
+  pf
+  sensor
+  phase: Str
+}
+
+// Power Factor Phase C
+ACPFC: POINT_GEN_PWR {
+  ac
+  elec
+  pf
+  sensor
+  phase: Str
+}
+
+// Multi-phase average power factor
+ACPFAVG: POINT_GEN_PWR {
+  ac
+  elec
+  avg
+  pf
+  sensor
+}
+
+// Any generic single phase AC voltage sensor
+ACV: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+}
+
+// AC Voltage Phase AB
+ACVAB: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+// AC Voltage Phase A
+ACVA: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+
+// Averaging three-phase AC voltage reading between all lines and neutral. Example
+// common U.S. voltages 120V/277V. 
+ACVAVG: POINT_GEN_PWR {
+  ac
+  avg
+  elec
+  magnitude
+  phaseVoltage
+  sensor
+  volt
+}
+
+
+// Averaging three-phase AC voltage reading between two phase lines. Example common
+// U.S. voltages 208V/480V. 
+ACVLLAVG: POINT_GEN_PWR {
+  ac
+  avg
+  elec
+  magnitude
+  lineVoltage
+  sensor
+  volt
+}
+
+// AC Voltage Phase BC
+ACVBC: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+// AC Voltage Phase B
+ACVB: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+// AC Voltage Phase CA
+ACVCA: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+// AC Voltage Phase C
+ACVC: POINT_GEN_PWR {
+  ac
+  elec
+  magnitude
+  sensor
+  volt
+  phase: Str
+}
+
+// Totalized (import + export) apparent energy
+APPENE: POINT_GEN_PWR {
+  ac
+  apparent
+  elec
+  energy
+  sensor
+  total
+}
+
+// Total Apparent Power
+APPPWR: POINT_GEN_PWR {
+  ac
+  apparent
+  elec
+  power
+  sensor
+  total
+}
+
+// DC Voltage
+DCV: POINT_GEN_PWR {
+  dc
+  elec
+  magnitude
+  sensor
+  volt
+}
+
+// Total net active energy
+ENERGYNET: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  energy
+  net
+  sensor
+  total
+}
+
+// Total imported (aka consumed) active energy. Imported is typically power in.
+ENERGYIMP: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  energy
+  import
+  sensor
+  total
+}
+
+// Total exported (aka generated) active energy. Exported is typically power out.
+ENERGYEXP: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  energy
+  export
+  sensor
+  total
+}
+
+
+// Electrical degrees of lag or lead between the voltage and current waveforms in
+// an ac circuit. 
+PHANG: Point {
+  avg
+  ac
+  elec
+  current
+  angle
+  sensor
+}
+
+// Total power demand
+PWRDMD: POINT_GEN_PWR {
+  ac
+  demand
+  elec
+  sensor
+  total
+}
+
+// Exported (aka generated) active power. Exported is typically power out.
+PWREXP: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  power
+  export
+  sensor
+}
+
+// Totalized (import + export) reactive energy
+REACENE: POINT_GEN_PWR {
+  ac
+  elec
+  energy
+  reactive
+  sensor
+  total
+}
+
+// Total reactive power of system
+REACPWR: POINT_GEN_PWR {
+  ac
+  elec
+  power
+  reactive
+  sensor
+  total
+}
+
+// Total real power of system
+RLPWR: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  power
+  sensor
+  total
+}
+
+// Real Power Phase A
+RLPWRA: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  power
+  sensor
+  phase: Str
+}
+
+// Real Power Phase B
+RLPWRB: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  power
+  sensor
+  phase: Str
+}
+
+// Real Power Phase C
+RLPWRC: POINT_GEN_PWR {
+  ac
+  active
+  elec
+  power
+  sensor
+  phase: Str
+}
+

@@ -1,0 +1,187 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Air Concentration for the purposes of Air Quality (Base Definition)
+AIR: Point {
+  air
+  concentration
+  sensor
+}
+
+// Air Concentration Setpoint (Base Definition)
+AIRSP: Point {
+  air
+  concentration
+  sp
+}
+
+// Carbon Monoxide (CO) measured in in the air within a space
+ZCO: AIR {
+  co
+  zone
+}
+
+// Zone CO2
+ZCO2: AIRCO2 {
+  zone
+  concentration
+}
+
+// Total Volatile Organic Compound (TVOC) measured in the air within a space
+ZTVOC: AIR {
+  tvoc
+  zone
+}
+
+// Particulate Matter 10 (PM 10) measured in the air within a space
+ZPM10: AIR {
+  pm10
+  zone
+}
+
+// Particulate Matter 2.5 (PM 2.5) measured in the air within a space
+ZPM25: AIR {
+  pm25
+  zone
+}
+
+// Particulate Matter 0.1 (PM 0.1) measured in the air within a space
+ZPM01: AIR {
+  pm01
+  zone
+}
+
+// Formaldehyde (CH2O) measured in the air within a space
+ZCH2O: AIR {
+  ch2o
+  zone
+}
+
+// Nitrogen Dioxide (NO2) measured in the air within a space
+ZNO2: AIR {
+  no2
+  zone
+}
+
+// Ozone (O3) measured in the air within a space
+ZO3: AIR {
+  o3
+  zone
+}
+
+// Ammonia (NH3) measured in the air within a space
+ZNH3: AIR {
+  nh3
+  zone
+}
+
+// Refrigerant concentration measured in the air within a space
+ZRF: AIR {
+  refrig
+  zone
+}
+
+// Zone CO2 Setpoint
+ZCO2SP: AIRSP {
+  co2
+  zone
+}
+
+// Zone CO (Carbon Monoxide) Setpoint
+ZCOSP: AIRSP {
+  co
+  zone
+}
+
+// Zone Air Refrigerant Concentration Setpoint
+ZRFSP: AIRSP {
+  refrig
+  zone
+}
+
+// Zone Air Total VOC Setpoint
+ZTVOCSP: AIRSP {
+  tvoc
+  zone
+}
+
+
+// Refrigerant concentration level has exceeded a certain threshold and is generating
+// an alarm. 
+RFALRMH: ALRMPT {
+  refrig
+  concentration
+  high
+}
+
+// The number of people detected in an area or zone
+ZPCNT: Point {
+  zone
+  occupancy
+  sensor
+}
+
+// The number of people detected crossing a line from the in direction
+LNIPCNT: Point {
+  line
+  entering
+  occupancy
+  sensor
+}
+
+// The number of people detected crossing a line from the out direction
+LNOPCNT: Point {
+  line
+  leaving
+  occupancy
+  sensor
+}
+
+// The duration (in units of time) a space or sensor senses occupancy
+OCCDWTM: Point {
+  occupied
+  duration
+  sensor
+}
+
+// Zone Alarm Setpoint (Base Definition)
+ZALMSP: Point {
+  zone
+  air
+  concentration
+  alarm
+  sp
+}
+
+// Methane (CH₄) measured in the air within a space
+ZCH4: AIR {
+  ch4
+  zone
+}
+
+
+// The concentration of methane (CH₄) in the air at which an alarm condition will
+// be activated 
+ZCH4ALMSP: ZALMSP {
+  ch4
+}
+
+
+// The concentration of carbon monoxide (CO) in the air at which an alarm condition
+// will be activated 
+ZCOALMSP: ZALMSP {
+  co
+}
+
+
+// The concentration of nitrogen dioxide (NO2) in the air at which an alarm condition
+// will be activated 
+ZNO2ALMSP: ZALMSP {
+  no2
+}
+
+// Motion Sensor Status
+MOST: Point {
+  motion
+  sensor
+}
+

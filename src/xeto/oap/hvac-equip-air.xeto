@@ -1,0 +1,1146 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Air Conditioning Unit: An AHU than uses DX Cooling and Gas Heating.
+ACU: AHU {
+  constantAirVolume
+  directZone
+  dxCooling
+  points: {
+    DACO2?
+    DARH?
+    DAT?
+    MACO2?
+    MARH?
+    RARH?
+    RAT?
+    BLDSPR?
+    BLDSPRSP?
+    CLCMD?
+    DADCTSPRSP?
+    DADCTSPR?
+    EFFDAFLWSP?
+    DAFLWSP?
+    DFCMD?
+    EADCMD?
+    EADFBK?
+    EFCMD?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    FLTDPR?
+    FRZST?
+    MAT?
+    MATSP?
+    OACLLCKTSP?
+    OADCMD?
+    OADFBK?
+    OAFLWMNSP?
+    OAFLWSP?
+    OAHTLCKTSP?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    OFCMD?
+    RADCMD?
+    RAFLWSP?
+    RATSP?
+    REVVCMD?
+    RFCMD?
+    RFDCMD?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    EFFZTSP?
+    OCCCMD?
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+    ZCO2?
+    ZRH?
+    ZT?
+    ZTSP?
+    ZCO2SP?
+    ZRHSP?
+    ZSPR?
+    ZSPRSP?
+  }
+}
+
+
+// Air Handling Unit: An enclosure with a fan that delivers air to a space via ductwork
+// and performs one or more of the functions of cleaning, heating, cooling, humidifying,
+// dehumidifying, ventilating or circulating the air. 
+AHU: Equip {
+  ahu
+  points: {
+    ALRMPT?
+    BLDSPR?
+    BLDSPRSP?
+    BYPDCMD?
+    CDDCMD?
+    CHWVCMD?
+    CLDEM?
+    CLREQ?
+    CLSTG1STS?
+    CLSTG1CMD?
+    CLSTG2STS?
+    CLSTG2CMD?
+    CLSTG3STS?
+    CLSTG3CMD?
+    CLSTG4STS?
+    CLSTG4CMD?
+    CLSTG5CMD?
+    CLSTG5STS?
+    CLSTG6CMD?
+    CLSTG6STS?
+    CLSTG7CMD?
+    CLSTG7STS?
+    CLSTG8CMD?
+    CLSTG8STS?
+    CLSTGCT?
+    CMPSPCMD?
+    CMPSPFBK?
+    CMPSSCMD?
+    CMPST?
+    CNDRFSTT?
+    CWVCMD?
+    CWVFBK?
+    DACO2?
+    DADCMD?
+    DADCTSPR?
+    DADCTSPRSP?
+    DADFBK?
+    DADHRHSP?
+    DAFLW?
+    DAFLWSP?
+    DAHUMRHSP?
+    DARH?
+    DAT?
+    DATSP?
+    DFCMD?
+    DFFREQ?
+    DFMDSP?
+    DFSPCMDH?
+    DFSPCMDL?
+    DFSPFBK?
+    DFST?
+    DHWTT?
+    EADCMD?
+    EADCTSPR?
+    EADCTSPRSP?
+    EADFBK?
+    EAFLW?
+    EAFLWSP?
+    EARH?
+    ECCMD?
+    ECENCMD?
+    ECMDSP?
+    ECOALCKESP?
+    ECWT?
+    EFANI?
+    EFANP?
+    EFCMD?
+    EFFDAFLWSP?
+    EFFREQ?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    EFFZTSP?
+    EFSPFBK?
+    EFST?
+    EHTOCMD?
+    EVCLCMD?
+    EVCLSTS?
+    EVPRFSTT?
+    FANSPMD?
+    FANST?
+    FLTDPR?
+    FRZST?
+    HDDCMD?
+    HMCMD?
+    HOAST?
+    HTGCLGV?
+    HTREQ?
+    HTSTS?
+    HWVCMD?
+    HWVFBK?
+    LCWT?
+    MACO2?
+    MAFLTST?
+    MAFLW?
+    MARH?
+    MAT?
+    MATSP?
+    OACLLCKTSP?
+    OADCMD?
+    OADFBK?
+    OAFLTST?
+    OAFLW?
+    OAFLWMNSP?
+    OAFLWSP?
+    OAHTLCKTSP?
+    OAWBTEMP?
+    OCCCMD?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCSNS?
+    OCCZRHSP?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    OFCMD?
+    PHWVCMD?
+    PRREQ?
+    RACO2?
+    RACO2SP?
+    RACTSP?
+    RADCMD?
+    RADFBK?
+    RADRHSP?
+    RADWP?
+    RAENTH?
+    RAFLW?
+    RAFLWSP?
+    RAHRHSP?
+    RAHTSP?
+    RARH?
+    RAT?
+    RATSP?
+    REVVCMD?
+    RFCMD?
+    RFSPCMD?
+    RFSPFBK?
+    RFFREQ?
+    RFDCMD?
+    RFST?
+    RNTM?
+    SSCMD?
+    UOCZRHSP?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+    ZCH4ALMSP?
+    ZCO?
+    ZCO2?
+    ZCO2SP?
+    ZCOALMSP?
+    ZDHRHSP?
+    ZHUMRHSP?
+    ZPCNT?
+    ZRH?
+    ZRHSP?
+    ZSPR?
+    ZSPRSP?
+    ZT?
+    ZTCA?
+    ZTHA?
+    ZTSP?
+  }
+}
+
+
+// VAV Air Handlers are ideal for providing cool conditioned air to zones in a commercial
+// building.  
+AHUDFVCO: AHU {
+  variableAirVolume
+  chilledWaterCooling
+}
+
+// VAV Air Handlers w/ Economizer
+AHUDFVCOEC: AHU {
+  variableAirVolume
+  chilledWaterCooling
+  economizing
+}
+
+// VAV Air Handlers w/ Economizer and Variable Exhaust Fan
+AHUDFVCOECEFV: AHU {
+  variableAirVolume
+  chilledWaterCooling
+  economizing
+}
+
+// VAV Air Handlers w/ Economizer and Hot Water Preheat
+AHUDFVCOECPH: AHU {
+  variableAirVolume
+  chilledWaterCooling
+  economizing
+  hotWaterHeating
+}
+
+// VAV Air Handler w/ Economizer, Hot Water Preheat, & Variable Exhaust Fan
+AHUDFVCOECPHEFV: AHU {
+  variableAirVolume
+  chilledWaterCooling
+  economizing
+  hotWaterHeating
+}
+
+
+// A single-zone air handling equipment that is a water-to-air heat pump using liquid
+// circulating in a neutral temperature loop functioning as a heat source/heat sink.
+AHUWSHPDZ: HP {
+  ahu
+  waterCooled
+  directZone
+  dxCooling
+  dxHeating
+  points: {
+    FLTDPR?
+    DFMDSP?
+  }
+}
+
+
+// An air handling equipment that is a water-to-air heat pump using liquid circulating
+// in a neutral temperature loop functioning as a heat source/heat sink that serves
+// 2 or more zones. 
+AHUWSHP: HP {
+  ahu
+  waterCooled
+  dxCooling
+  dxHeating
+  points: {
+    FLTDPR?
+    DFMDSP?
+  }
+}
+
+// Computer Room Air Conditioner: An FCU designed to condition a computer room.
+CRAC: FCU {
+  crac
+  dxCooling
+  directZone
+  points: {
+    DACO2?
+    DARH?
+    DAT?
+    RARH?
+    RAT?
+    ZCO2?
+    ZRH?
+    ZT?
+  }
+}
+
+// Computer Room Air Conditioner: An AHU designed to condition a computer room.
+CRAH: FCU {
+  crac
+  chilledWaterCooling
+  hotWaterHeating
+  directZone
+  points: {
+    DACO2?
+    DARH?
+    DAT?
+    MACO2?
+    MARH?
+    OAFLTST?
+    RARH?
+    RAT?
+    ZCO2?
+    ZRH?
+    ZT?
+    DATSP?
+  }
+}
+
+
+// Dedicated Outside Air System: An AHU that brings in 100% outside air and no recirculated
+// air in order to provide ventilation to spaces. 
+DOAS: AHU {
+  doas
+  points: {
+    HVACMDSP?
+    HVACMDCMD?
+    FLTDPR?
+    FLTST?
+    OATEMP?
+    OARH?
+    EAT?
+    EARH?
+    RADCMD?
+    DAT?
+    CNDRFPR?
+    EVPRFPR?
+    CMPRFLT?
+    CMPST?
+  }
+}
+
+// Roof Top Unit: A unitary AHU that is weatherized for outdoor use.
+RTU: AHU {
+  rtu
+  dxCooling
+  gasHeating
+  ahu
+  singleDuct
+  constantAirVolume
+  points: {
+    DACO2?
+    DARH?
+    DAT?
+    DFST?
+    EFST?
+    MACO2?
+    MAFLTST?
+    MAFLW?
+    MARH?
+    OAFLTST?
+    OAFLW?
+    RAFLW?
+    RARH?
+    RAT?
+    RFST?
+    ZCO2?
+    ZRH?
+    ZT?
+    BLDSPR?
+    BLDSPRSP?
+    BYPDCMD?
+    CHWVCMD?
+    CLCMD?
+    CWVCMD?
+    CWVFBK?
+    DADCTSPRSP?
+    DADCTSPR?
+    EFFDAFLWSP?
+    DAFLWSP?
+    DATSP?
+    DFCMD?
+    EADCMD?
+    EADFBK?
+    EFCMD?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    FLTDPR?
+    HTGCLGV?
+    HWVCMD?
+    MATSP?
+    OACLLCKTSP?
+    OADCMD?
+    OADFBK?
+    OAFLWMNSP?
+    OAFLWSP?
+    OAHTLCKTSP?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    OFCMD?
+    RADCMD?
+    RAFLWSP?
+    RATSP?
+    REVVCMD?
+    RFCMD?
+    RFDCMD?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    ZCO2SP?
+    ZRHSP?
+    ZSPR?
+    ZSPRSP?
+    EFFZTSP?
+    ZTSP?
+    OCCCMD?
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+  }
+}
+
+// Balancing Damper
+BD: DMP {
+  balancing
+}
+
+// Bypass Damper
+BYPD: DMP {
+  bypass
+}
+
+// Conduit used to convey Cold air.
+CDDT: DUCT {
+  cooling
+}
+
+
+// Equipment used to regulate the amount of air entering the space. Typically found
+// in a VAV or MZU. 
+DAD: DMP {
+  discharge
+}
+
+// Conduit used to convey air for on the Discharge side of the airside process.
+DADUCT: DUCT {
+  discharge
+}
+
+// Fan equipment or control point located in the Discharge Air Duct
+DAF: FAN {
+  discharge
+  points: {
+    DFI?
+    DFP?
+    DFSPCMD?
+  }
+}
+
+// Equipment used to regulate flow of air.
+DMP: Equip {
+  damper
+}
+
+// Generic Base class of conduit used to convey air.
+DUCT: Equip {
+  duct
+}
+
+
+// Equipment use to regulate the amount of air exhausted from the space or building.
+EAD: DMP {
+  exhaust
+}
+
+// Conduit used to convey air for on the Discharge side of the airside process.
+EADT: DUCT {
+  discharge
+}
+
+// Fan equipment or control point located in the Exhaust Air Duct
+EF: FAN {
+  exhaust
+  relief: Marker?
+}
+
+
+// Heat exchanger used to heat air using electricity as the source. Coils are sub-components
+// of HVAC equipment such as airHandlingEquip. 
+EHC: COIL {
+  elecHeating
+  heatingCoil
+}
+
+// An equip that moves air.
+FAN: Equip {
+  fan
+  points: {
+    ALRMPT?
+    CLDEM?
+    DFSPFBK?
+    DRSTS?
+    DWSTS?
+    EAFLWSP?
+    EARH?
+    EFSPFBK?
+    FANST?
+    HOAST?
+    ISOADCMD?
+    VFDSPREF?
+    ZCO?
+  }
+}
+
+// A group of fans that are arranged in a wall and controlled together.
+FANW: Equip {
+  fan
+  fanWall
+  points: {
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+  }
+}
+
+// A discharge fan wall. See definition for fan wall.
+DFANW: FANW {
+  discharge
+}
+
+// An exhaust fan wall. See definition for fan wall.
+EFANW: FANW {
+  exhaust
+  relief: Marker?
+}
+
+// A return fan wall. See definition for fan wall.
+RFANW: FANW {
+  return
+}
+
+
+// Fan used to remove contaminated air, specifically carbon monoxide from a space
+// where motor vehicles are used such as a garage. 
+GEF: FAN {
+  exhaust
+  co
+  points: {
+    ZCO?
+    ZNO2?
+    EADCMD?
+    EADFBK?
+    OADCMD?
+    OADFBK?
+  }
+}
+
+
+// Heat exchanger used to heat air using natural gas as the source. Coils are sub-components
+// of HVAC equipment such as airHandlingEquip. 
+GHC: COIL {
+  gasHeating
+  heatingCoil
+}
+
+// Conduit used to convey Hot air.
+HTDT: DUCT {
+  heating
+}
+
+// Equipment use to regulate the mixture of outside and return air before the DF.
+MAD: DMP {
+  mixed
+}
+
+
+// Conduit used to convey air, blending outside air and return air prior to the
+// heating and cooling process. 
+MADUCT: DUCT {
+  mixed
+}
+
+
+// Equipment use to regulate the amount of outside air entering the space or building.
+OAD: DMP {
+  outside
+}
+
+// Conduit used to convey outside air.
+OADUCT: DUCT {
+  outside
+}
+
+// Fan equipment or located in the Outside Air Duct
+OF: FAN {
+  outside
+}
+
+
+// Equipment use to regulate the amount of return air routed back to the space or
+// building. 
+RAD: DMP {
+  return
+}
+
+// Conduit used to convey air for on the Return side of the airside process.
+RADUCT: DUCT {
+  return
+}
+
+// Fan equipment or control point located in the Return Air Duct
+RF: FAN {
+  return
+}
+
+// Fan equipment or control point located in the Discharge Air Duct
+SF: FAN {
+  discharge
+  points: {
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+  }
+}
+
+
+// An integral part of a VRF system, the branch selector box will send either hot
+// gas (Heating mode) or Low pressure liquid (Cooling mode) to the indoor fan coil.
+BRSEL: Equip {
+  vrf
+  branchSelector
+}
+
+
+// Constant air volume (CAV) is a type of heating, ventilating, and air-conditioning
+// (HVAC) system where the supply air flow rate is constant, but the supply air
+// temperature is varied to meet the thermal loads of a space. 
+CAV: Equip {
+  cav
+}
+
+// Chilled Beam
+CHB: Equip {
+  chilledBeam
+  active
+  points: {
+    DAT?
+    ZCO2?
+    ZRH?
+    ZT?
+    DFCMD?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    FLTDPR?
+    HWVCMD?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    EFFZTSP?
+    ZTSP?
+    CN?
+    IAT?
+    RWFLW?
+    ZDWP?
+    ZOVCMD?
+    ZCO2SP?
+  }
+}
+
+
+// An air handling equipment which employs a vapor compression cycle with a reversing
+// valve to provide heating or cooling to a space. 
+HP: Equip {
+  heatPump
+  ahu
+  points: {
+    CLCMD?
+    CMPST?
+    CMPST?
+    DACO2?
+    DARH?
+    DAT?
+    DFCMD?
+    DFMDSP?
+    DFOVCMD?
+    ECWT?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    EFFZTSP?
+    FLTDPR?
+    FRZST?
+    LCWT?
+    MACO2?
+    MARH?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCSNS?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    RARH?
+    RAT?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    ZCO2?
+    ZCO2SP?
+    ZRH?
+    ZRHSP?
+    ZRHSP?
+    ZT?
+    ZTSP?
+  }
+}
+
+
+// Make Up Air Unit: A larger air handler that conditions 100% outside air, and
+// no recirculated air to make up for air lost from exhausted air.  
+MAU: AHU {
+  mau
+  points: {
+    ALRMPT?
+    DAFLW?
+    DFCMD?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    FLTDPR?
+    OADCMD?
+    OAFLTST?
+    OATEMP?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    EFFZTSP?
+    ZRHAVG?
+    ZTAVG?
+    ZTSP?
+  }
+}
+
+// The outdoor unit of a VRF System, comprising one or multiple compressors.
+VRFOU: Equip {
+  vrf
+  outdoorUnit
+}
+
+
+// The outdoor unit of a heat pump VRF System, comprising one or multiple compressors.
+// The outdoor unit utilizes an air-cooled condenser to reject (or absorb) heat
+// to ambient air. 
+VRFOUACHP: VRFOU {
+  airCooled
+  heatPump
+}
+
+
+// The outdoor unit of a heat recovery VRF System, comprising one or multiple compressors.
+// The outdoor unit utilizes an air-cooled condenser to reject (or absorb) heat
+// to ambient air. 
+VRFOUACHR: VRFOU {
+  airCooled
+  heatRecovery
+}
+
+
+// The outdoor unit of a heat pump VRF System, comprising one or multiple compressors.
+// The compressors are cooled by condenser water. 
+VRFOUWCHP: VRFOU {
+  waterCooled
+  heatPump
+}
+
+
+// The outdoor unit of a heat recovery VRF System, comprising one or multiple compressors.
+// The outdoor unit utilizes a water-cooled condenser to reject (or absorb) heat.
+// Note that this unit does not strictly need to be outdoors as it is water-cooled.
+VRFOUWCHR: VRFOU {
+  waterCooled
+  heatRecovery
+}
+
+
+// A typical system consists of an outdoor unit (comprising one or more skids containing
+// a compressor and condenser) and several indoor units (often called "fan coils").
+// The system is connected by refrigerant piping and comm wire running from the
+// outdoor units to all indoor units. 
+VRFSYS: Equip {
+  system
+  vrf
+}
+
+
+// Fan Coil Unit: A unitary, factory-made enclosure with a fan and coil that recirculates
+// air in a space and performs one or more of the functions of cleaning, heating,
+// cooling, humidifying, dehumidifying, or ventilating the air. Unit heaters are
+// examples of FCUs. 
+FCU: Equip {
+  fcu
+  points: {
+    ALRMPT?
+    CHWVCMD?
+    CHWVFBK?
+    CLDEM?
+    CWVCMD?
+    CWVFBK?
+    DACO2?
+    DADCMD?
+    DADCTSPR?
+    DADFBK?
+    DADHRHSP?
+    DAFLWSP?
+    DAHUMRHSP?
+    DAT?
+    DATSP?
+    DFCMD?
+    DFFREQ?
+    DFMDSP?
+    DFSPCMDH?
+    DFSPCMDL?
+    ECMDSP?
+    EFFDAFLWSP?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    EFFZTSP?
+    EHTOCMD?
+    EVPRFLT?
+    FANSPMD?
+    FANSPMDCMD?
+    FLTDPR?
+    HTGCLGV?
+    HTREQ?
+    HWVCMD?
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCSNS?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    RAT?
+    SSCMD?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    VFDSPCMD?
+    VFDSPREF?
+    VFDSSCMD?
+    ZCO2?
+    ZCO2SP?
+    ZOVCMD?
+    ZRH?
+    ZRHSP?
+    ZT?
+    ZTCA?
+    ZTHA?
+    ZTSP?
+  }
+}
+
+// FCU with chilled water cooling-only (discharge control).
+FCUDACO: FCU {
+  coolingOnly
+  directZone
+}
+
+// FCU with DX heating and cooling and part of VRF System (zone control).
+FCUVRFZC: FCU {
+  vrf
+  directZone
+  points: {
+    ALRMPT?
+    SSST?
+    SSCMD?
+    FLTST?
+    DFSPCMD?
+    HVACMDSP?
+    HVACMDCMD?
+    EVPRFET?
+    TSTATLCK?
+    TSTATMDLCK?
+    TSTATFLCK?
+    TSTATTLCK?
+    ZOVCMD?
+    RLPWR?
+    THRMSRCPWR?
+    THRMSRCEN?
+  }
+}
+
+// FCU with chilled water cooling and hot water heating (zone control).
+FCUZC: FCU {
+  directZone
+}
+
+// FCU with chilled water cooling-only (zone control).
+FCUZCCO: FCU {
+  coolingOnly
+  directZone
+}
+
+// FCU with DX cooling-only (zone control).
+FCUZCCOD: FCU {
+  dxCooling
+  coolingOnly
+  directZone
+}
+
+
+// FCU with electric heating only (zone control).  Also referred to as a Unit Heater.
+FCUZCHOE: FCU {
+  elecHeating
+  heatingOnly
+  directZone
+}
+
+
+// Variable air volume (VAV) is a type of heating, ventilating, and/or air-conditioning
+// (HVAC) system.  
+VAV: Equip {
+  vav
+  points: {
+    CLDEM?
+    CLREQ?
+    DACO2?
+    DADCMD?
+    DADFBK?
+    DARH?
+    DFCMD?
+    EADCMD?
+    EAFLW?
+    EFFCDAFLWSP?
+    EFFHDAFLWSP?
+    EFFIAFLWSP?
+    EFFZTCLSP?
+    EFFZTHTSP?
+    EFFZTSP?
+    EHTOCMD?
+    FLTDPR?
+    HDDATSP?
+    HDDCMD?
+    HTDEM?
+    HTREQ?
+    HWVCMD?
+    IAFLW?
+    OCCCDAFLWMNSP?
+    OCCCDAFLWMXSP?
+    OCCCMD?
+    OCCEFFSP?
+    OCCHDAFLWMNSP?
+    OCCHDAFLWMXSP?
+    OCCIAFLWCLMNSP?
+    OCCIAFLWCLMXSP?
+    OCCIAFLWHTMNSP?
+    OCCIAFLWHTMXSP?
+    OCCSCHSP?
+    OCCSNS?
+    OCCZCLDB?
+    OCCZHTDB?
+    OCCZTCLSP?
+    OCCZTHTSP?
+    RADVCMD?
+    RHV?
+    RHVCMD?
+    SBCDAFLWMNSP?
+    SBCDAFLWMXSP?
+    SBHDAFLWMNSP?
+    SBHDAFLWMXSP?
+    SBIAFLWCLMNSP?
+    SBIAFLWCLMXSP?
+    SBIAFLWHTMNSP?
+    SBIAFLWHTMXSP?
+    SBZTCLSP?
+    SBZTHTSP?
+    UOCCDAFLWMNSP?
+    UOCCDAFLWMXSP?
+    UOCHDAFLWMNSP?
+    UOCHDAFLWMXSP?
+    UOCIAFLWCLMNSP?
+    UOCIAFLWCLMXSP?
+    UOCIAFLWHTMNSP?
+    UOCIAFLWHTMXSP?
+    UOCIAFLWMNSP?
+    UOCZTCLSP?
+    UOCZTHTSP?
+    ZCH4ALMSP?
+    ZCO2?
+    ZCO2SP?
+    ZCOALMSP?
+    ZDHRHSP?
+    ZHUMRHSP?
+    ZOVCMD?
+    ZPCNT?
+    ZRH?
+    ZRHSP?
+    ZSPR?
+    ZSPRSP?
+    ZTSP?
+  }
+}
+
+
+// VAV terminal unit that delivers air to downstream equips, typically 1 or more
+// chilled beams. 
+VAVCDAFC: VAV {
+  pressureIndependent
+  singleDuct
+}
+
+// VAV terminal unit that is supplied cool air from an AHU.
+VAVCO: VAV {
+  pressureIndependent
+  coolingOnly
+  singleDuct
+  directZone
+}
+
+// Single duct reheat VAV with electric heat.
+VAVEH: VAV {
+  pressureIndependent
+  elecHeating
+  singleDuct
+  directZone
+}
+
+// Fan-powered series VAV.
+VAVFPS: VAV {
+  pressureIndependent
+  fanPowered
+  series
+  directZone
+  elecHeating: Marker?
+  hotWaterHeating: Marker?
+  chilledWaterCooling: Marker?
+}
+
+// Fan-powered parallel VAV.
+VAVFPP: VAV {
+  pressureIndependent
+  fanPowered
+  parallel
+  directZone
+  elecHeating: Marker?
+  hotWaterHeating: Marker?
+  chilledWaterCooling: Marker?
+}
+
+// VAV terminal unit that is supplied warm air from an AHU.
+VAVHO: VAV {
+  heatingOnly
+  pressureIndependent
+  singleDuct
+  directZone
+}
+
+// Pressure Dependent VAV
+VAVPD: VAV {
+  pressureDependent
+  singleDuct
+  directZone
+}
+
+// Pressure Dependent VAV with Hot Water Reheat
+VAVPDRH: VAV {
+  pressureDependent
+  hotWaterHeating
+  singleDuct
+  directZone
+}
+
+// Single duct reheat VAV with dual setpoint control.
+VAVRH: VAV {
+  pressureIndependent
+  hotWaterHeating
+  singleDuct
+  directZone
+}
+
+// VAV used to deliver outside air to a given space or process.
+VAVV: VAV {
+  pressureIndependent
+  singleDuct
+  ventilationOnly
+}
+
+// Exhaust control VAV
+EAV: Equip {
+  eav
+  points: {
+    ALRMPT?
+  }
+}
+
+// Return control VAV
+RAV: Equip {
+  rav
+}
+
+// Supply air valve for zone pressure control, typically used in labs.
+SAV: Equip {
+  sav
+  directZone
+}
+
+// SAV - Cooling Only
+SAVCO: SAV {
+  coolingOnly
+  pressureIndependent
+  singleDuct
+  directZone
+}
+
+// Supply air valve for zone pressure control with hot water reheat.
+SAVRH: SAV {
+  hotWaterHeating
+  singleDuct
+  directZone
+}
+
+// Stairwell Pressurization Fan
+SPF: Equip {
+  fan
+  pressurization
+  stairwell
+}
+

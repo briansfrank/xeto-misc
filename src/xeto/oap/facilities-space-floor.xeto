@@ -1,0 +1,26 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Any level part of a building with a floor used by people
+FLOOR: Space {
+  floor
+}
+
+
+// Subterranean floor, also known as a basement or cellar is one or more floors
+// of a building that are completely or partly below the ground level. 
+BSMNT: FLOOR {
+  subterranean
+}
+
+
+// A floor, typically located directly under a flat-roof, that houses mechanical
+// equipment 
+PENT: FLOOR {
+  penthouse
+}
+
+// A floor or level on which parking takes place.
+PRKLVL: FLOOR {
+  parking
+}
+

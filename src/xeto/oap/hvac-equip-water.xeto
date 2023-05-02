@@ -1,0 +1,712 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// Heat exchanger used to cool air using chilled water as the source. Coils are
+// sub-components of HVAC equipment such as airHandlingEquip. 
+CHWC: COIL {
+  coolingCoil
+  chilledWaterCooling
+}
+
+
+// Heat exchanger used to heat or cool air using condenser water as the source.
+// Coils are sub-components of HVAC equipment such as airHandlingEquip. 
+CWCOIL: COIL {
+  coolingCoil
+  condenserCooling
+}
+
+
+// Heat exchanger used to heat air using hot water as the source. Coils are sub-components
+// of HVAC equipment such as airHandlingEquip. 
+HWC: COIL {
+  heatingCoil
+  hotWaterHeating
+}
+
+// A boiler is a closed vessel in which fluid (generally water) is heated. 
+BLR: Equip {
+  boiler
+  points: {
+    LHXISOVCMD?
+    LHXISOVFBK?
+    LHWISOVCMD?
+    LHWISOVFBK?
+    LHWTSP?
+    LWISOVCMD?
+    LWISOVST?
+    MXWVCMD?
+    MXWVFBK?
+  }
+}
+
+// Simple hot water boiler with start/stop and leaving temperature control
+HWB: BLR {
+  hot
+  water
+  points: {
+    WFLWST?
+    HTDEM?
+    NGVCMD?
+    HWDT?
+  }
+}
+
+// Simple hot water boiler with leaving control and leaving isolation
+HWBISOV: BLR {
+  hot
+  water
+  isolation
+  points: {
+    WFLWST?
+    HTDEM?
+    NGVCMD?
+    HWDT?
+  }
+}
+
+
+// A steam boiler is a closed vessel in which fluid (generally water) is heated
+// to steam.  
+SB: BLR {
+  steam
+  points: {
+    STMASS?
+    STVOL?
+    STFLOW?
+    STMFLOW?
+    STCNMASS?
+    STCNVOL?
+    STCNFLOW?
+    STCNMFLOW?
+    FOMFL?
+    LSTT?
+    LSTP?
+  }
+}
+
+
+// Clean steam generators are used to produce pure and clean steam, free of any
+// harmful substances and impurities. Applications include pharmacies and hospitals,
+// as well as food and cosmetic industries. 
+CSG: BLR {
+  steam
+}
+
+
+// Machine for imparting energy to a fluid, causing it to do work, drawing a fluid
+// into itself through an entrance port, and forcing the fluid out through an exhaust
+// port. 
+PUMP: Equip {
+  pump
+  points: {
+    DHWTT?
+    MXWVCMD?
+    MXWVFBK?
+    VFDSPREF?
+    WLALRMH?
+  }
+}
+
+// A specific type of pump used to circulate water within a boiler.
+BCP: PUMP {
+  circ
+  hot
+  water
+}
+
+// A specific type of pump used to pump feedwater into a steam boiler.
+BFWP: PUMP {
+  feedwater
+}
+
+// Pump that moves Condenser Water
+CWP: PUMP {
+  condenser
+  water
+}
+
+// Pump that moves Condenser Water
+PCWP: PUMP {
+  condenser
+  water
+  primaryLoop
+}
+
+// Pump that moves Condenser Water
+SCWP: PUMP {
+  condenser
+  water
+  secondaryLoop
+}
+
+// Pump that moves Chilled Water
+CHWP: PUMP {
+  chilled
+  water
+}
+
+// Pump that moves Chilled Water through chiller
+PCHWP: PUMP {
+  primaryLoop
+  chilled
+  water
+}
+
+// Pump that moves Chilled Water from a Chilled Water Plant to the load
+SCHWP: PUMP {
+  secondaryLoop
+  chilled
+  water
+}
+
+// Pump that moves Chilled Water within the buildings to the load
+TCHWP: PUMP {
+  tertiaryLoop
+  chilled
+  water
+}
+
+// Pump that moves/lifts condensate
+CNP: PUMP {
+  condensate
+  water
+}
+
+
+// A circulator pump or circulating pump is a specific type of pump used to circulate
+// gases, liquids, or slurries in a closed circuit.  
+CP: PUMP {
+  circ
+  water
+  hot: Marker?
+  condenser: Marker?
+}
+
+// Pump that moves Hot Water
+HWP: PUMP {
+  hot
+  water
+}
+
+// Pump that moves Hot Water
+PHWP: PUMP {
+  hot
+  water
+  primaryLoop
+}
+
+// Pump that moves Hot Water
+SHWP: PUMP {
+  hot
+  water
+  secondaryLoop
+}
+
+// Pump that moves Hot Water
+THWP: PUMP {
+  hot
+  water
+  tertiaryLoop
+}
+
+// Separator Pump
+SEPP: PUMP {
+  water
+  separator
+}
+
+// Bypass Valve
+BYPV: VLV {
+  bypass
+}
+
+// Chilled Water Valve
+CHWV: VLV {
+  chilled
+  water
+}
+
+// Condenser Water Valve
+CWV: VLV {
+  condenser
+  water
+}
+
+
+// A pressure independent valve utilizing advanced cloud-based analytics to leverage
+// captured system data to its full potential providing savings and the most efficient
+// operation. 
+ENV: Equip {
+  valve
+  energy
+  points: {
+    WFLOW?
+    WFLOWSP?
+    THRMPWR?
+    THRMEN?
+    ALRMPT?
+    CNTMDCFG?
+    DT?
+    DTSP?
+    ECHWT?
+    EHWT?
+    LCHWT?
+    LHWT?
+    GLYCON?
+    VCMD?
+    VPOS?
+  }
+}
+
+// Hot Water Valve
+HWV: VLV {
+  hot
+  water
+}
+
+// Make Up Water Valve
+MUV: VLV {
+  makeup
+}
+
+
+// A valve is a device that regulates, directs or controls the flow of a fluid (gases,
+// liquids, fluidized solids, or slurries) by opening, closing, or partially obstructing
+// various passageways.  
+VLV: Equip {
+  valve
+}
+
+
+// A chiller is a machine that removes heat from a liquid via a vapor-compression
+// or absorption refrigeration cycle. 
+CH: Equip {
+  chiller
+  points: {
+    ALRMPT?
+    CHWBYPVCMD?
+    CHWBYPVFBK?
+    CHWDPR?
+    CHWDPRSP?
+    CHWFLWMNSP?
+    CHWISOVCMD?
+    CHWISOVFBK?
+    CLDEM?
+    CLTHRMPWR?
+    CMPSSCMD?
+    CMPST?
+    CWBYPVFBK?
+    CWDPR?
+    CWISOVCMD?
+    CWISOVFBK?
+    CWVFBK?
+    ECHWFLST?
+    ECHWISOVCMD?
+    ECHWISOVFBK?
+    ECHWT?
+    ECWISOVCMD?
+    ECWISOVFBK?
+    ECWT?
+    HOAST?
+    IGVFBK?
+    LCHWFL?
+    LCHWFLST?
+    LCHWT?
+    LCHWTSP?
+    LCWT?
+    LCHWISOVCMD?
+    LCHWISOVFBK?
+    LCWISOVCMD?
+    LCWISOVFBK?
+  }
+}
+
+
+// A chilled water plant containing equipment and piping to deliver chilled water
+// to a building, process, or equipment. 
+CHWPL: Equip {
+  chilled
+  plant
+  water
+  points: {
+    ALRMPT?
+    BYPCHWFL?
+    CHWBYPVCMD?
+    CHWBYPVFBK?
+    CHWDPR?
+    CHWDPRSP?
+    CHWDT?
+    CHWISOVFBK?
+    CLDEM?
+    CLTHRMPWR?
+    CTBYPVCMD?
+    CWBYPVFBK?
+    CWDPR?
+    CWISOVFBK?
+    CWVFBK?
+    ECHWFL?
+    ECHWFLST?
+    ECHWISOVCMD?
+    ECHWISOVFBK?
+    ECHWT?
+    ECWISOVCMD?
+    ECWISOVFBK?
+    ECWT?
+    EHXISOVCMD?
+    EHXISOVFBK?
+    ENCMD?
+    EWTSP?
+    LCHWFL?
+    LCHWFLOWSP?
+    LCHWFLST?
+    LCHWT?
+    LCHWTSP?
+    LCWFL?
+    LCWTSP?
+    LCHWISOVCMD?
+    LCHWISOVFBK?
+    LCWISOVCMD?
+    LCWISOVFBK?
+    LCWT?
+    LHXISOVCMD?
+    LHXISOVFBK?
+    LWISOVCMD?
+    LWISOVST?
+    MKUPWVCMD?
+    PRCHWDPR?
+    PRCHWDPRSP?
+    PRECHWT?
+    PRLCHWT?
+    PRLCHWTSP?
+    REFCMD?
+    SCHWFL?
+    SCCHWDPR?
+    SCCHWDPRSP?
+    SCECHWT?
+    SCLCHWT?
+    SCLCHWTSP?
+    TRCHWFL?
+    TRCHWDPR?
+    TRCHWDPRSP?
+    TRECHWT?
+    TRLCHWT?
+  }
+}
+
+
+// A chilled and heating hot water plant containing equipment and piping to deliver
+// both chilled and heating hot water to a building, process, or equipment. 
+CHWHWPL: Equip {
+  chilled
+  hot
+  plant
+  water
+  points: {
+    CHWBYPVCMD?
+    REFCMD?
+    ECHWT?
+    LCHWT?
+    CHWDPRSP?
+    CWDPR?
+    ECHWFL?
+    LCHWFL?
+    LCHWTSP?
+    LCWFL?
+    LCWTSP?
+    SCHWFL?
+    WECVCMD?
+    WECVPOS?
+  }
+}
+
+
+// A condensate receiver, also called a condensate tank, captures it and sends it
+// back to the boiler room so it can be reused. 
+CNR: Equip {
+  condensate
+  tank
+}
+
+
+// A cooling tower is a heat rejection device that rejects waste heat to the atmosphere
+// through the cooling of a water stream to a lower temperature.  
+CT: Equip {
+  coolingTower
+  points: {
+    ALRMPT?
+    FANST?
+    FANCMD?
+    FANSPCMD?
+    CTBYPVCMD?
+    CWISOVCMD?
+    ECWT?
+    LCWT?
+    LCWFL?
+    LCWTSP?
+    BAHTST?
+    BSWPSSCMD?
+    BSWPSSST?
+  }
+}
+
+// Cooling Tower Fan
+CTF: FAN {
+  coolingTower
+  points: {
+    FANST?
+    FANCMD?
+    FANSPCMD?
+  }
+}
+
+// Cooling Tower Filtration System
+CTFS: Equip {
+  coolingTower
+  filtration
+  system
+}
+
+// Cooling Tower Sand Filter
+CTSFLT: Equip {
+  coolingTower
+  sandFilter
+}
+
+// Cooling Tower Separator
+CTSEP: Equip {
+  separator
+  coolingTower
+}
+
+
+// A condenser water plant containing equipment and piping to deliver condenser
+// water to a building, process, or equipment. 
+CWPL: Equip {
+  condenser
+  plant
+  water
+  points: {
+    ALRMPT?
+    BSWPSSCMD?
+    BSWPSSST?
+    CLTHRMPWR?
+    COVCMD?
+    COVFBK?
+    CTBYPVCMD?
+    CWBYPVCMD?
+    CWBYPVFBK?
+    CWDPR?
+    CWDPRSP?
+    CWISOVFBK?
+    ECWISOVCMD?
+    CWVFBK?
+    ECWISOVFBK?
+    EHXISOVCMD?
+    EHXISOVFBK?
+    EWTSP?
+    HWVCMD?
+    HWVFBK?
+    HXISOVCMD?
+    LCWISOVCMD?
+    LCWISOVFBK?
+    LHXISOVCMD?
+    LHXISOVFBK?
+    LWISOVCMD?
+    LWISOVST?
+    MKUPWVCMD?
+    PRLCWT?
+    PRLCWTSP?
+    PRECWT?
+    PLLCWFLSP?
+    PLLCWFLOW?
+    PRLENCMD?
+    SCLENCMD?
+    SCLCWT?
+    SCLCWTSP?
+    SCLCWCTSP?
+    SCLCWHTSP?
+    SCECWT?
+    SLLCWFLSP?
+    SLLCWFLOW?
+    SCCWHXBYPVCMD?
+    TRCHWFL?
+    TRHWFL?
+    TRCHWDPR?
+    TRCHWDPRSP?
+    TRECHWT?
+    TREHWT?
+    TRHWDPR?
+    TRHWDPRSP?
+    TRLCHWT?
+    TRLHWT?
+    WECVCMD?
+    WECVPOS?
+  }
+}
+
+
+// A deaerator reduces dissolved gases, particularly oxygen, to a low level and
+// improve a plant's thermal efficiency by raising the water temperature. In addition,
+// deaerators provide feedwater storage and proper suction conditions for boiler
+// feedwater pumps. 
+DEA: Equip {
+  deaerator
+}
+
+// Duct Heater
+DH: Equip {
+  heater
+  duct
+}
+
+// Dehumidifier
+DHUM: Equip {
+  dehumidify
+}
+
+// Heating Coil
+HC: Equip {
+  heatingCoil
+}
+
+// Heat Recovery Unit
+HRU: Equip {
+  heatRecovery
+}
+
+// Humidifier
+HUM: Equip {
+  humidifier
+}
+
+
+// A hot water plant contains equipment and piping to deliver hot water to a building,
+// process, or equipment. 
+HWPL: Equip {
+  hot
+  plant
+  water
+  points: {
+    ALRMPT?
+    BCPSSCMD?
+    BCPSSST?
+    EHWISOVCMD?
+    EHWISOVFBK?
+    EHWT?
+    EHXISOVCMD?
+    EHXISOVFBK?
+    ENCMD?
+    EWTSP?
+    FLGST?
+    HTSTGCT?
+    HTTHRMPWR?
+    HWBYPVCMD?
+    HWDT?
+    OALCKTSP?
+    PREHWT?
+    PRLHWT?
+    SCEHWT?
+    SCLHWT?
+    HWDPR?
+    HWDPRSP?
+    LHWFL?
+    LHWT?
+    PRLHWTSP?
+    SCLHWTSP?
+    LHXISOVCMD?
+    LHXISOVFBK?
+    LHWISOVCMD?
+    LHWISOVFBK?
+    LHWTSP?
+    LWISOVCMD?
+    LWISOVST?
+    MKUPWVCMD?
+    PRHWDPR?
+    PRHWDPRSP?
+    SHWFL?
+    SCHWDPR?
+    SCHWDPRSP?
+    TRHWFL?
+    TREHWT?
+    TRHWDPR?
+    TRHWDPRSP?
+    TRLHWT?
+  }
+}
+
+
+// A water heat exchanger is an equip which transfers heat between two water flows.
+HXW: Equip {
+  heatExchanger
+  water
+}
+
+// Chillers that can cool process fluids in temperatures as low as -40°F
+LTCH: CH {
+  lowTemp
+}
+
+
+// A PRV lowers the pressure for safety and efficiency, and to match the requirements
+// of the application.  
+PRV: Equip {
+  prv
+}
+
+
+// A steam plant containing equipment and piping to deliver steam to a building,
+// process, or equipment. 
+SPL: Equip {
+  steam
+  plant
+  points: {
+    ALRMPT?
+    STMASS?
+    STVOL?
+    STFLOW?
+    STMFLOW?
+    STCNMASS?
+    STCNVOL?
+    STCNFLOW?
+    STCNMFLOW?
+    LSTT?
+    LSTP?
+  }
+}
+
+
+// A PRV lowers the steam pressure for safety and efficiency, and to match the requirements
+// of the application.  
+SPRV: PRV {
+  steam
+}
+
+
+// A hydronic heat pump,  also known as a "reversible chiller", is a machine that
+// removes heat from or adds heat to a liquid via vapor-compression or absorption
+// refrigeration cycle. 
+TWHP: Equip {
+  heatPump
+  chiller
+  boiler
+}
+
+
+// An air to water heat pump is a machine that removes heat from or adds heat to
+// a liquid via a vapor-compression or absorption refrigeration cycle that then
+// absorbs/rejects heat from the air. It is similar to an air-cooled chiller except
+// it can make hot water, chilled water, or sometimes both simultaneously. 
+ATWHP: TWHP {
+  airCooled
+}
+
+
+// A water to water heat pump is a machine that removes heat from or adds heat to
+// a liquid via a vapor-compression or absorption refrigeration cycle. It is similar
+// to an water-cooled chiller except it can make hot water, chilled water, or sometimes
+// both simultaneously. 
+WTWHP: TWHP {
+  waterCooled
+}
+

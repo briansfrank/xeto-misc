@@ -1,0 +1,1868 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Fan Status
+FANST: ST {
+  fan
+  run
+}
+
+// Fan Current (Base Definition)
+FANI: Point {
+  fan
+  current
+  sensor
+}
+
+// Fan Power (Base Definition)
+FANP: Point {
+  fan
+  power
+  sensor
+}
+
+// Filter Status
+FLTST: ST {
+  filter
+}
+
+// Load (Base Definition)
+LOAD: Point {
+  sensor
+  load
+}
+
+// Cold Deck Air Flow
+CDAFLW: AIRFLOW {
+  coldDeck
+}
+
+// Cold Deck Discharge Air Temperature
+CDDAT: DAT {
+  coldDeck
+}
+
+
+// The air temperature measured by a sensor in the discharge air duct immediately
+// downstream of a cooling coil. 
+CCDAT: DAT {
+  coolingCoil
+}
+
+
+// The air temperature measured by a sensor in the discharge air duct immediately
+// downstream of a heating coil. 
+HCDAT: DAT {
+  heatingCoil
+}
+
+// Hot Deck Air Flow
+HDAFLW: AIRFLOW {
+  hotDeck
+}
+
+// Hot Deck Discharge Air Temperature
+HDDAT: DAT {
+  hotDeck
+}
+
+// Discharge Air CO2
+DACO2: AIRCO2 {
+  discharge
+}
+
+// Discharge Air Flow
+DAFLW: AIRFLOW {
+  discharge
+}
+
+// Discharge Air Relative Humidity
+DARH: RELHUM {
+  discharge
+}
+
+// The air temperature measured by a sensor in the discharge air duct.
+DAT: AIRTEMP {
+  discharge
+}
+
+// Discharge Fan Current
+DFI: FANI {
+  discharge
+}
+
+// Enumerated list of fan speeds (i.e. OFF, AUTO, LOW, MEDIUM, HIGH).
+DFMDSP: FANSPMD {
+  discharge
+}
+
+// Discharge Fan Power
+DFP: FANP {
+  discharge
+}
+
+// Discharge Fan Status
+DFST: FANST {
+  discharge
+}
+
+// Exhaust Air Flow
+EAFLW: AIRFLOW {
+  exhaust
+}
+
+// The relative humidity measured by a sensor in the exhaust air duct.
+EARH: RELHUM {
+  exhaust
+}
+
+// The air temperature measured by a sensor in the exhaust air duct.
+EAT: AIRTEMP {
+  exhaust
+}
+
+// Exhaust Fan Status
+EFST: FANST {
+  exhaust
+}
+
+// Current mode of the equipment i.e. heating, cooling, fan etc
+HVACMDSP: Point {
+  hvacMode
+  sp
+}
+
+// Commanded mode of the equipment i.e. heating, cooling, fan etc
+HVACMDCMD: CMD {
+  hvacMode
+}
+
+// Mixed Air CO2
+MACO2: AIRCO2 {
+  mixed
+}
+
+// Mixed Air Filter Status
+MAFLTST: FLTST {
+  mixed
+}
+
+// Mixed Air Flow
+MAFLW: AIRFLOW {
+  mixed
+}
+
+// Mixed Air Enthalpy
+MAENTH: AIRENTH {
+  mixed
+}
+
+// Mixed Air Relative Humidity
+MARH: RELHUM {
+  mixed
+}
+
+// The air temperature measured by a sensor in the mixed air duct.
+MAT: AIRTEMP {
+  mixed
+}
+
+// Outside Air Filter Status
+OAFLTST: FLTST {
+  outside
+}
+
+// Outside Air Flow
+OAFLW: AIRFLOW {
+  outside
+}
+
+// Return Air CO2
+RACO2: AIRCO2 {
+  return
+}
+
+// Return Air Dew Point
+RADWP: AIRDWP {
+  return
+}
+
+// Return Air Enthalpy
+RAENTH: AIRENTH {
+  return
+}
+
+// Return Air Flow
+RAFLW: AIRFLOW {
+  return
+}
+
+// Return Air Relative Humidity
+RARH: RELHUM {
+  return
+}
+
+// The air temperature measured by a sensor in the return air duct.
+RAT: AIRTEMP {
+  return
+}
+
+// Return Fan Status
+RFST: FANST {
+  return
+}
+
+// Zone Relative Humidity
+ZRH: RELHUM {
+  zone
+}
+
+// The average relative humidity of an indoor space.
+ZRHAVG: RELHUM {
+  zone
+  avg
+}
+
+// The air temperature of an indoor space.
+ZT: AIRTEMP {
+  zone
+}
+
+// The average air temperature of an indoor space.
+ZTAVG: AIRTEMP {
+  zone
+  avg
+}
+
+// In a data center, the temperature of the cool or cold side of the server rack.
+ZTCA: ZT {
+  coldAisle
+}
+
+// In a data center, the temperature of the warm or hot side of the server rack.
+ZTHA: ZT {
+  hotAisle
+}
+
+// The start/stop command for the heat recovery wheel.
+HRWCMD: CMD {
+  heatWheel
+  heatRecovery
+  run
+}
+
+// The status for the heat recovery wheel.
+HRWST: ST {
+  heatWheel
+  heatRecovery
+  run
+}
+
+// The heat recovery wheel speed command.
+HRWSPCMD: CMD {
+  heatWheel
+  heatRecovery
+  speed
+}
+
+// The heat recovery bypass damper command.
+HRBYPDCMD: CMD {
+  heatRecovery
+  bypass
+  damper
+}
+
+// The discharge air temperature leaving the heat recovery wheel.
+HRDAT: AIRTEMP {
+  heatRecovery
+  discharge
+}
+
+// Inlet Air Flow
+IAFLW: AIRFLOW {
+  inlet
+}
+
+// Air Pressure (Base Definition)
+ADP: Point {
+  air
+  pressure
+  sensor
+}
+
+// Air Pressure Setpoint (Base Definition)
+ADPSP: Point {
+  air
+  pressure
+  sp
+}
+
+// Air Flow Setpoint (Base Definition)
+AFLWSP: Point {
+  air
+  flow
+  sp
+}
+
+// Air Temperature Setpoint (Base Definition)
+ATSP: Point {
+  air
+  temp
+  sp
+}
+
+// Relative Humidity Setpoint
+RHSP: Point {
+  humidity
+  sp
+  air
+}
+
+// Dehumidify Command
+DHCMD: Point {
+  cmd
+  dehumidify
+}
+
+// Humidify Command
+HMCMD: Point {
+  cmd
+  humidify
+}
+
+// Damper Command (Base Definition)
+DPRCMD: Point {
+  air
+  damper
+  cmd
+}
+
+// Fan Command
+FANCMD: Point {
+  fan
+  run
+  cmd
+}
+
+// Fan Speed Command
+FANSPCMD: Point {
+  cmd
+  speed
+  fan
+}
+
+// Fan Speed Feedback
+FANSPFBK: Point {
+  speed
+  fan
+  sensor
+}
+
+
+// Current fan speed mode. Typically an enumerated list of fan speeds (i.e. OFF,
+// LOW, HIGH). 
+FANSPMD: Point {
+  fan
+  mode
+  sp
+}
+
+
+// Fan speed mode as commanded to an equipment by an outside source such as the
+// BAS. Typically an enumerated list of fan speeds (i.e. OFF, LOW, HIGH). 
+FANSPMDCMD: Point {
+  fan
+  mode
+  cmd
+}
+
+// Requests (Base Definition)
+REQ: Point {
+  sp
+  request
+}
+
+// Valve Command (Base Definition)
+VCMD: Point {
+  valve
+  cmd
+}
+
+// Valve Position (Base Definition)
+VPOS: Point {
+  valve
+  sensor
+}
+
+// Valve Status (Base Definition)
+VST: Point {
+  sensor
+  valve
+}
+
+// Bldg Static Pressure
+BLDSPR: ADP {
+  return
+}
+
+// Bldg Static Pressure Setpoint
+BLDSPRSP: ADPSP {
+  return
+}
+
+// Bypass Damper Command
+BYPDCMD: DPRCMD {
+  air
+  bypass
+}
+
+// Effective Cold Deck Air Flow Setpoint
+EFFCDAFLWSP: AFLWSP {
+  coldDeck
+  effective
+}
+
+// Cold Deck Discharge Air Temperature Setpoint
+CDDATSP: ATSP {
+  coldDeck
+  discharge
+  effective
+}
+
+// Cold Deck Damper Command
+CDDCMD: DPRCMD {
+  coldDeck
+}
+
+// Chilled Water Bypass Valve Command
+CHWBYPVCMD: VCMD {
+  bypass
+  chilled
+  water
+}
+
+// Chilled Water Bypass Valve Position Feedback
+CHWBYPVFBK: VPOS {
+  bypass
+  chilled
+  water
+}
+
+// Chilled Water Isolation Valve Command
+CHWISOVCMD: VCMD {
+  chilled
+  isolation
+  water
+}
+
+// Leaving Chilled Water Isolation Valve Command
+LCHWISOVCMD: VCMD {
+  leaving
+  chilled
+  isolation
+  water
+}
+
+// Entering Chilled Water Isolation Valve Command
+ECHWISOVCMD: VCMD {
+  entering
+  chilled
+  isolation
+  water
+}
+
+// Chilled Water Isolation Valve Position Feedback
+CHWISOVFBK: VPOS {
+  chilled
+  isolation
+  water
+}
+
+// Leaving Chilled Water Isolation Valve Position Feedback
+LCHWISOVFBK: VPOS {
+  leaving
+  chilled
+  isolation
+  water
+}
+
+// Entering Chilled Water Isolation Valve Position Feedback
+ECHWISOVFBK: VPOS {
+  entering
+  chilled
+  isolation
+  water
+}
+
+// Chilled Water Valve Command
+CHWVCMD: VCMD {
+  chilled
+  cool
+  water
+}
+
+// Chilled Water Valve Position Feedback
+CHWVFBK: VPOS {
+  chilled
+  cool
+  water
+}
+
+// Cooling Command
+CLCMD: Point {
+  cool
+  cmd
+}
+
+// Highest number of stages at which equipment is currently operating.
+CLSTGCT: Point {
+  cool
+  stage
+}
+
+// Cooling Stage 1 Command
+CLSTG1CMD: Point {
+  cool
+  cmd
+  stage: Int 1
+}
+
+// Cooling Stage 2 Command
+CLSTG2CMD: Point {
+  cool
+  cmd
+  stage: Int 2
+}
+
+// Cooling Stage 3 Command
+CLSTG3CMD: Point {
+  cool
+  cmd
+  stage: Int 3
+}
+
+// Cooling Stage 4 Command
+CLSTG4CMD: Point {
+  cool
+  cmd
+  stage: Int 4
+}
+
+// Cooling Stage 5 Command
+CLSTG5CMD: Point {
+  cool
+  cmd
+  stage: Int 5
+}
+
+// Cooling Stage 6 Command
+CLSTG6CMD: Point {
+  cool
+  cmd
+  stage: Int 6
+}
+
+// Cooling Stage 7 Command
+CLSTG7CMD: Point {
+  cool
+  cmd
+  stage: Int 7
+}
+
+// Cooling Stage 8 Command
+CLSTG8CMD: Point {
+  cool
+  cmd
+  stage: Int 8
+}
+
+// Cooling Stage 1 Status
+CLSTG1STS: Point {
+  cool
+  sensor
+  stage: Int 1
+}
+
+// Cooling Stage 2 Status
+CLSTG2STS: Point {
+  cool
+  sensor
+  stage: Int 2
+}
+
+// Cooling Stage 3 Status
+CLSTG3STS: Point {
+  cool
+  sensor
+  stage: Int 3
+}
+
+// Cooling Stage 4 Status
+CLSTG4STS: Point {
+  cool
+  sensor
+  stage: Int 4
+}
+
+// Cooling Stage 5 Status
+CLSTG5STS: Point {
+  cool
+  sensor
+  stage: Int 5
+}
+
+// Cooling Stage 6 Status
+CLSTG6STS: Point {
+  cool
+  sensor
+  stage: Int 6
+}
+
+// Cooling Stage 7 Status
+CLSTG7STS: Point {
+  cool
+  sensor
+  stage: Int 7
+}
+
+// Cooling Stage 8 Status
+CLSTG8STS: Point {
+  cool
+  sensor
+  stage: Int 8
+}
+
+// Cooling Status
+CLSTS: Point {
+  cool
+  sensor
+}
+
+// The calculated demand for cooling
+CLDEM: LOAD {
+  cooling
+}
+
+// Cooling Requests
+CLREQ: REQ {
+  cooling
+}
+
+// Condenser Water Isolation Valve Command
+CWISOVCMD: VCMD {
+  condenser
+  isolation
+  water
+}
+
+// Leaving Condenser Water Isolation Valve Command
+LCWISOVCMD: VCMD {
+  leaving
+  condenser
+  isolation
+  water
+}
+
+// Entering Condenser Water Isolation Valve Command
+ECWISOVCMD: VCMD {
+  entering
+  condenser
+  isolation
+  water
+}
+
+// Condenser Water Isolation Valve Position Feedback
+CWISOVFBK: VPOS {
+  condenser
+  isolation
+  water
+}
+
+// Leaving Condenser Water Isolation Valve Position Feedback
+LCWISOVFBK: VPOS {
+  leaving
+  condenser
+  isolation
+  water
+}
+
+// Entering Condenser Water Isolation Valve Position Feedback
+ECWISOVFBK: VPOS {
+  entering
+  condenser
+  isolation
+  water
+}
+
+// Condenser Water Valve Command
+CWVCMD: VCMD {
+  condenser
+  water
+}
+
+// Condenser Water Valve Position Feedback
+CWVFBK: VPOS {
+  condenser
+  water
+}
+
+// Discharge Air Damper Command
+DADCMD: DPRCMD {
+  discharge
+}
+
+// Discharge Air Damper Command Open
+DADCMDOP: DPRCMDOP {
+  discharge
+}
+
+// Discharge Air Damper Command Closed
+DADCMDCL: DPRCMDCL {
+  discharge
+}
+
+// Discharge Air Damper Feedback
+DADFBK: ADFBK {
+  discharge
+}
+
+// Air Damper Feedback
+ADFBK: Point {
+  air
+  damper
+  sensor
+}
+
+// Discharge Air Duct Static Pressure Setpoint
+DADCTSPRSP: ADPSP {
+  discharge
+  effective
+}
+
+// Discharge Air Duct Static Pressure
+DADCTSPR: ADP {
+  discharge
+}
+
+// Damper Command Open
+DPRCMDOP: Point {
+  air
+  damper
+  cmd
+  open
+}
+
+// Damper Command Closed
+DPRCMDCL: DPRCMD {
+  air
+  damper
+  cmd
+  closed
+}
+
+// Damper Requests
+DPRREQ: REQ {
+  damper
+}
+
+// Effective Discharge Air Flow Setpoint
+EFFDAFLWSP: AFLWSP {
+  discharge
+  effective
+}
+
+// Effective Air Flow Setpoint
+EFFIAFLWSP: AFLWSP {
+  inlet
+  effective
+}
+
+// Discharge Air Dewpoint
+DADWP: AIRDWP {
+  discharge
+}
+
+// Discharge Air Flow Setpoint
+DAFLWSP: AFLWSP {
+  discharge
+}
+
+// Discharge Air Temperature Setpoint
+DATSP: ATSP {
+  discharge
+  effective
+}
+
+// Discharge Air Temperature Cooling Setpoint
+DATCLSP: ATSP {
+  discharge
+  effective
+  cooling
+}
+
+// Discharge Air Temperature Heating Setpoint
+DATHTSP: ATSP {
+  discharge
+  effective
+  heating
+}
+
+// Discharge Air Humidity Setpoint
+DARHSP: RHSP {
+  discharge
+}
+
+// The lower bound of relative humidity that the discharge air is maintained to.
+DAHUMRHSP: Point {
+  discharge
+  air
+  humidity
+  humidify
+  sp
+}
+
+// The upper bound of relative humidity that the discharge air is maintained to.
+DADHRHSP: Point {
+  discharge
+  air
+  humidity
+  dehumidify
+  sp
+}
+
+// Discharge Fan Command
+DFCMD: FANCMD {
+  discharge
+}
+
+// Discharge Fan Override Command
+DFOVCMD: DFCMD {
+  override
+}
+
+// Discharge Fan Speed Command
+DFSPCMD: FANSPCMD {
+  discharge
+}
+
+
+// High Speed On/Off command for multispeed fans with fixed number of speeds where
+// each speed is controlled by a boolean on/off point. 
+DFSPCMDH: DFSPCMD {
+  high
+}
+
+
+// Low Speed On/Off command for multispeed fans with fixed number of speeds where
+// each speed is controlled by a boolean on/off point. 
+DFSPCMDL: DFSPCMD {
+  low
+}
+
+// Discharge Fan Speed Feedback
+DFSPFBK: FANSPFBK {
+  discharge
+}
+
+// Discharge Fan Frequency Feedback
+DFFREQ: VFDFREQ {
+  discharge
+  fan
+}
+
+// Exhaust Air Damper Command
+EADCMD: DPRCMD {
+  air
+  exhaust
+}
+
+// Exhaust Air Damper Feedback
+EADFBK: ADFBK {
+  air
+  exhaust
+}
+
+// Exhaust Air Flow Setpoint
+EAFLWSP: AFLWSP {
+  air
+  exhaust
+}
+
+// Exhaust Air Duct Static Pressure
+EADCTSPR: ADP {
+  exhaust
+}
+
+// Exhaust Air Duct Static Pressure Setpoint
+EADCTSPRSP: ADPSP {
+  exhaust
+  effective
+}
+
+// Economizer Mode Status
+ECMDSP: Point {
+  economizing
+  mode
+  sp
+}
+
+// Economizer Output Command
+ECCMD: Point {
+  economizing
+  outside
+  air
+  damper
+  cmd
+}
+
+// Economizer Enable Command
+ECENCMD: Point {
+  economizing
+  enable
+  cmd
+}
+
+// Economizer Outside Air Lockout Temperature Setpoint
+ECOALCKTSP: ATSP {
+  damper
+  enable
+  economizing
+  outside
+}
+
+// Economizer Outside Air Lockout Enthalpy Setpoint
+ECOALCKESP: Point {
+  enthalpy
+  sp
+  air
+  damper
+  enable
+  economizing
+  outside
+}
+
+// Exhaust Fan Command
+EFCMD: FANCMD {
+  exhaust
+}
+
+// Evaporative Cooling Command
+EVCLCMD: CLCMD {
+  evaporative
+}
+
+// Evaporative Cooling Status
+EVCLSTS: CLSTS {
+  evaporative
+}
+
+// Exhaust Fan Speed Command
+EFSPCMD: FANSPCMD {
+  exhaust
+}
+
+// Exhaust Fan Speed Feedback
+EFSPFBK: FANSPFBK {
+  exhaust
+}
+
+// Exhaust Fan Frequency Feedback
+EFFREQ: VFDFREQ {
+  exhaust
+  fan
+}
+
+// Exhaust Fan Current
+EFANI: FANI {
+  exhaust
+}
+
+// Exhaust Fan Power
+EFANP: FANP {
+  exhaust
+}
+
+// Electric Heating Output Command
+EHTOCMD: Point {
+  heat
+  cmd
+  elec
+}
+
+// Flue Gas Temperature
+FLGST: AIRTEMP {
+  flue
+  gas
+}
+
+// Filter Differential Pressure
+FLTDPR: ADP {
+  filter
+}
+
+// Effective Hot Deck Air Flow Setpoint
+EFFHDAFLWSP: AFLWSP {
+  effective
+  hotDeck
+}
+
+// Inlet Guide Vane Feedback
+IGVFBK: Point {
+  inlet
+  guideVane
+  sensor
+}
+
+// Hot Deck Discharge Air Temperature Setpoint
+HDDATSP: ATSP {
+  discharge
+  effective
+  hotDeck
+}
+
+// Hot Deck Damper Command
+HDDCMD: DPRCMD {
+  hotDeck
+}
+
+// Heating Command
+HTCMD: Point {
+  heat
+  cmd
+}
+
+// Highest number of stages at which equipment is currently operating.
+HTSTGCT: Point {
+  heat
+  stage
+}
+
+// Heating Status
+HTSTS: Point {
+  heat
+  sensor
+}
+
+// The calculated demand for heating
+HTDEM: LOAD {
+  heating
+}
+
+// Heating Requests
+HTREQ: REQ {
+  heating
+}
+
+// Htg Clg Valve
+HTGCLGV: VCMD {
+  heatCool
+}
+
+// Hot Gas Reheat Valve Command
+HTGRHVCMD: VCMD {
+  hotGas
+}
+
+// Hot Gas Reheat Setpoint
+HTGRHSP: Point {
+  hotGas
+  reheat
+  air
+  temp
+  sp
+}
+
+// Hot Gas Reheat Deadband Setpoint
+HTGRHDBSP: Point {
+  hotGas
+  reheat
+  deadband
+  sp
+}
+
+// Heating Stage 1 Command
+HTSTG1CMD: Point {
+  heat
+  cmd
+  stage: Int 1
+}
+
+// Heating Stage 2 Command
+HTSTG2CMD: Point {
+  heat
+  cmd
+  stage: Int 2
+}
+
+// Heating Stage 3 Command
+HTSTG3CMD: Point {
+  heat
+  cmd
+  stage: Int 3
+}
+
+// Heating Stage 4 Command
+HTSTG4CMD: Point {
+  heat
+  cmd
+  stage: Int 4
+}
+
+// Heating Stage 1 Status
+HTSTG1STS: Point {
+  heat
+  sensor
+  stage: Int 1
+}
+
+// Heating Stage 2 Status
+HTSTG2STS: Point {
+  heat
+  sensor
+  stage: Int 2
+}
+
+// Heating Stage 3 Status
+HTSTG3STS: Point {
+  heat
+  sensor
+  stage: Int 3
+}
+
+// Heating Stage 4 Status
+HTSTG4STS: Point {
+  heat
+  sensor
+  stage: Int 4
+}
+
+// Hot Water Bypass Valve Command
+HWBYPVCMD: VCMD {
+  bypass
+  hot
+  water
+}
+
+// Hot Water Valve Command
+HWVCMD: VCMD {
+  heat
+  hot
+  water
+}
+
+// Inlet Air Damper Command
+IADCMD: DPRCMD {
+  inlet
+}
+
+// Inlet Air Damper Command Open
+IADCMDOP: DPRCMDOP {
+  inlet
+}
+
+// Inlet Air Damper Command Close
+IADCMDCL: DPRCMDCL {
+  inlet
+}
+
+// Inlet Air Damper Feedback
+IADFBK: ADFBK {
+  inlet
+}
+
+// Cooling Air Flow Min Setpoint
+IAFLWCLMNSP: AFLWSP {
+  cooling
+  inlet
+  min
+}
+
+// Cooling Air Flow Max Setpoint
+IAFLWCLMXSP: AFLWSP {
+  cooling
+  inlet
+  max
+}
+
+// Heating Air Flow Min Setpoint
+IAFLWHTMNSP: AFLWSP {
+  heating
+  inlet
+  min
+}
+
+// Heating Air Flow Max Setpoint
+IAFLWHTMXSP: AFLWSP {
+  heating
+  inlet
+  max
+}
+
+// Isolation Air Damper Command
+ISOADCMD: DPRCMD {
+  isolation
+}
+
+// Hot Water Valve Position Feedback
+HWVFBK: VPOS {
+  heat
+  hot
+  water
+}
+
+// Hot Water Isolation Valve Command
+HWISOVCMD: VCMD {
+  hot
+  isolation
+  water
+}
+
+// Leaving Hot Water Isolation Valve Command
+LHWISOVCMD: VCMD {
+  leaving
+  hot
+  isolation
+  water
+}
+
+// Entering Hot Water Isolation Valve Command
+EHWISOVCMD: VCMD {
+  entering
+  hot
+  isolation
+  water
+}
+
+// Hot Water Isolation Valve Position Feedback
+HWISOVFBK: VPOS {
+  hot
+  isolation
+  water
+}
+
+// Leaving Hot Water Isolation Valve Position Feedback
+LHWISOVFBK: VPOS {
+  leaving
+  hot
+  isolation
+  water
+}
+
+// Entering Hot Water Isolation Valve Position Feedback
+EHWISOVFBK: VPOS {
+  entering
+  hot
+  isolation
+  water
+}
+
+// Isolation Valve Command
+ISOVCMD: VCMD {
+  isolation
+}
+
+// Mixed Air Temperature Setpoint
+MATSP: ATSP {
+  mixed
+}
+
+// Natural Gas Valve Command
+NGVCMD: VCMD {
+  naturalGas
+}
+
+// Cooling Lockout Temperature Setpoint
+OACLLCKTSP: ATSP {
+  cooling
+  enable
+  outside
+}
+
+// Outside Air Damper Command
+OADCMD: DPRCMD {
+  outside
+}
+
+// Outside Air Enthalpy
+OAENTH: AIRENTH {
+  outside
+}
+
+// Minimum Outside Air Damper Setpoint
+MNOADSP: Point {
+  min
+  damper
+  sp
+  air
+  outside
+}
+
+// Outside Air Damper Feedback
+OADFBK: ADFBK {
+  outside
+}
+
+// Outside Air Minimum Flow Setpoint
+OAFLWMNSP: AFLWSP {
+  min
+  outside
+}
+
+// Outside Air Flow Setpoint
+OAFLWSP: AFLWSP {
+  outside
+}
+
+// Heating Lockout Temperature Setpoint
+OAHTLCKTSP: ATSP {
+  enable
+  heating
+  outside
+}
+
+// Outside Air Lockout Temperature Setpoint
+OALCKTSP: ATSP {
+  enable
+  outside
+}
+
+// Occupied Cold Deck Air Flow Min Setpoint
+OCCCDAFLWMNSP: AFLWSP {
+  coldDeck
+  min
+  occ
+}
+
+// Occupied Cold Deck Air Flow Max Setpoint
+OCCCDAFLWMXSP: AFLWSP {
+  coldDeck
+  max
+  occ
+}
+
+// Occupied Air Flow Min Setpoint
+OCCIAFLWMNSP: AFLWSP {
+  inlet
+  min
+  occ
+}
+
+// Occupied Air Flow Max Setpoint
+OCCIAFLWMXSP: AFLWSP {
+  inlet
+  max
+  occ
+}
+
+// Occupied Cooling Air Flow Min Setpoint
+OCCIAFLWCLMNSP: AFLWSP {
+  cooling
+  inlet
+  min
+  occ
+}
+
+// Occupied Cooling Air Flow Max Setpoint
+OCCIAFLWCLMXSP: AFLWSP {
+  cooling
+  inlet
+  max
+  occ
+}
+
+// Occupied Heating Air Flow Min Setpoint
+OCCIAFLWHTMNSP: AFLWSP {
+  heating
+  inlet
+  min
+  occ
+}
+
+// Occupied Heating Air Flow Max Setpoint
+OCCIAFLWHTMXSP: AFLWSP {
+  heating
+  inlet
+  max
+  occ
+}
+
+// Occupied Hot Deck Air Flow Min Setpoint
+OCCHDAFLWMNSP: AFLWSP {
+  hotDeck
+  min
+  occ
+}
+
+// Occupied Hot Deck Air Flow Max Setpoint
+OCCHDAFLWMXSP: AFLWSP {
+  max
+  hotDeck
+  occ
+}
+
+// Occupied Zone Relative Humidity Setpoint
+OCCZRHSP: RHSP {
+  occ
+  zone
+}
+
+// Occupied Zone Temperature Cooling Setpoint
+OCCZTCLSP: ATSP {
+  cooling
+  occ
+  zone
+}
+
+// Occupied Zone Temperature Heating Setpoint
+OCCZTHTSP: ATSP {
+  heating
+  occ
+  zone
+}
+
+// Outside Air Fan Command
+OFCMD: FANCMD {
+  outside
+}
+
+// Return Air Cooling Temperature Setpoint
+RACTSP: ATSP {
+  return
+  cooling
+}
+
+// Return Air Damper Command
+RADCMD: DPRCMD {
+  air
+  return
+}
+
+// Return Air Damper Feedback
+RADFBK: ADFBK {
+  return
+}
+
+// Radiator Valve Command
+RADVCMD: VCMD {
+  heat
+  hot
+  perimeterHeat
+  water
+}
+
+// Return Air Flow Setpoint
+RAFLWSP: AFLWSP {
+  return
+}
+
+// Return Air Heating Temperature Setpoint
+RAHTSP: ATSP {
+  return
+  heating
+}
+
+// Return Air Temperature Setpoint
+RATSP: ATSP {
+  return
+}
+
+// Return Air Humidity Setpoint
+RARHSP: RHSP {
+  return
+}
+
+// Return Air Humidification Humidity Setpoint
+RAHRHSP: RHSP {
+  return
+  humidify
+}
+
+// Return Air Dehumidification Humidity Setpoint
+RADRHSP: RHSP {
+  return
+  dehumidify
+}
+
+// Return Air CO2 Setpoint
+RACO2SP: Point {
+  return
+  air
+  co2
+  sp
+}
+
+// Refrig Exhaust Fan
+REFCMD: FANCMD {
+  exhaust
+  refrig
+}
+
+// Reversing Valve Command
+REVVCMD: VCMD {
+  reversing
+}
+
+// Return Fan Command
+RFCMD: FANCMD {
+  return
+}
+
+// Return Fan Speed Command
+RFSPCMD: FANSPCMD {
+  return
+}
+
+// Return Fan Speed Feedback
+RFSPFBK: FANSPFBK {
+  return
+}
+
+// Return Fan Frequency Feedback
+RFFREQ: VFDFREQ {
+  return
+  fan
+}
+
+// Relief Damper Command
+RFDCMD: DPRCMD {
+  air
+  relief
+}
+
+// Reheat Valve Position
+RHV: VPOS {
+  reheat
+}
+
+// Reheat Valve Command
+RHVCMD: VCMD {
+  reheat
+}
+
+// Standby Cold Deck Air Flow Min Setpoint
+SBCDAFLWMNSP: AFLWSP {
+  coldDeck
+  min
+  standby
+}
+
+// Standby Cold Deck Air Flow Max Setpoint
+SBCDAFLWMXSP: AFLWSP {
+  coldDeck
+  max
+  standby
+}
+
+// Standby Air Flow Min Setpoint
+SBIAFLWMNSP: AFLWSP {
+  inlet
+  min
+  standby
+}
+
+// Standby Air Flow Max Setpoint
+SBIAFLWMXSP: AFLWSP {
+  inlet
+  max
+  standby
+}
+
+// Standby Cooling Air Flow Min Setpoint
+SBIAFLWCLMNSP: AFLWSP {
+  min
+  inlet
+  standby
+  cooling
+}
+
+// Standby Cooling Air Flow Max Setpoint
+SBIAFLWCLMXSP: AFLWSP {
+  cooling
+  inlet
+  max
+  standby
+}
+
+// Standby Heating Air Flow Min Setpoint
+SBIAFLWHTMNSP: AFLWSP {
+  heating
+  inlet
+  min
+  standby
+}
+
+// Standby Heating Air Flow Max Setpoint
+SBIAFLWHTMXSP: AFLWSP {
+  heating
+  inlet
+  max
+  standby
+}
+
+// Standby Hot Deck Air Flow Min Setpoint
+SBHDAFLWMNSP: AFLWSP {
+  hotDeck
+  min
+  standby
+}
+
+// Standby Hot Deck Air Flow Max Setpoint
+SBHDAFLWMXSP: AFLWSP {
+  hotDeck
+  max
+  standby
+}
+
+// Standby Zone Temperature Cooling Setpoint
+SBZTCLSP: ATSP {
+  cooling
+  standby
+  zone
+}
+
+// Standby Zone Temperature Heating Setpoint
+SBZTHTSP: ATSP {
+  heating
+  standby
+  zone
+}
+
+// Unoccupied Cold Deck Air Flow Min Setpoint
+UOCCDAFLWMNSP: AFLWSP {
+  coldDeck
+  min
+  unocc
+}
+
+// Unoccupied Cold Deck Air Flow Max Setpoint
+UOCCDAFLWMXSP: AFLWSP {
+  coldDeck
+  max
+  unocc
+}
+
+// Unoccupied Cooling Air Flow Min Setpoint
+UOCIAFLWCLMNSP: AFLWSP {
+  cooling
+  inlet
+  min
+  unocc
+}
+
+// Unoccupied Cooling Air Flow Max Setpoint
+UOCIAFLWCLMXSP: AFLWSP {
+  cooling
+  inlet
+  max
+  unocc
+}
+
+// Unoccupied Heating Air Flow Min Setpoint
+UOCIAFLWHTMNSP: AFLWSP {
+  heating
+  inlet
+  min
+  unocc
+}
+
+// Unoccupied Heating Air Flow Max Setpoint
+UOCIAFLWHTMXSP: AFLWSP {
+  heating
+  inlet
+  max
+  unocc
+}
+
+// Unoccupied Air Flow Min Setpoint
+UOCIAFLWMNSP: AFLWSP {
+  inlet
+  min
+  unocc
+}
+
+// Unoccupied Air Flow Max Setpoint
+UOCIAFLWMXSP: AFLWSP {
+  inlet
+  max
+  unocc
+}
+
+// Unoccupied Hot Deck Air Flow Min Setpoint
+UOCHDAFLWMNSP: AFLWSP {
+  hotDeck
+  min
+  unocc
+}
+
+// Unoccupied Hot Deck Air Flow Max Setpoint
+UOCHDAFLWMXSP: AFLWSP {
+  hotDeck
+  max
+  unocc
+}
+
+// Unoccupied Zone Temperature Cooling Setpoint
+UOCZTCLSP: ATSP {
+  cooling
+  unocc
+  zone
+}
+
+// Unoccupied Zone Relative Humidity Setpoint
+UOCZRHSP: RHSP {
+  unocc
+  zone
+}
+
+// Unoccupied Zone Temperature Heating Setpoint
+UOCZTHTSP: ATSP {
+  heating
+  unocc
+  zone
+}
+
+// Valve Command Open
+VCMDOP: Point {
+  valve
+  cmd
+  open
+}
+
+// Valve Command Closed
+VCMDCL: Point {
+  valve
+  cmd
+  closed
+}
+
+// Zone Humidity Setpoint
+ZRHSP: RHSP {
+  zone
+}
+
+// The upper bound of relative humidity that the zone air is maintained to.
+ZDHRHSP: ZRHSP {
+  dehumidify
+}
+
+// The lower bound of relative humidity that the zone air is maintained to.
+ZHUMRHSP: ZRHSP {
+  humidify
+}
+
+// Zone Differential Pressure
+ZDPR: ADP {
+  zone
+  delta
+}
+
+// Zone Static Pressure
+ZSPR: ADP {
+  zone
+}
+
+// Zone Pressure Setpoint
+ZSPRSP: ADPSP {
+  zone
+}
+
+// Zone Temperature Adjust Setpoint
+ZTADJSP: ATSP {
+  zone
+  adjust
+}
+
+// Adjustable difference between heating and cooling setpoints
+EFFZTDB: Point {
+  effective
+  zone
+  deadband
+  air
+  temp
+}
+
+// Effective Zone Temperature Setpoint
+EFFZTSP: ATSP {
+  effective
+  zone
+}
+
+// Effective Zone Temperature Cooling Setpoint
+EFFZTCLSP: ATSP {
+  cooling
+  effective
+  zone
+}
+
+// Effective Zone Temperature Heating Setpoint
+EFFZTHTSP: ATSP {
+  effective
+  heating
+  zone
+}
+
+
+// The zone temperature setpoint that is used to calculate the effective or occupied
+// setpoints when adding a deadband or offset. 
+ZTSP: ATSP {
+  zone
+  base
+}
+
+// Adjustable cooling setpoint offset used by some devices setpoint control
+OCCZCLDB: Point {
+  cooling
+  deadband
+  occ
+  sp
+  zone
+  air
+  temp
+}
+
+// Occupied Zone Heating Deadband
+OCCZHTDB: Point {
+  deadband
+  heating
+  occ
+  sp
+  zone
+  air
+  temp
+}
+
+
+// Adjustable difference between heating and cooling setpoints during occupied periods
+OCCZDB: Point {
+  deadband
+  occ
+  sp
+  zone
+  air
+  temp
+}
+
+
+// Adjustable difference between heating and cooling setpoints during unoccupied
+// periods 
+UOCCZDB: Point {
+  deadband
+  unocc
+  sp
+  zone
+  air
+  temp
+}
+
+// Inlet Air Temperature
+IAT: Point {
+  entering
+  air
+  temp
+  sensor
+}
+
+// Freezestat status
+FRZST: ST {
+  freezeStat
+}
+

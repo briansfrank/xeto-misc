@@ -1,0 +1,133 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// A desktop computer is a personal computer designed for regular use at a single
+// location on or near a desk or table due to its size and power requirements. 
+DTC: Dict {
+  device
+  desktop
+  computer
+}
+
+
+// A laptop computer, often called a laptop or notebook, is a small, portable personal
+// computer with a "clamshell" form factor, typically having a thin LCD or LED computer
+// screen mounted on the inside of the upper lid of the clamshell and an alphanumeric
+// keyboard on the inside of the lower lid.  
+LTC: Dict {
+  device
+  computer
+  laptop
+}
+
+
+// A computer program or a device that provides functionality for other programs
+// or devices, called "clients". 
+SRV: Dict {
+  device
+  computer
+  server
+}
+
+
+// Network hardware device for connecting multiple devices together and making them
+// act as a single network segment 
+HUB: Dict {
+  device
+  networking
+  hub
+}
+
+
+// Network hardware device for connecting wireless multiple devices together and
+// making them act as a single network segment 
+WLHUB: HUB {
+  wireless
+}
+
+
+// Networking hardware that connects devices on a computer network by using packet
+// switching to receive and forward data to the destination device. 
+ETS: Dict {
+  device
+  networking
+  switch
+}
+
+
+// An Ethernet Switch is networking hardware that connects devices on a computer
+// network by using packet switching to receive and forward data to the destination
+// device and is capable of supplying power via the Ethernet Ports. 
+POEETS: Dict {
+  device
+  poe
+  networking
+  ethernet
+  switch
+  opticalFiber: Marker?
+}
+
+
+// A firewall is a network security system that monitors and controls incoming and
+// outgoing network traffic based on predetermined security rules. A firewall typically
+// establishes a barrier between a trusted internal network and untrusted external
+// network, such as the Internet. 
+FW: Dict {
+  device
+  networking
+  firewall
+  router: Marker?
+}
+
+// A device that connects 2 disparate networks.
+GW: Dict {
+  device
+  networking
+  gateway
+}
+
+// A device that connects 2 disparate networks, one of which is LoRaWAN.
+LWGW: GW {
+  lora
+}
+
+// A networking device that forwards data packets between computer networks.
+RTR: Dict {
+  device
+  networking
+  router
+}
+
+
+// A Wi-Fi router is a device that performs the functions of a router and also includes
+// the functions of a Wi-Fi access point. 
+WIFIRTR: RTR {
+  wifi
+  switch: Marker?
+  controller: Marker?
+}
+
+
+// A transducer designed to transmit or receive electromagnetic (e.g., TV or radio)
+// waves. 
+ANT: Dict {
+  device
+  antenna
+}
+
+// An access point compliant with either 802.11b, 802.11g, or 802.11ac.
+WIFIANT: ANT {
+  wifi
+}
+
+
+// A wireless access point (WAP), or more generally just access point (AP), is a
+// networking hardware device that allows other Wi-Fi devices to connect to a wired
+// network. 
+WIFIAP: Dict {
+  device
+  wifi
+  ap
+  switch: Marker?
+}
+

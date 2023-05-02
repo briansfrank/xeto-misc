@@ -1,0 +1,13 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+
+// Parking lot gates provide security and control for parking lots and parking garages.
+//  
+PRKSP: Space {
+  parking
+  points: {
+    PRKSPACT?
+    PRKSPST?
+  }
+}
+

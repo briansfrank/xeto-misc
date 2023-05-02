@@ -1,0 +1,47 @@
+// Auto-generated 2-May-2023 Tue 11:32:39AM EDT
+
+// Heat exchanger used to heat or cool air
+COIL: Equip {
+  coil
+}
+
+// Compressor
+CMP: Equip {
+  compressor
+}
+
+// A DX Coil uses direct-expansion of refrigerants for heating and cooling.
+DXCOIL: COIL {
+  dx
+  dxCooling
+  dxHeating
+  coolingCoil
+}
+
+
+// A heat exchanger is a system used to transfer heat between two or more fluids.
+// Heat exchangers are used in both cooling and heating processes. 
+HX: Equip {
+  heatExchanger
+  points: {
+    ALRMPT?
+    HWVCMD?
+  }
+}
+
+// Heats a space using pipes or cables embedded beneath floor.
+RADF: Equip {
+  radiantFloor
+  points: {
+    OCCEFFSP?
+    OCCSCHSP?
+    OCCSNS?
+  }
+}
+
+// Heats a space using pipes or cables embedded beneath floor.
+RADFE: RADF {
+  elecHeating
+  heatingOnly
+}
+

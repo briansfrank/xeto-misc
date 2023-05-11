@@ -19,6 +19,7 @@ class Build : BuildGroup
   {
     childrenScripts =
     [
+      `xetoMore/build.fan`,
       `oapc/build.fan`,
     ]
   }

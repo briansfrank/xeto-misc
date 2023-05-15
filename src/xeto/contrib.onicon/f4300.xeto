@@ -31,12 +31,12 @@ OniconF4300FlowMeter: FlowMeter {
   resources: {
 
     // F-4300 Clamp-on Ultrasonic Flow Meter Manual
-    PdfDocument {
+    PdfDocument & Manual {
       uri: "https://www.onicon.com/wp-content/uploads/f-4300-clamp-on-ultrasonic-flow-meter-manual-doc-0003010.pdf"
     }
 
     // F-4300 Clamp-on Ultrasonic Thermal Energy Measurement System Installation & Operation Addendum
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-4300-thermal-energy-measurement-system-manual-doc-0004075.pdf"
     }
 
@@ -46,7 +46,7 @@ OniconF4300FlowMeter: FlowMeter {
     }
 
     // F-4300 Clamp-on Ultrasonic Flow Meter/ Thermal Energy Measurement System Guide Specification
-    WordDocument {
+    WordDocument & CutSheet {
       uri: "https://www.onicon.com/wp-content/uploads/f-4300-guide-specification.docx"
     }
 
@@ -76,7 +76,7 @@ OniconF4300FlowMeter: FlowMeter {
     }
 
     // Installation Guide for Clamp-on Thermowells
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-4300-install-hardware-instruction-for-clamp-on-thermowells-doc-0004103.pdf"
     }
 

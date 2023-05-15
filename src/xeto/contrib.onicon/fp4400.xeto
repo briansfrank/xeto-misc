@@ -29,7 +29,7 @@ OniconFP4400FlowMeter: FlowMeter {
   resources: {
 
     // FP-4400 Portable Clamp-on Ultrasonic Flow Meter Manual
-    PdfDocument {
+    PdfDocument & Manual {
       uri: "https://www.onicon.com/wp-content/uploads/fp-4400-portable-clamp-on-ultrasonic-flow-meter-manual-doc-0004434.pdf"
     }
 

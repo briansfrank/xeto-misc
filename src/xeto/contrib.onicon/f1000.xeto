@@ -41,27 +41,27 @@ OniconF1000FlowMeter: FlowMeter {
     }
 
     // ONICON Installation Hardware Selection Guide
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/installation-hardware-selection-guide-doc-0003936.pdf"
     }
 
     // F-1000 Series Turbine Configuration Utility Installation and Operation Guide
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-configuration-utility-guide-doc-0000807.pdf"
     }
 
     // Turbine Meter Configuration Tool – Version 1.2.5
-    AutoCadDocument {
+    AutoCadDocument & ConfigureGuide {
       uri: "https://www.onicon.com/wp-content/uploads/TurbineMeterUtility_Bluetooth.zip"
     }
 
     // F-1000 Series Turbine Flow Meter Bluetooth Configuration Quick Start Guide
-    Video {
+    Video & ConfigureGuide {
       uri: "https://youtu.be/FQ_XPO-BqJs"
     }
 
     // F-1000 Series and F-3500 Insertion Flow Meter Installation Procedure
-    Video {
+    Video & InstallationGuide {
       uri: "https://youtu.be/Srrs1iYX1Xw"
     }
 
@@ -71,12 +71,12 @@ OniconF1000FlowMeter: FlowMeter {
     }
 
     // F-1000 Series Turbine Flow Meter Manual
-    PdfDocument {
+    PdfDocument & Manual {
       uri: "https://www.onicon.com/wp-content/uploads/2013-3-Microprocessor-Turbine-Flow-Meter-Manual-for-email-04-18.pdf"
     }
 
     // F-1000 Series Turbine Flow Meter- Bluetooth Configuration Quick Start Guide
-    PdfDocument {
+    PdfDocument & ConfigureGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-1000-bluetooth-configuration-quick-start-guide-doc-0003837.pdf"
     }
 
@@ -86,7 +86,7 @@ OniconF1000FlowMeter: FlowMeter {
     }
 
     // Word FileF-1000 Series Turbine Flow Meter Guide Specifications
-    WordDocument {
+    WordDocument & CutSheet {
       uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-tubine-flow-meter-guide-specifications-doc-0003923.docx"
     }
 
@@ -101,22 +101,22 @@ OniconF1000FlowMeter: FlowMeter {
     }
 
     // F-1000 and F-3500 Insertion Meter Dry Tap Installation Instructions
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/2070-Dry-Tap-Installation-Hardware-Instructions-8.5x11-01-18.pdf"
     }
 
     // F-1000 and F-3500 Insertion Meter Hot Tap Installation Instructions
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/2071-Hot-Tap-Installation-Hardware-Instructions-8.5x11-12-19.pdf"
     }
 
     // F-1000 Series Insertion Turbine Flow Meter – Installation and Removal Instructions
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-installation-and-removal-instructions-doc-0003734.pdf"
     }
 
     // F-1000 Series Turbine Flow Meter – Bluetooth Installation Instructions
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-turbine-flow-meter-bluetooth-installtion-instructions-doc-0003909.pdf"
     }
   }

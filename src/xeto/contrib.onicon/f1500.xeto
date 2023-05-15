@@ -42,7 +42,7 @@ OniconF1500FlowMeter: FlowMeter {
     }
 
     // F-1500 Insertion Turbine Flow Meter (Steam & Gases) Manual
-    PdfDocument {
+    PdfDocument & Manual {
       uri: "https://www.onicon.com/wp-content/uploads/F-1500-Turbine-Flow-Meter-Manual.pdf"
     }
 
@@ -52,12 +52,12 @@ OniconF1500FlowMeter: FlowMeter {
     }
 
     // F-1500 Insertion Turbine Flow Meter Installation Instructions (For Water Applications Only)
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/f-1500-installation-instructions-water-doc-0000812.pdf"
     }
 
     // PDF FileF-2700 and F-1500 Series Insertion Meter Installation Instructions
-    PdfDocument {
+    PdfDocument & InstallationGuide {
       uri: "https://www.onicon.com/wp-content/uploads/DOC-0000816.pdf"
     }
 

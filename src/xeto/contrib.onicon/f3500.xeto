@@ -1,0 +1,114 @@
+//
+// F-3500 Insertion Electromagnetic Flow Meter.
+//
+// ONICON's F-3500 Series Insertion Electromagnetic Flow Meters are suitable
+// for measuring electrically conductive liquids in a wide variety of applications.
+// Each F-3500 provides a single analog output for flow rate, a high resolution
+// frequency output to drive peripheral devices, a scalable pulse output for
+// totalization, and an empty pipe alarm. It is available for use in pipes ranging
+// in size from 1¼ " to 72 " in diameter. The F-3500 Insertion Electromagnetic
+// Flow Meter features ONICON's unique hot tap design that allows for easy
+// insertion or removal from the pipe without the use of special tools and without
+// disrupting flow. The low maintenance design is provided ready-to-use without
+// the need for field programming.   The FB-3500 Electromagnetic Flow Meter is
+// available for bi-directional flow applications. It provides an analog output
+// for flow rate, a contact closure output to indicate flow direction and separate
+// pulse outputs to totalize forward and reverse flow.
+//
+// The F-3500 is ideal for chilled water, hot water, domestic water, condenser
+// water, water/glycol, and municipal water applications.
+//
+OniconF3500FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+    // ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/01/ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED.xlsm"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16.xlsx"
+    }
+
+    // ONICON Installation Hardware Selection Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/installation-hardware-selection-guide-doc-0003936.pdf"
+    }
+
+    // F-3500 Series Insertion Electromagnetic Flow Meter Small Pipe Installation
+    Video {
+      uri: "https://youtu.be/ymPZ6H1zQqs"
+    }
+
+    // F-1000 Series and F-3500 Insertion Flow Meter Installation Procedure
+    Video {
+      uri: "https://youtu.be/Srrs1iYX1Xw"
+    }
+
+    // F-1000 Series and F-3500 Insertion Flow Meter Removal Procedure
+    Video {
+      uri: "https://youtu.be/RngQhE1geJM"
+    }
+
+    // F-3500 Insertion Electromagnetic Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/F-3500-Insertion-Magmeter-Manual.pdf"
+    }
+
+    // F-3500-12 Bi-Directional Insertion Electromagnetic Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/FB-3500-Bi-Directional-Insertion-Magmeter-Manual.pdf"
+    }
+
+    // F-3500 Series Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/F-3500-Catalog-Sheet.pdf"
+    }
+
+    // F-3500 Insertion Electromagnetic Flow Meter Master Specification
+    WordDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/DOC-0003072.docx"
+    }
+
+    // F-3500 Insertion Electromagnetic Flow Meter Installation
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/F-3500-Flow-Meter-Installation.dwg"
+    }
+
+    // F-3500 Insertion Electromagnetic Flow Meter Revit Package
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-3500-flow-meter-revit-package-DOC-0004357.zip"
+    }
+
+    // F-1000 and F-3500 Insertion Meter Dry Tap Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2070-Dry-Tap-Installation-Hardware-Instructions-8.5x11-01-18.pdf"
+    }
+
+    // F-1000 and F-3500 Insertion Meter Hot Tap Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2071-Hot-Tap-Installation-Hardware-Instructions-8.5x11-12-19.pdf"
+    }
+
+    // F-3500 Insertion Electromagenetic Flow Meter – Installation and Removal Procedure
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-3500-installation-and-removal-procedure-doc-0004002.pdf"
+    }
+
+    // F-3500 Insertion Electromagnetic Flow Meter – Software Downloading Procedure
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-3500-software-downloading-procedure-doc-0000961.pdf"
+    }
+  }
+}
+

@@ -1,0 +1,136 @@
+//
+// FT-3000 Series Inline Electromagnetic Flow Meters.
+//
+// ONICON's FT-3000 Series family of Inline Electromagnetic Flow Meters are
+// suitable for measuring electrically conductive liquids in a wide variety
+// of commercial HVAC applications. The FT-3000 series provides analog and
+// digital outputs for flow rate and programmable pulse outputs for flow
+// totalization and/or alarms. The FT-3000 Inline Electromagnetic Flow Meters
+// are available in various sizes and arrive factory-configured for ease of
+// installation and start-up. All FT-3000 series flow meters are wet calibrated
+// in a flow laboratory against standards that are directly traceable to
+// international standards. A certificate of calibration accompanies every
+// meter.
+//
+// Typical applications include monitoring of cooling water, heating water,
+// condenser water and domestic water.
+//
+OniconFT3000FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+    // ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/01/ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED.xlsm"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16.xlsx"
+    }
+
+    // F-3200 Inline Electromagnetic Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/0671-17-F-3200-Inline-Magmeter-Manual-for-email-03-18.pdf"
+    }
+
+    // FT-3000 Series Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-series-manual-doc-0003077.pdf"
+    }
+
+    // FT-3000 Series MODBUS Supplement
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-series-modbus-supplement-doc-0001665.pdf"
+    }
+
+    // FT-3000 Series Transmitter Programming Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-series-transmitter-programming-guide-doc-0001666.pdf"
+    }
+
+    // F-3200 Inline Electromagnetic Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-3200-inline-electromagnetic-flow-meter-catalog-sheet-doc-0002595.pdf"
+    }
+
+    // FT-3000 Series Inline Electromagnetic Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-series-catalog-sheet-doc-0003147.pdf"
+    }
+
+    // Grounding Ring Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/Grounding-Ring-Catalog-Sheet.pdf"
+    }
+
+    // FT-3200 Series Flow Meter Guide Specification
+    WordDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/DOC-0003095.docx"
+    }
+
+    // F-3200 Inline Electromagnetic Flow Meter Installation
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/F-3200-Flow-Meter-Installation.dwg"
+    }
+
+    // FT-3000 Series Integral Mount Flange Style in Conductive Pipe Installation
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-integral-mount-flange-style-conductive-pipe-installation-cad-000356.dwg"
+    }
+
+    // FT-3000 Series Integral Mount Flange Style in Conductive Pipe Installation
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-integral-mount-flange-style-conductive-pipe-installation-doc-0003952.pdf"
+    }
+
+    // FT-3000 Series Integral Mount Flange Style in Non-Conductive Pipe Installation
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-integral-mount-flange-non-conductive-pipe-installation-cad-000358.dwg"
+    }
+
+    // FT-3000 Series Integral Mount Flange Style in Non-Conductive Pipe Installation
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-integral-mount-flange-non-conductive-pipe-installation-doc-0003954.pdf"
+    }
+
+    // FT-3000 Series Remote Mount Flange Style in Conductive Pipe Installation
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-remote-mount-flange-conductive-pipe-installation-cad-000357.dwg"
+    }
+
+    // FT-3000 Series Remote Mount Flange Style in Conductive Pipe Installation
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-remote-mount-flange-conductive-pipe-installation-doc-0003953.pdf"
+    }
+
+    // F-3000 Series Mating Flange Grounding Kit Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/0779-2-F-3000-Series-Mating-Flange-Grounding-Kit-Instructions-07-18.pdf"
+    }
+
+    // FT-3000 Series Inline Electromagnetic Flow Meter – Changing Flow Direction On The Display Procedure
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ft-3000-series-changing-flow-direction-on-the-display-procedure-doc-0003755.pdf"
+    }
+
+    // FT-3100 Submittal and Data Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/04/FT-3100-Submittal-and-Data-Sheet.pdf"
+    }
+
+    // FT-3200 Submittal and Data Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/04/FT-3200-Submittal-and-Data-Sheet.pdf"
+    }
+  }
+}
+

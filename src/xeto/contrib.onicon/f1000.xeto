@@ -1,0 +1,124 @@
+//
+// F-1000 Series Turbine Flow Meters.
+//
+// ONICON’s F-1000 Series is a family of insertion and inline style turbine flow
+// meters that provide accurate, reliable flow measurement in a variety of applications.
+// Each model utilizes ONICON’s patented electronic turbine rotation sensing system
+// and unique low mass turbine design that is accurate over wide flow ranges with
+// excellent low flow measurement capability.
+//
+// ONICON F-1000 Series Turbine Flow Meters are designed to work in pipe sizes ranging
+// from ¾" to 72" in diameter (1" for copper). Uses for the F-1000 Series turbine
+// flow meters include:
+//   - Chilled Water
+//   - Hot Water
+//   - Condenser Water
+//   - Domestic Water
+//   - Process Cooling
+//   - Steam Condensate and Brine
+//
+OniconF1000FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+
+    // ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/01/ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED.xlsm"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16.xlsx"
+    }
+
+    // ONICON Installation Hardware Selection Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/installation-hardware-selection-guide-doc-0003936.pdf"
+    }
+
+    // F-1000 Series Turbine Configuration Utility Installation and Operation Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-configuration-utility-guide-doc-0000807.pdf"
+    }
+
+    // Turbine Meter Configuration Tool – Version 1.2.5
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/TurbineMeterUtility_Bluetooth.zip"
+    }
+
+    // F-1000 Series Turbine Flow Meter Bluetooth Configuration Quick Start Guide
+    Video {
+      uri: "https://youtu.be/FQ_XPO-BqJs"
+    }
+
+    // F-1000 Series and F-3500 Insertion Flow Meter Installation Procedure
+    Video {
+      uri: "https://youtu.be/Srrs1iYX1Xw"
+    }
+
+    // F-1000 Series and F-3500 Insertion Flow Meter Removal Procedure
+    Video {
+      uri: "https://youtu.be/RngQhE1geJM"
+    }
+
+    // F-1000 Series Turbine Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2013-3-Microprocessor-Turbine-Flow-Meter-Manual-for-email-04-18.pdf"
+    }
+
+    // F-1000 Series Turbine Flow Meter- Bluetooth Configuration Quick Start Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-bluetooth-configuration-quick-start-guide-doc-0003837.pdf"
+    }
+
+    // F-1000 Series Turbine Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-turbine-flow-meter-catalog-sheet-doc-0003616.pdf"
+    }
+
+    // Word FileF-1000 Series Turbine Flow Meter Guide Specifications
+    WordDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-tubine-flow-meter-guide-specifications-doc-0003923.docx"
+    }
+
+    // F-1000 Series Flow Meter Revit Package (ZIP)
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2022/09/F-1000-Series-Flow-Meter-Revit-Package-DOC-0004849.zip"
+    }
+
+    // F-1000 Series Flow Meter Revit Package (PDF)
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2022/09/F-1000-Series-Flow-Meter-Revit-Package-DOC-0004849.zip"
+    }
+
+    // F-1000 and F-3500 Insertion Meter Dry Tap Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2070-Dry-Tap-Installation-Hardware-Instructions-8.5x11-01-18.pdf"
+    }
+
+    // F-1000 and F-3500 Insertion Meter Hot Tap Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2071-Hot-Tap-Installation-Hardware-Instructions-8.5x11-12-19.pdf"
+    }
+
+    // F-1000 Series Insertion Turbine Flow Meter – Installation and Removal Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-installation-and-removal-instructions-doc-0003734.pdf"
+    }
+
+    // F-1000 Series Turbine Flow Meter – Bluetooth Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1000-series-turbine-flow-meter-bluetooth-installtion-instructions-doc-0003909.pdf"
+    }
+  }
+}
+

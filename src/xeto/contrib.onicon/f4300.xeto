@@ -1,0 +1,129 @@
+//
+// Onicon F-4300 Clamp-on Ultrasonic Flow Meter / Thermal Energy Measurement System.
+//
+// **Ideal Solution for Retrofits and Baseline Monitoring** Clamp-on transducers allow
+// for quick and easy installation with no system shutdown and no pressure drop. Each
+// meter is provided with a built-in 128 megabyte data logger, making it an ideal solution
+// for baseline monitoring.
+//
+// **Simple to Install and Commission**  Every ONICON F-4300 is individually configured
+// and programmed using customer specific application data. Complex field programming
+// is not required.
+//
+// **High Confidence and Reliability** ONICON provides transducers that are optimized
+// for specific pipe conditions, providing a strong, stable signal with an outstanding
+// signal-to-noise ratio.
+//
+// **Native BACnet and MODBUS Communications**  The F-4300 is provided with a single
+// RS485 output that can be configured to operate on BACnet® MS/TP or MODBUS® RTU networks.
+//
+OniconF4300FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-clamp-on-ultrasonic-flow-meter-manual-doc-0003010.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Thermal Energy Measurement System Installation & Operation Addendum
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-thermal-energy-measurement-system-manual-doc-0004075.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter/ Thermal Energy Measurement System Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-clamp-on-ultrasonic-flow-meter-catalog-sheet-doc-0002706.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter/ Thermal Energy Measurement System Guide Specification
+    WordDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-guide-specification.docx"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – 10 Series Transducer Dimensions
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-10-series-transducer-dimensions-doc-000343.dwg"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – 20 Series Transducer Dimensions
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-20-series-transducer-dimensions-doc-000344.dwg"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – 30 Series Transducer Dimensions
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-30-series-transducer-dimensions-doc-000345.dwg"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – Enclosure Dimensions
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-series-enclosure-dimensions-doc-000342.dwg"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter Revit Package
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-flow-meter-revit-package-DOC-0004316.zip"
+    }
+
+    // Installation Guide for Clamp-on Thermowells
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-install-hardware-instruction-for-clamp-on-thermowells-doc-0004103.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – Firmware Update Procedure
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-firmware-update-procedure-doc-0003794.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter – Hardware and Transducer Update
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-hardware-and-transducer-update-procedure-doc-0003825.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter/ Thermal Energy Measurement System Submittal
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-clamp-on-ultrasonic-flow-meter-submittal-doc-0003648.pdf"
+    }
+
+    // F-4300 Clamp-on Ultrasonic Flow Meter/ Thermal Energy Measurement System Application and Ordering Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-4300-application-and-ordering-guide-doc-0003269.pdf"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/01/ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED.xlsm"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16.xlsx"
+    }
+
+    // ONICON F-4300 Logger Utility Software - Version V2.90
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-F-4300-Logger-Utility-Software-Version-V2.90-1.zip"
+    }
+
+    // DiagnosticGui Setup 3.0.19244.2942
+    Resource {
+      uri: "https://www.onicon.com/wp-content/uploads/2022/10/DiagnosticGui_Setup_3.0.19244.29420.msi"
+    }
+
+    // Software Versions
+    TextDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2022/10/software_versions.txt"
+    }
+  }
+}
+

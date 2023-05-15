@@ -1,0 +1,47 @@
+//
+// FP-4400 Portable Clamp-on Ultrasonic Flow Meter.
+//
+// ONICON's FP-4400 Portable Clamp-on Ultrasonic Flow Meter utilizes clamp-on
+// transducers to measure flow through the pipe wall via the transit time ultrasonic
+// measurement principle. It is a battery operated flow meter specifically designed
+// for use on a wide range of pipe sizes and can provide a full day of use on a
+// single charge (an AC adapter is also provided for longer flow testing). The clamp
+// on design does NOT require a system shutdown or penetration of the pipe in any way
+// when installing and operating this meter. Instead, precision matched signal transducers
+// are mounted on the pipe to accurately measure flow through the pipe wall. The rugged,
+// handheld backlit display allows for easy set up via intuitive menus.
+//
+// The FP-4400 portable clamp-on ultrasonic flow meter is ideal for flow testing
+// during test and balance. It is also useful for temporary flow monitoring in
+// existing systems to establish baseline demand data.
+//
+OniconFP4400FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+
+    // FP-4400 Portable Clamp-on Ultrasonic Flow Meter Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/fp-4400-portable-clamp-on-ultrasonic-flow-meter-manual-doc-0004434.pdf"
+    }
+
+    // FP-4400 Portable Clamp-on Ultrasonic Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/fp-4400-portable-clamp-on-ultrasonic-flow-meter-catalog-sheet-doc-0004433.pdf"
+    }
+
+    // Logger Software
+    AutoCadDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/Logger-Software.zip"
+    }
+  }
+}
+

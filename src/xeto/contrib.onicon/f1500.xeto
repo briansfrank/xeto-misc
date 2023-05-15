@@ -1,0 +1,70 @@
+//
+// F-1500 Insertion Turbine Flow Meter for Steam.
+//
+// F-1500 Series Insertion Turbine Flow Meters are designed for accurate,
+// cost-effective mass flow measurement of steam, high temperature liquids
+// and gases. Insertion turbine flow meters are ideal for use in larger steam
+// lines where downsizing the line size to improve flow measurement is not desirable.
+// In these applications, the pitch of the turbine rotor is selected to match
+// the expected steam flow velocity range in the pipe. This optimizes the
+// operating range of the flow meter for the application.  The standard loop
+// powered version of the meter is equipped with the internal temperature
+// compensation required for direct mass flow measurement of saturated steam.
+// Each F-1500 Flow Meter is provided with a 4-20mA analog output for flow rate,
+// a pulse output for totalization and a built-in user interface and display.
+// The standard loop powered meter also includes HART.
+//
+OniconF1500FlowMeter: FlowMeter {
+
+  // Points
+  points: {
+  }
+
+  // Attributes
+  attrs: {
+  }
+
+  // Supporting resource files
+  resources: {
+    // ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/2023/01/ONICON-Product-Comprehensive-Order-Form_-Macro-Enabled-Workbook_Rev-18-RECOMMENDED.xlsm"
+    }
+
+    // ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16
+    ExcelDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/ONICON-Product-Comprehensive-Order-Form-Workbook_Rev-16.xlsx"
+    }
+
+    // ONICON Installation Hardware Selection Guide
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/installation-hardware-selection-guide-doc-0003936.pdf"
+    }
+
+    // F-1500 Insertion Turbine Flow Meter (Steam & Gases) Manual
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/F-1500-Turbine-Flow-Meter-Manual.pdf"
+    }
+
+    // F-1500 Insertion Turbine Flow Meter Catalog Sheet
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1500-insertion-turbine-flow-meter-catalog-sheet-doc-0002999.pdf"
+    }
+
+    // F-1500 Insertion Turbine Flow Meter Installation Instructions (For Water Applications Only)
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1500-installation-instructions-water-doc-0000812.pdf"
+    }
+
+    // PDF FileF-2700 and F-1500 Series Insertion Meter Installation Instructions
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/DOC-0000816.pdf"
+    }
+
+    // F-1500 Insertion Turbine Flow Meter – Transmitter Orientation Adjustment
+    PdfDocument {
+      uri: "https://www.onicon.com/wp-content/uploads/f-1500-transmitter-orientation-adjustment-tech-note-doc-0003819.pdf"
+    }
+  }
+}
+

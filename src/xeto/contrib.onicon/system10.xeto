@@ -15,19 +15,16 @@ OniconSystem10Meter : Meter {
 
     // System-10 & D-100 Programming Guide
     programmingGuide: PdfDocument & ConfigureGuide {
-      dis: "System-10 & D-100 Programming Guide"
       uri: "https://www.onicon.com/wp-content/uploads/system-10-d-100-programming-guide-doc-0003868.pdf"
     }
 
     // System-10 BTU Meter Dual Network Interface Installation Guide
     meterDualNetworkGuide: PdfDocument & InstallationGuide {
-      dis: "System-10 BTU Meter Dual Network Interface Installation Guide"
       uri: "https://www.onicon.com/wp-content/uploads/system-10-dual-network-interface-installation-guide-doc-0003376.pdf"
     }
 
     // PDF FileSystem-10 BTU Meter Installation and Operation Guide
     installAndOperations: PdfDocument & InstallationGuide & OperationsGuide {
-      dis: "PDF FileSystem-10 BTU Meter Installation and Operation Guide"
       uri: "https://www.onicon.com/wp-content/uploads/system-10-installation-and-operation-guide-doc-0002341.pdf"
     }
 

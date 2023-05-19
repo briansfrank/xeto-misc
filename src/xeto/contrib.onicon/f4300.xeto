@@ -21,10 +21,27 @@ OniconF4300FlowMeter: FlowMeter {
 
   // Points
   points: {
+    OniconFlowVelocitySensor
+    OniconFlowRateSensor
+    OniconSonicVelocitySensor
+    OniconSignalStrengthSensor
+    OniconTotalVolumeSensor
+    OniconAvgFlowSensor
+    OniconPrevDayVolumeSensor
+    OniconRelay1Sensor
+    OniconRelay2Sensor
   }
 
   // Attributes
   attrs: {
+    Manufactor { val: "Onicon" }
+    ModelNum { val: "F-4300" }
+    AmbientOperatorMinTemp { val: -5°F }
+    AmbientOperatorMaxTemp { val: 140°F }
+    CoolingMinTemp { val:32°F }
+    CoolingMaxTemp { val:77°F }
+    HeatingMinTemp { val:140°F }
+    HeatingMaxTemp { val:212°F }
   }
 
   // Supporting resource files
@@ -126,4 +143,65 @@ OniconF4300FlowMeter: FlowMeter {
     }
   }
 }
+
+//////////////////////////////////////////////////////////////////////////
+// Points
+//////////////////////////////////////////////////////////////////////////
+
+// Velocity at the meter
+OniconFlowVelocitySensor: Sensor { bacnetAddr:"AI 1" }
+
+// Volume flow rate at the meter
+OniconFlowRateSensor: Sensor { bacnetAddr:"AI 2" }
+
+// Speed of sound through the liquid
+OniconSonicVelocitySensor: Sensor { bacnetAddr:"AI 3" }
+
+// Flow transducer signal strength
+OniconSignalStrengthSensor: Sensor { bacnetAddr:"AI 4" }
+
+// Total flow volume
+OniconTotalVolumeSensor: Sensor { bacnetAddr:"AV 1" }
+
+// Average flow rate for previous day
+OniconAvgFlowSensor: Sensor { bacnetAddr:"AV 3" }
+
+// Volume total for previous day
+OniconPrevDayVolumeSensor: Sensor { bacnetAddr:"AV 4" }
+
+// Indicates current state of relay 1
+OniconRelay1Sensor: Sensor { bacnetAddr:"BV 2" }
+
+// Indicates current state of relay 2
+OniconRelay2Sensor: Sensor { bacnetAddr:"BV 3" }
+
+//////////////////////////////////////////////////////////////////////////
+// Attributes
+//////////////////////////////////////////////////////////////////////////
+
+Attr: { attr }
+
+// Manufactor company name
+Manufactor: Attr { manufactor }
+
+// Equipment model number
+ModelNum: Attr { modelNum }
+
+// Max rated ambient operating temperature
+AmbientOperatorMinTemp: Attr { ambient, operating, min, rated, temp }
+
+// Max rated ambient operating temperature
+AmbientOperatorMaxTemp: Attr { ambient, operating, max, rated, temp }
+
+// Min rated temperature for cooling applications for 1K sensors
+CoolingMinTemp: Attr { cooling, min, rated, temp }
+
+// Max rated temperature for cooling applications for 1K sensors
+CoolingMaxTemp: Attr { cooling, max, rated, temp }
+
+// Min rated temperature for heating applications for 2K sensors
+HeatingMinTemp: Attr { heating, min, rated, temp }
+
+// Max rated temperature for heating applications for 2K sensors
+HeatingMaxTemp: Attr { heating, max, rated, temp }
 

@@ -35,6 +35,6 @@ class Build : BuildPod
                ]
     srcDirs = [`fan/`]
 
-    index = ["xeto.cmd":"xetoMore::DocToc"]
+    index = ["xeto.cmd":["xetoMore::DocToc", "xetoMore::JsonSrc"]]
   }
 }

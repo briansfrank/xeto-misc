@@ -1,0 +1,30 @@
+
+// Movie
+Movie: Dict {
+  title: Str                      // Title string of the moview
+  director: Person                // Director of the movie
+  releaseDate: Date               // Date of film release
+  openingCrawl: Str               // Introduction text at start of film
+}
+
+// Person alive or dead
+Person: Dict {
+  name: Str                       // Full name of person
+  born: Date                      // Date of birth
+  died: Date?                     // Date of death if person no longer alive
+}
+
+// Character in film
+Character: Dict {
+  name: Str                       // Full name of character
+  actor: Person                   // Actor who portrayed the character
+  movies: List<of:Movie>          // List of movies this character appeared in
+  born: TimelineYear              // Year both in timeline
+  died: TimelineYear?             // Year of death in timeline
+  aka: List<of:Character, maybe>  // Other aliases for the same character
+}
+
+// Year in the 'ABY-BBY' dating system where zero year is the
+// destruction of the first Death Star at the Battle of Yavin.
+// Years are denoted with the suffix "ABY" or "BBY"
+TimelineYear: Scalar

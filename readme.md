@@ -11,6 +11,11 @@ This repo provides additional supporting tools and libraries.
 # Videos
 The following series of videos provide instructions on how to use this software to validate data:
 
+- [Deep Dive](https://www.youtube.com/watch?v=UvxWmU72wvs): presentation from Haystack Connect 
+  in June 2023 (latest information)
+  
+Older videos (some information is slightly out of date):
+
 - [Overview](https://youtu.be/fr-K-MVbAa8): presentation of high level concepts
 
 - [Axon Shell](https://youtu.be/9Bu1Rtd8VWE): setting up and getting around Axon shell
